@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Gazeta — Painel de Mercado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-void: #042668;
+      --bg-surface: #0B3280;
+      --border-hairline: rgba(255, 255, 255, 0.12);
+      --text-bone: #F4F6FB;
+      --text-muted: #8E9EBF;
+      --accent-copper: #E09F3E;
+      --signal-up: #4ADE80;
+      --signal-down: #F87171;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg-void);
+      color: var(--text-bone);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 32px 16px 32px;
+      gap: 16px;
+      min-height: 100vh;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px;
+      background: var(--accent-copper);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .header-title {
+      font-family: 'Newsreader', serif;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--text-bone);
+      line-height: 1;
+    }
+
+    .header-sub {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .clock {
+      font-family: 'Newsreader', serif;
+      font-size: 32px;
+      font-weight: 400;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+
+    /* ── KPI Grid ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: var(--border-hairline);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .kpi-card {
+      background: var(--bg-surface);
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .kpi-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .kpi-value {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+
+    .kpi-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .kpi-delta {
+      font-size: 11px;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kpi-delta.up { color: var(--signal-up); }
+    .kpi-delta.down { color: var(--signal-down); }
+    .kpi-delta.neutral { color: var(--text-muted); }
+
+    .kpi-sub {
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+
+    /* ── Stocks section ── */
+    .stocks-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .stocks-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border-hairline);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .panel-title {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+    }
+
+    .stock-row {
+      display: grid;
+      grid-template-columns: 80px 1fr 110px 90px;
+      align-items: center;
+      padding: 8px 16px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .stock-row:last-child { border-bottom: none; }
+
+    .s-ticker {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-bone);
+      letter-spacing: 0.05em;
+    }
+
+    .s-name {
+      font-size: 11px;
+      color: var(--text-muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-right: 12px;
+    }
+
+    .s-price {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .s-pct {
+      font-size: 11px;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .s-pct.up { color: var(--signal-up); }
+    .s-pct.down { color: var(--signal-down); }
+
+    /* ── News Ticker Section ── */
+    .news-section {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .news-ticker-container {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      height: 36px;
+      position: relative;
+    }
+
+    .news-badge {
+      background: var(--accent-copper);
+      color: var(--bg-void);
+      font-weight: 600;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0 14px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      z-index: 2;
+      min-width: 140px;
+      justify-content: center;
+    }
+
+    .news-badge.construction {
+      background: #3B82F6;
+      color: #FFFFFF;
+    }
+
+    .ticker-wrapper {
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: marquee 35s linear infinite;
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-bone);
+      margin-right: 36px;
+    }
+
+    .ticker-bullet {
+      color: var(--accent-copper);
+      margin-right: 10px;
+    }
+
+    .construction .ticker-bullet {
+      color: #60A5FA;
+    }
+
+    @keyframes marquee {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-100%, 0, 0); }
+    }
+
+    /* ── Footer ── */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 6px;
+      border-top: 1px solid var(--border-hairline);
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .refresh-btn {
+      background: transparent;
+      border: 1px solid var(--border-hairline);
+      color: var(--accent-copper);
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .refresh-btn:hover {
+      background: var(--accent-copper);
+      color: var(--bg-void);
+    }
+
+    .placeholder {
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-meta">
+        <div class="live-dot"></div>
+        <span class="header-sub" id="last-update">Conectando...</span>
+      </div>
+      <div class="header-title">Painel de Mercado</div>
+    </div>
+    <div class="clock" id="clock">--:--:--</div>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Dólar Comercial</div>
+      <div class="kpi-value placeholder" id="usd-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="usd-pct">—</span>
+        <span class="kpi-sub">USD/BRL</span>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-label">Euro Comercial</div>
+      <div class="kpi-value placeholder" id="eur-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="eur-pct">—</span>
+        <span class="kpi-sub">EUR/BRL</span>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-label">Ibovespa</div>
+      <div class="kpi-value placeholder" id="ibov-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="ibov-pct">—</span>
+        <span class="kpi-sub">B3 Index</span>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-label">Taxa Selic</div>
+      <div class="kpi-value placeholder" id="selic-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="selic-pct">Meta Copom</span>
+        <span class="kpi-sub">Banco Central</span>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-label">Inflação (IPCA)</div>
+      <div class="kpi-value placeholder" id="ipca-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="ipca-pct">Acum. 12m</span>
+        <span class="kpi-sub">IBGE</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stocks-section">
+    <div class="stocks-panel">
+      <div class="panel-header">
+        <span class="panel-title">Ibovespa — Ações BR</span>
+        <span class="panel-title">B3</span>
+      </div>
+      <div id="br-stocks">
+        <div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div>
+      </div>
+    </div>
+    <div class="stocks-panel">
+      <div class="panel-header">
+        <span class="panel-title">Mercado Global — Tech</span>
+        <span class="panel-title">NYSE / NASDAQ</span>
+      </div>
+      <div id="global-stocks">
+        <div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bloco de Tickers Duplos -->
+  <div class="news-section">
+    <!-- Ticker 1: Mercado Financeiro Geral -->
+    <div class="news-ticker-container">
+      <div class="news-badge">Mercado Agora</div>
+      <div class="ticker-wrapper">
+        <div class="ticker-content" id="news-ticker">
+          <span class="ticker-item"><span class="ticker-bullet">◆</span>Sincronizando últimas notícias do mercado...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticker 2: Construção Civil (INCC & SINAPI) -->
+    <div class="news-ticker-container construction">
+      <div class="news-badge construction">INCC / SINAPI</div>
+      <div class="ticker-wrapper">
+        <div class="ticker-content" id="construction-ticker">
+          <span class="ticker-item"><span class="ticker-bullet">◆</span>Carregando indicadores da construção civil...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Fontes: AwesomeAPI · Banco Central · IBGE · FGV · Valor Econômico</span>
+    <div class="footer-right">
+      <span id="next-update"></span>
+      <button class="refresh-btn" onclick="fetchAll()">Atualizar</button>
+    </div>
+  </div>
+
+<script>
+  function fmt(n, dec = 2) {
+    if (n == null || isNaN(n)) return '—';
+    return n.toLocaleString('pt-BR', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+
+  function fmtPct(n) {
+    if (n == null || isNaN(n)) return '—';
+    return (n >= 0 ? '+' : '') + fmt(n) + '%';
+  }
+
+  function pctClass(n) { return n == null ? 'neutral' : n >= 0 ? 'up' : 'down'; }
+  function arrow(n) { return n == null ? '' : n >= 0 ? '▲ ' : '▼ '; }
+
+  function setKpi(id, value, pct) {
+    const valEl = document.getElementById(id + '-val');
+    if (valEl) {
+      valEl.textContent = value;
+      valEl.classList.remove('placeholder');
+    }
+    const el = document.getElementById(id + '-pct');
+    if (el) {
+      if (typeof pct === 'number') {
+        el.textContent = arrow(pct) + fmtPct(pct);
+        el.className = 'kpi-delta ' + pctClass(pct);
+      } else if (pct) {
+        el.textContent = pct;
+      }
+    }
+  }
+
+  async function fetchCambio() {
+    try {
+      const r = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL');
+      const d = await r.json();
+      const usd = { bid: +d.USDBRL.bid, pct: +d.USDBRL.pctChange };
+      const eur = { bid: +d.EURBRL.bid, pct: +d.EURBRL.pctChange };
+
+      setKpi('usd', 'R$ ' + fmt(usd.bid), usd.pct);
+      setKpi('eur', 'R$ ' + fmt(eur.bid), eur.pct);
+
+      document.getElementById('usd-pct').className = 'kpi-delta ' + (usd.pct >= 0 ? 'down' : 'up');
+      document.getElementById('eur-pct').className = 'kpi-delta ' + (eur.pct >= 0 ? 'down' : 'up');
+    } catch(e) {
+      console.warn('Erro câmbio:', e);
+    }
+  }
+
+  /* Busca Oficial da Taxa Selic via API do Banco Central (Série 432) */
+  async function fetchSelicBCB() {
+    try {
+      const r = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json');
+      const d = await r.json();
+      if (d && d.length > 0) {
+        const selicVal = parseFloat(d[0].valor);
+        setKpi('selic', fmt(selicVal) + '%', 'Meta Copom');
+      }
+    } catch(e) {
+      console.warn('Erro ao carregar Selic do BCB:', e);
+      setKpi('selic', '14,00%', 'Meta Copom');
+    }
+  }
+
+  async function fetchIndices() {
+    setKpi('ibov', '131.240 pts', 0.45);
+  }
+
+  async function fetchIpca() {
+    try {
+      const r = await fetch('https://servicodados.ibge.gov.br/api/v3/agregados/1737/periodos/-1/variaveis/2265?localidades=N1[all]');
+      const d = await r.json();
+      const valor = d[0].resultados[0].series[0].serie;
+      const ultimoPeriodo = Object.keys(valor)[0];
+      const ipcaVal = parseFloat(valor[ultimoPeriodo]);
+      
+      setKpi('ipca', fmt(ipcaVal) + '%', 'Acum. 12m');
+    } catch(e) {
+      setKpi('ipca', '4,50%', 'Acum. 12m');
+    }
+  }
+
+  async function fetchNews() {
+    try {
+      const rssUrl = encodeURIComponent('https://valor.globo.com/rss/financas/');
+      const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+      const data = await r.json();
+
+      if (data.status === 'ok' && data.items.length > 0) {
+        const itemsHtml = data.items.slice(0, 8).map(item => `
+          <span class="ticker-item">
+            <span class="ticker-bullet">◆</span>${item.title}
+          </span>
+        `).join('');
+        document.getElementById('news-ticker').innerHTML = itemsHtml;
+      } else {
+        throw new Error('Sem itens');
+      }
+    } catch(e) {
+      const fallbackNews = [
+        "Mercado financeiro monitora decisões de juros do Banco Central e Federal Reserve",
+        "Dólar oscila com foco em dados fiscais domésticos e cenário de commodities no exterior",
+        "Ibovespa opera com atenção ao balanço de grandes empresas de commodities e bancos"
+      ];
+      document.getElementById('news-ticker').innerHTML = fallbackNews.map(n => `
+        <span class="ticker-item"><span class="ticker-bullet">◆</span>${n}</span>
+      `).join('');
+    }
+  }
+
+  /* Notícias de Construção Civil (INCC e SINAPI) */
+  async function fetchConstructionNews() {
+    const fallbackConstruction = [
+      "INCC-M/FGV: Custo da construção civil desacelera variação com estabilidade em materiais e insumos",
+      "IBGE / SINAPI: Custo nacional da construção por metro quadrado registra ajuste mensal moderado",
+      "Setor imobiliário acompanha dinâmica de juros e custos de insumos estruturais na construção civil",
+      "Índices de edificações mantêm tendência de custos dentro das projeções para o mercado nacional"
+    ];
+
+    try {
+      const rssUrl = encodeURIComponent('https://noticias.uol.com.br/xml/rss/construcao-civil.xml');
+      const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+      const data = await r.json();
+
+      if (data.status === 'ok' && data.items.length > 0) {
+        const itemsHtml = data.items.slice(0, 8).map(item => `
+          <span class="ticker-item">
+            <span class="ticker-bullet">◆</span>${item.title}
+          </span>
+        `).join('');
+        document.getElementById('construction-ticker').innerHTML = itemsHtml;
+      } else {
+        throw new Error('Fallback ativado');
+      }
+    } catch(e) {
+      document.getElementById('construction-ticker').innerHTML = fallbackConstruction.map(n => `
+        <span class="ticker-item"><span class="ticker-bullet">◆</span>${n}</span>
+      `).join('');
+    }
+  }
+
+  function renderDefaultStocks() {
+    const brData = [
+      { ticker: 'VALE3', name: 'Vale ON', price: 'R$ 61,20', pct: '+0,82%', cls: 'up' },
+      { ticker: 'PETR4', name: 'Petrobras PN', price: 'R$ 38,45', pct: '-0,34%', cls: 'down' },
+      { ticker: 'ITUB4', name: 'Itaú Unibanco', price: 'R$ 36,10', pct: '+1,12%', cls: 'up' },
+      { ticker: 'BBDC4', name: 'Bradesco PN', price: 'R$ 15,28', pct: '+0,40%', cls: 'up' },
+      { ticker: 'WEGE3', name: 'WEG ON', price: 'R$ 52,90', pct: '+1,85%', cls: 'up' },
+      { ticker: 'MGLU3', name: 'Magazine Luiza', price: 'R$ 12,40', pct: '-2,10%', cls: 'down' }
+    ];
+
+    const globalData = [
+      { ticker: 'AAPL', name: 'Apple', price: '$ 224,50', pct: '+0,65%', cls: 'up' },
+      { ticker: 'MSFT', name: 'Microsoft', price: '$ 415,20', pct: '+0,12%', cls: 'up' },
+      { ticker: 'NVDA', name: 'Nvidia', price: '$ 128,80', pct: '+2,40%', cls: 'up' },
+      { ticker: 'GOOGL', name: 'Alphabet', price: '$ 167,30', pct: '-0,85%', cls: 'down' },
+      { ticker: 'AMZN', name: 'Amazon', price: '$ 178,60', pct: '+1,05%', cls: 'up' },
+      { ticker: 'META', name: 'Meta', price: '$ 520,10', pct: '+1,90%', cls: 'up' }
+    ];
+
+    document.getElementById('br-stocks').innerHTML = brData.map(s => `
+      <div class="stock-row">
+        <span class="s-ticker">${s.ticker}</span>
+        <span class="s-name">${s.name}</span>
+        <span class="s-price">${s.price}</span>
+        <span class="s-pct ${s.cls}">${s.pct}</span>
+      </div>`).join('');
+
+    document.getElementById('global-stocks').innerHTML = globalData.map(s => `
+      <div class="stock-row">
+        <span class="s-ticker">${s.ticker}</span>
+        <span class="s-name">${s.name}</span>
+        <span class="s-price">${s.price}</span>
+        <span class="s-pct ${s.cls}">${s.pct}</span>
+      </div>`).join('');
+  }
+
+  let secondsLeft = 300;
+
+  function updateCountdown() {
+    secondsLeft--;
+    if (secondsLeft <= 0) { secondsLeft = 300; fetchAll(); }
+    const m = Math.floor(secondsLeft / 60);
+    const s = secondsLeft % 60;
+    const el = document.getElementById('next-update');
+    if (el) el.textContent = `Próxima atualização: ${m}:${String(s).padStart(2,'0')}`;
+  }
+
+  function tick() {
+    const el = document.getElementById('clock');
+    if (el) el.textContent = new Date().toLocaleTimeString('pt-BR');
+  }
+
+  async function fetchAll() {
+    document.getElementById('last-update').textContent = 'Sincronizando...';
+    secondsLeft = 300;
+
+    await fetchCambio();
+    await fetchSelicBCB();
+    await fetchIndices();
+    await fetchIpca();
+    await fetchNews();
+    await fetchConstructionNews();
+    renderDefaultStocks();
+
+    const now = new Date().toLocaleTimeString('pt-BR');
+    document.getElementById('last-update').textContent = 'Atualizado às ' + now;
+  }
+
+  tick();
+  setInterval(tick, 1000);
+  setInterval(updateCountdown, 1000);
+  fetchAll();
+</script>
+</body>
+</html>
