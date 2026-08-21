@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Gazeta — Painel de Mercado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-void: #08090D;
+      --bg-surface: #111318;
+      --border-hairline: rgba(255, 255, 255, 0.09);
+      --text-bone: #EAE6DF;
+      --text-muted: #7A7F8E;
+      --accent-copper: #C27838;
+      --signal-up: #3E9B56;
+      --signal-down: #D04545;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg-void);
+      color: var(--text-bone);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 32px 40px;
+      gap: 24px;
+      min-height: 100vh;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px;
+      background: var(--accent-copper);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .header-title {
+      font-family: 'Newsreader', serif;
+      font-size: 32px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--text-bone);
+      line-height: 1;
+    }
+
+    .header-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .clock {
+      font-family: 'Newsreader', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+
+    /* ── KPI Grid ── */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border-hairline);
+      border: 1px solid var(--border-hairline);
+    }
+
+    .kpi-card {
+      background: var(--bg-surface);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .kpi-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .kpi-value {
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+
+    .kpi-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 4px;
+    }
+
+    .kpi-delta {
+      font-size: 12px;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kpi-delta.up { color: var(--signal-up); }
+    .kpi-delta.down { color: var(--signal-down); }
+    .kpi-delta.neutral { color: var(--text-muted); }
+
+    .kpi-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* ── Stocks section ── */
+    .stocks-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      flex: 1;
+    }
+
+    .stocks-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border-hairline);
+      background: rgba(255, 255, 255, 0.01);
+    }
+
+    .panel-title {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+    }
+
+    .stock-row {
+      display: grid;
+      grid-template-columns: 80px 1fr 110px 90px;
+      align-items: center;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .stock-row:last-child { border-bottom: none; }
+
+    .s-ticker {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-bone);
+      letter-spacing: 0.05em;
+    }
+
+    .s-name {
+      font-size: 12px;
+      color: var(--text-muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-right: 12px;
+    }
+
+    .s-price {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .s-pct {
+      font-size: 12px;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .s-pct.up { color: var(--signal-up); }
+    .s-pct.down { color: var(--signal-down); }
+
+    /* ── Footer ── */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-hairline);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .refresh-btn {
+      background: transparent;
+      border: 1px solid var(--border-hairline);
+      color: var(--accent-copper);
+      font-size: 11px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .refresh-btn:hover {
+      background: var(--accent-copper);
+      color: var(--bg-void);
+    }
+
+    .placeholder {
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <div class="header-meta">
+        <div class="live-dot"></div>
+        <span class="header-sub" id="last-update">Sincronizando feed</span>
+      </div>
+      <div class="header-title">Painel de Mercado</div>
+    </div>
+    <div class="clock" id="clock">--:--:--</div>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Dólar Comercial</div>
+      <div class="kpi-value placeholder" id="usd-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="usd-pct">—</span>
+        <span class="kpi-sub">USD/BRL</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Euro Comercial</div>
+      <div class="kpi-value placeholder" id="eur-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="eur-pct">—</span>
+        <span class="kpi-sub">EUR/BRL</span>
+      </div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Ibovespa</div>
+      <div class="kpi-value placeholder" id="ibov-val">—</div>
+      <div class="kpi-footer">
+        <span class="kpi-delta neutral" id="ibov-pct">—</span>
+        <span class="kpi-sub">B3 Index</span>
+      </div>
+    </div>
