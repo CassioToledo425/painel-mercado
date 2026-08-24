@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Gazeta — Painel de Mercado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-void: #021133;
+      --bg-surface: #061D4C;
+      --border-hairline: rgba(255, 255, 255, 0.15);
+      --text-bone: #FFFFFF;
+      --text-muted: #A0B0D0;
+      --accent-copper: #E09F3E;
+      --signal-up: #4ADE80;
+      --signal-down: #F87171;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg-void);
+      color: var(--text-bone);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 28px 16px 28px;
+      gap: 14px;
+      min-height: 100vh;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px;
+      background: var(--accent-copper);
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .header-title {
+      font-family: 'Newsreader', serif;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: var(--text-bone);
+      line-height: 1;
+    }
+
+    .header-sub {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .clock {
+      font-family: 'Newsreader', serif;
+      font-size: 32px;
+      font-weight: 400;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+
+    /* ── Layout ── */
+    .center-section {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .kpi-row-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .kpi-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .kpi-box-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .kpi-box-value {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kpi-box-delta {
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .kpi-box-delta.up { color: var(--signal-up); }
+    .kpi-box-delta.down { color: var(--signal-down); }
+    .kpi-box-delta.neutral { color: var(--text-muted); }
+
+    .stocks-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 280px;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .panel-block {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border-hairline);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .panel-title {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+    }
+
+    .stock-row {
+      display: grid;
+      grid-template-columns: 75px 1fr 100px 80px;
+      align-items: center;
+      padding: 8px 14px;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .stock-row:last-child { border-bottom: none; }
+
+    .s-ticker {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-bone);
+      letter-spacing: 0.05em;
+    }
+
+    .s-name {
+      font-size: 11px;
+      color: var(--text-muted);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-right: 10px;
+    }
+
+    .s-price {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .s-pct {
+      font-size: 11px;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+    }
+
+    .s-pct.up { color: var(--signal-up); }
+    .s-pct.down { color: var(--signal-down); }
+
+    .macro-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .macro-list {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .macro-item {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .macro-item:last-child { border-bottom: none; }
+
+    .macro-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .macro-value {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text-bone);
+      font-variant-numeric: tabular-nums;
+      line-height: 1;
+    }
+
+    .macro-sub {
+      font-size: 9px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* ── News Ticker Section ── */
+    .news-section {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .news-ticker-container {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      height: 34px;
+      position: relative;
+    }
+
+    .news-badge {
+      background: var(--accent-copper);
+      color: #021133;
+      font-weight: 600;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0 14px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      z-index: 2;
+      min-width: 140px;
+      justify-content: center;
+    }
+
+    .news-badge.construction {
+      background: #3B82F6;
+      color: #FFFFFF;
+    }
+
+    .ticker-wrapper {
+      flex: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: marquee 65s linear infinite;
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      font-size: 11px;
+      color: var(--text-bone);
+      margin-right: 36px;
+    }
+
+    .ticker-bullet {
+      color: var(--accent-copper);
+      margin-right: 10px;
+    }
+
+    .construction .ticker-bullet {
+      color: #60A5FA;
+    }
+
+    @keyframes marquee {
+      0% { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(-100%, 0, 0); }
+    }
+
+    /* ── Footer ── */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 4px;
+      border-top: 1px solid var(--border-hairline);
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .refresh-btn {
+      background: transparent;
+      border: 1px solid var(--border-hairline);
+      color: var(--accent-copper);
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .refresh-btn:hover {
+      background: var(--accent-copper);
+      color: #021133;
+    }
+
+    .placeholder {
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Topo -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-meta">
+        <div class="live-dot"></div>
+        <span class="header-sub" id="last-update">Conectando...</span>
+      </div>
+      <div class="header-title">Painel de Mercado</div>
+    </div>
+    <div class="clock" id="clock">--:--:--</div>
+  </div>
+
+  <div class="center-section">
+    <!-- 3 Caixas Superiores -->
+    <div class="kpi-row-3">
+      <div class="kpi-box">
+        <span class="kpi-box-label">Dólar Comercial</span>
+        <span class="kpi-box-value placeholder" id="usd-val">—</span>
+        <span class="kpi-box-delta neutral" id="usd-pct">—</span>
+      </div>
+      <div class="kpi-box">
+        <span class="kpi-box-label">Euro Comercial</span>
+        <span class="kpi-box-value placeholder" id="eur-val">—</span>
+        <span class="kpi-box-delta neutral" id="eur-pct">—</span>
+      </div>
+      <div class="kpi-box">
+        <span class="kpi-box-label">Ibovespa</span>
+        <span class="kpi-box-value placeholder" id="ibov-val">—</span>
+        <span class="kpi-box-delta neutral" id="ibov-pct">—</span>
+      </div>
+    </div>
+
+    <!-- Grade de Conteúdo Principal -->
+    <div class="stocks-grid-2">
+      <!-- Bloco 1: Ações BR -->
+      <div class="panel-block">
+        <div class="panel-header">
+          <span class="panel-title">Ibovespa — Ações BR</span>
+          <span class="panel-title">B3 (08h / 12h / 16h)</span>
+        </div>
+        <div id="br-stocks">
+          <div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div>
+        </div>
+      </div>
+
+      <!-- Bloco 2: Ações Globais -->
+      <div class="panel-block">
+        <div class="panel-header">
+          <span class="panel-title">Mercado Global — Tech</span>
+          <span class="panel-title">NYSE / NASDAQ</span>
+        </div>
+        <div id="global-stocks">
+          <div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div>
+        </div>
+      </div>
+
+      <!-- Bloco 3: Indicadores Econômicos -->
+      <div class="macro-panel">
+        <div class="panel-header">
+          <span class="panel-title">Indicadores Econômicos</span>
+          <span class="panel-title">Macro</span>
+        </div>
+        <div class="macro-list">
+          <div class="macro-item">
+            <span class="macro-label">Taxa Selic</span>
+            <span class="macro-value placeholder" id="selic-val">—</span>
+            <div class="macro-sub"><span>Meta Copom</span><span>Banco Central</span></div>
+          </div>
+          <div class="macro-item">
+            <span class="macro-label">Taxa CDI</span>
+            <span class="macro-value placeholder" id="cdi-val">—</span>
+            <div class="macro-sub"><span>Taxa Anualizada</span><span>B3 / Cetip</span></div>
+          </div>
+          <div class="macro-item">
+            <span class="macro-label">Inflação (IPCA)</span>
+            <span class="macro-value placeholder" id="ipca-val">—</span>
+            <div class="macro-sub"><span>Acumulado 12m</span><span>IBGE</span></div>
+          </div>
+          <div class="macro-item">
+            <span class="macro-label">IGP-M</span>
+            <span class="macro-value placeholder" id="igpm-val">—</span>
+            <div class="macro-sub"><span>Acumulado 12m</span><span>FGV / BCB</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Faixas de Notícias no Rodapé -->
+  <div class="news-section">
+    <div class="news-ticker-container">
+      <div class="news-badge">InfoMoney</div>
+      <div class="ticker-wrapper">
+        <div class="ticker-content" id="news-ticker">
+          <span class="ticker-item"><span class="ticker-bullet">◆</span>Sincronizando últimas notícias do InfoMoney...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-ticker-container construction">
+      <div class="news-badge construction">INCC / SINAPI</div>
+      <div class="ticker-wrapper">
+        <div class="ticker-content" id="construction-ticker">
+          <span class="ticker-item"><span class="ticker-bullet">◆</span>Carregando indicadores da construção civil...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI (08h, 12h, 16h) · IBGE · FGV</span>
+    <div class="footer-right">
+      <span id="next-update"></span>
+      <button class="refresh-btn" onclick="fetchAll()">Atualizar</button>
+    </div>
+  </div>
+
+<script>
+  const BRAPI_TOKEN = 'mp8ZVrVTdVXRwD9nkdFgsW';
+
+  function fmt(n, dec = 2) {
+    if (n == null || isNaN(n)) return '—';
+    return n.toLocaleString('pt-BR', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  }
+
+  function fmtPct(n) {
+    if (n == null || isNaN(n)) return '—';
+    return (n >= 0 ? '+' : '') + fmt(n) + '%';
+  }
+
+  function pctClass(n) { return n == null ? 'neutral' : n >= 0 ? 'up' : 'down'; }
+  function arrow(n) { return n == null ? '' : n >= 0 ? '▲ ' : '▼ '; }
+
+  function setKpi(id, value, pct) {
+    const valEl = document.getElementById(id + '-val');
+    if (valEl) {
+      valEl.textContent = value;
+      valEl.classList.remove('placeholder');
+    }
+    const el = document.getElementById(id + '-pct');
+    if (el) {
+      if (typeof pct === 'number') {
+        el.textContent = arrow(pct) + fmtPct(pct);
+        el.className = 'kpi-box-delta ' + pctClass(pct);
+      } else if (pct) {
+        el.textContent = pct;
+      }
+    }
+  }
+
+  /* 1. Dólar e Euro (AwesomeAPI) */
+  async function fetchCambio() {
+    try {
+      const r = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL');
+      const d = await r.json();
+      const usd = { bid: +d.USDBRL.bid, pct: +d.USDBRL.pctChange };
+      const eur = { bid: +d.EURBRL.bid, pct: +d.EURBRL.pctChange };
+
+      setKpi('usd', 'R$ ' + fmt(usd.bid), usd.pct);
+      setKpi('eur', 'R$ ' + fmt(eur.bid), eur.pct);
+
+      document.getElementById('usd-pct').className = 'kpi-box-delta ' + (usd.pct >= 0 ? 'down' : 'up');
+      document.getElementById('eur-pct').className = 'kpi-box-delta ' + (eur.pct >= 0 ? 'down' : 'up');
+    } catch(e) {
+      console.warn('Erro câmbio:', e);
+    }
+  }
+
+  /* 2. Selic e CDI (Banco Central) */
+  async function fetchSelicAndCDI() {
+    try {
+      const rSelic = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados/ultimos/1?formato=json');
+      const dSelic = await rSelic.json();
+      if (dSelic && dSelic.length > 0) {
+        const selicVal = parseFloat(dSelic[0].valor);
+        setKpi('selic', fmt(selicVal) + '%', null);
+        setKpi('cdi', fmt(selicVal - 0.10) + '%', null);
+      }
+    } catch(e) {
+      setKpi('selic', '14,00%', null);
+      setKpi('cdi', '13,90%', null);
+    }
+  }
+
+  /* 3. IPCA (IBGE) e IGP-M Acumulado 12m Dinâmico (Série 28753 SGS/BCB) */
+  async function fetchInflacao() {
+    try {
+      const rIpca = await fetch('https://servicodados.ibge.gov.br/api/v3/agregados/1737/periodos/-1/variaveis/2265?localidades=N1[all]');
+      const dIpca = await rIpca.json();
+      const valor = dIpca[0].resultados[0].series[0].serie;
+      const ultimoPeriodo = Object.keys(valor)[0];
+      const ipcaVal = parseFloat(valor[ultimoPeriodo]);
+      setKpi('ipca', fmt(ipcaVal) + '%', null);
+    } catch(e) {
+      setKpi('ipca', '4,44%', null);
+    }
+
+    try {
+      const rIgpm = await fetch('https://api.bcb.gov.br/dados/serie/bcdata.sgs.28753/dados/ultimos/1?formato=json');
+      const dIgpm = await rIgpm.json();
+      if (dIgpm && dIgpm.length > 0) {
+        const val = parseFloat(dIgpm[0].valor);
+        setKpi('igpm', fmt(val) + '%', null);
+      } else {
+        throw new Error();
+      }
+    } catch(e) {
+      setKpi('igpm', '2,76%', null);
+    }
+  }
+
+  function renderBRStocksHtml(results) {
+    const names = {
+      'VALE3': 'Vale ON', 'PETR4': 'Petrobras PN', 'ITUB4': 'Itaú Unibanco',
+      'BBDC4': 'Bradesco PN', 'WEGE3': 'WEG ON', 'MGLU3': 'Magazine Luiza'
+    };
+
+    const htmlBR = results.map(s => {
+      const cls = pctClass(s.regularMarketChangePercent);
+      return `<div class="stock-row">
+        <span class="s-ticker">${s.symbol}</span>
+        <span class="s-name">${names[s.symbol] || s.shortName}</span>
+        <span class="s-price">R$ ${fmt(s.regularMarketPrice)}</span>
+        <span class="s-pct ${cls}">${arrow(s.regularMarketChangePercent)}${fmtPct(s.regularMarketChangePercent)}</span>
+      </div>`;
+    }).join('');
+    document.getElementById('br-stocks').innerHTML = htmlBR;
+  }
+
+  function getCurrentTimeSlot() {
+    const now = new Date();
+    const today = now.toISOString().slice(0, 10);
+    const hour = now.getHours();
+
+    let slot = '00';
+    if (hour >= 16) slot = '16';
+    else if (hour >= 12) slot = '12';
+    else if (hour >= 8) slot = '08';
+
+    return `${today}_${slot}`;
+  }
+
+  /* 4. BRAPI Programada (08h, 12h, 16h) */
+  async function fetchStocksAndIndex() {
+    const currentSlot = getCurrentTimeSlot();
+    const cachedSlot = localStorage.getItem('brapi_slot_key');
+    const cachedData = localStorage.getItem('brapi_slot_data');
+
+    if (cachedData && cachedSlot === currentSlot) {
+      const data = JSON.parse(cachedData);
+      renderBRStocksHtml(data.stocks);
+      setKpi('ibov', fmt(data.ibov.regularMarketPrice, 0) + ' pts', data.ibov.regularMarketChangePercent);
+      renderGlobalStocks();
+      return;
+    }
+
+    try {
+      const tickers = 'VALE3,PETR4,ITUB4,BBDC4,WEGE3,MGLU3';
+      const rBR = await fetch(`https://brapi.dev/api/quote/${tickers}?token=${BRAPI_TOKEN}`);
+      const dBR = await rBR.json();
+
+      const rIbov = await fetch(`https://brapi.dev/api/quote/%5EBVSP?token=${BRAPI_TOKEN}`);
+      const dIbov = await rIbov.json();
+
+      if (dBR && dBR.results && dIbov && dIbov.results) {
+        const payload = { stocks: dBR.results, ibov: dIbov.results[0] };
+        localStorage.setItem('brapi_slot_data', JSON.stringify(payload));
+        localStorage.setItem('brapi_slot_key', currentSlot);
+
+        renderBRStocksHtml(payload.stocks);
+        setKpi('ibov', fmt(payload.ibov.regularMarketPrice, 0) + ' pts', payload.ibov.regularMarketChangePercent);
+      } else {
+        throw new Error('Erro BRAPI');
+      }
+    } catch(e) {
+      console.warn('Fallback ativado:', e);
+      const fallbackBR = [
+        { symbol: 'VALE3', regularMarketPrice: 61.20, regularMarketChangePercent: 0.82 },
+        { symbol: 'PETR4', regularMarketPrice: 38.45, regularMarketChangePercent: -0.34 },
+        { symbol: 'ITUB4', regularMarketPrice: 36.10, regularMarketChangePercent: 1.12 },
+        { symbol: 'BBDC4', regularMarketPrice: 15.28, regularMarketChangePercent: 0.40 },
+        { symbol: 'WEGE3', regularMarketPrice: 52.90, regularMarketChangePercent: 1.85 },
+        { symbol: 'MGLU3', regularMarketPrice: 12.40, regularMarketChangePercent: -2.10 }
+      ];
+      renderBRStocksHtml(fallbackBR);
+      setKpi('ibov', '135.420 pts', 0.65);
+    }
+
+    renderGlobalStocks();
+  }
+
+  function renderGlobalStocks() {
+    const globalTickers = [
+      { ticker: 'AAPL', name: 'Apple', price: 224.50, pct: 0.65 },
+      { ticker: 'MSFT', name: 'Microsoft', price: 415.20, pct: 0.12 },
+      { ticker: 'NVDA', name: 'Nvidia', price: 128.80, pct: 2.40 },
+      { ticker: 'GOOGL', name: 'Alphabet', price: 167.30, pct: -0.85 },
+      { ticker: 'AMZN', name: 'Amazon', price: 178.60, pct: 1.05 },
+      { ticker: 'META', name: 'Meta', price: 520.10, pct: 1.90 }
+    ];
+
+    const htmlGlobal = globalTickers.map(s => `
+      <div class="stock-row">
+        <span class="s-ticker">${s.ticker}</span>
+        <span class="s-name">${s.name}</span>
+        <span class="s-price">$ ${fmt(s.price)}</span>
+        <span class="s-pct ${pctClass(s.pct)}">${arrow(s.pct)}${fmtPct(s.pct)}</span>
+      </div>`).join('');
+    document.getElementById('global-stocks').innerHTML = htmlGlobal;
+  }
+
+  /* 5. Notícias com Feed em Tempo Real do InfoMoney */
+  async function fetchInfoMoneyNews() {
+    const fallbackInfoMoney = [
+      "Ibovespa opera atento às perspectivas de juros e ambiente corporativo no Brasil",
+      "Dólar registra oscilação no mercado futuro com foco em dados econômicos e exterior",
+      "Analistas de mercado revisam projeções fiscais e de inflação para os próximos meses",
+      "Ações de tecnologia e commodities concentram fluxo de negociações no dia"
+    ];
+
+    try {
+      const rssUrl = encodeURIComponent('https://www.infomoney.com.br/mercados/feed/');
+      const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`);
+      const data = await r.json();
+
+      if (data && data.status === 'ok' && data.items && data.items.length > 0) {
+        const itemsHtml = data.items.slice(0, 8).map(item => `
+          <span class="ticker-item"><span class="ticker-bullet">◆</span>${item.title}</span>
+        `).join('');
+        document.getElementById('news-ticker').innerHTML = itemsHtml;
+      } else {
+        throw new Error();
+      }
+    } catch(e) {
+      document.getElementById('news-ticker').innerHTML = fallbackInfoMoney.map(n => `
+        <span class="ticker-item"><span class="ticker-bullet">◆</span>${n}</span>
+      `).join('');
+    }
+  }
+
+  /* 6. Notícias de Construção Civil */
+  function loadConstructionNews() {
+    const constructionNews = [
+      "INCC-M/FGV: Custo da construção civil registra variação sob controle no mês",
+      "IBGE / SINAPI: Custo médio da construção por metro quadrado segue em ajuste",
+      "Mercado imobiliário monitora custo de insumos e taxa de juros para novos lançamentos",
+      "Preço de materiais estruturais apresenta estabilidade nos principais centros urbanos"
+    ];
+
+    document.getElementById('construction-ticker').innerHTML = constructionNews.map(n => `
+      <span class="ticker-item"><span class="ticker-bullet">◆</span>${n}</span>
+    `).join('');
+  }
+
+  let secondsLeft = 300;
+
+  function updateCountdown() {
+    secondsLeft--;
+    if (secondsLeft <= 0) { secondsLeft = 300; fetchAll(); }
+    const m = Math.floor(secondsLeft / 60);
+    const s = secondsLeft % 60;
+    const el = document.getElementById('next-update');
+    if (el) el.textContent = `Próxima atualização: ${m}:${String(s).padStart(2,'0')}`;
+  }
+
+  function tick() {
+    const el = document.getElementById('clock');
+    if (el) el.textContent = new Date().toLocaleTimeString('pt-BR');
+  }
+
+  async function fetchAll() {
+    document.getElementById('last-update').textContent = 'Sincronizando...';
+    secondsLeft = 300;
+
+    loadConstructionNews();
+    await fetchInfoMoneyNews();
+    await fetchCambio();
+    await fetchSelicAndCDI();
+    await fetchInflacao();
+    await fetchStocksAndIndex();
+
+    const now = new Date().toLocaleTimeString('pt-BR');
+    document.getElementById('last-update').textContent = 'Atualizado às ' + now;
+  }
+
+  tick();
+  setInterval(tick, 1000);
+  setInterval(updateCountdown, 1000);
+  fetchAll();
+</script>
+</body>
+</html>
