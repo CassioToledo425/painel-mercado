@@ -17,10 +17,12 @@ if (!html.includes('<script src="news-client.js"></script>')) {
 }
 
 html = html.replace('NYSE / NASDAQ</span>', 'NYSE / NASDAQ · AUTO</span>');
+html = html.replace(/NYSE \/ NASDAQ(?: · AUTO)+<\/span>/, 'NYSE / NASDAQ · AUTO</span>');
+
 html = html.replace(
-  'Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI (08h, 12h, 16h) · IBGE · FGV',
+  /Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI \(08h, 12h, 16h\) · IBGE · FGV(?: · Yahoo Finance)*/,
   'Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI (08h, 12h, 16h) · IBGE · FGV · Yahoo Finance'
 );
 
 await writeFile(file, html, 'utf8');
-console.log('index.html atualizado: motor seguro e feed local de notícias ativados.');
+console.log('index.html atualizado: motor seguro, feed local e rodapé normalizado.');
