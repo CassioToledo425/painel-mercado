@@ -9,6 +9,13 @@ if (!html.includes('<script src="app.js"></script>')) {
   html = html.replace(inline, '<script src="app.js"></script>');
 }
 
+if (!html.includes('<script src="news-client.js"></script>')) {
+  html = html.replace(
+    '<script src="app.js"></script>',
+    '<script src="app.js"></script>\n<script src="news-client.js"></script>'
+  );
+}
+
 html = html.replace('NYSE / NASDAQ</span>', 'NYSE / NASDAQ · AUTO</span>');
 html = html.replace(
   'Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI (08h, 12h, 16h) · IBGE · FGV',
@@ -16,4 +23,4 @@ html = html.replace(
 );
 
 await writeFile(file, html, 'utf8');
-console.log('index.html atualizado: token removido e app.js ativado.');
+console.log('index.html atualizado: motor seguro e feed local de notícias ativados.');
