@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-11T18:50:13.343Z",
+  "updatedAt": "2026-09-11T19:03:05.501Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,8 +29,13 @@
       "pubDate": null
     },
     {
-      "title": "Ala do STF critica sigilo parcial de Mendonça e quer adiar julgamento de Moraes",
-      "link": "https://www.infomoney.com.br/mercados/ala-do-stf-critica-sigilo-parcial-de-mendonca-e-quer-adiar-julgamento-de-moraes/",
+      "title": "Safra: Investidores seguem cautelosos com a Bolsa e de olho em IA ao redor do mundo",
+      "link": "https://www.infomoney.com.br/mercados/safra-investidores-seguem-cautelosos-com-a-bolsa-e-de-olho-em-ia-ao-redor-do-mundo/",
+      "pubDate": null
+    },
+    {
+      "title": "B3 anuncia que passará a divulgar \"Ibovespa em dólar\" a partir de segunda-feira",
+      "link": "https://www.infomoney.com.br/mercados/b3-anuncia-que-passara-a-divulgar-ibovespa-em-dolar-a-partir-de-segunda-feira/",
       "pubDate": null
     },
     {
@@ -41,11 +46,6 @@
     {
       "title": "Bolsas da Europa fecham em alta com queda do petróleo",
       "link": "https://www.infomoney.com.br/mercados/bolsas-da-europa-fecham-em-alta-com-queda-do-petroleo/",
-      "pubDate": null
-    },
-    {
-      "title": "Sabesp, Copasa ou Sanepar: quem ganha com a nova regra da ANA para o saneamento?",
-      "link": "https://www.infomoney.com.br/mercados/sabesp-copasa-ou-sanepar-quem-ganha-com-a-nova-regra-da-ana-para-o-saneamento/",
       "pubDate": null
     }
   ]
