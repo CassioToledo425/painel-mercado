@@ -22,7 +22,6 @@
 
     html, body {
       height: 100%;
-      /* Tenta carregar a imagem bg.png, se não encontrar usa a cor exata do azul */
       background: var(--bg-void) url('bg.png') no-repeat center center fixed;
       background-size: cover;
       color: var(--text-bone);
@@ -42,7 +41,6 @@
       margin: 0 auto;
     }
 
-    /* ── Header ── */
     .header {
       display: flex;
       align-items: flex-end;
@@ -51,343 +49,63 @@
       border-bottom: 1px solid var(--border-hairline);
     }
 
-    .header-left {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-    }
+    .header-left { display: flex; flex-direction: column; gap: 4px; }
+    .header-meta { display: flex; align-items: center; gap: 10px; }
+    .live-dot { width: 6px; height: 6px; background: var(--accent-copper); animation: pulse 2.5s infinite ease-in-out; }
+    @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.4; transform:scale(.8); } }
+    .header-title { font-family:'Newsreader',serif; font-size:28px; font-weight:500; letter-spacing:-.01em; color:var(--text-bone); line-height:1; }
+    .header-sub { font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.1em; }
+    .clock { font-family:'Newsreader',serif; font-size:32px; font-weight:400; color:var(--text-bone); font-variant-numeric:tabular-nums; letter-spacing:.02em; line-height:1; }
 
-    .header-meta {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .center-section { display:flex; flex-direction:column; gap:14px; flex:1; }
+    .kpi-row-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .kpi-box { background:var(--bg-surface); backdrop-filter:blur(8px); border:1px solid var(--border-hairline); padding:12px 16px; display:flex; flex-direction:column; gap:2px; }
+    .kpi-box-label { font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em; }
+    .kpi-box-value { font-size:22px; font-weight:600; color:var(--text-bone); font-variant-numeric:tabular-nums; }
+    .kpi-box-delta { font-size:11px; font-weight:500; }
+    .kpi-box-delta.up { color:var(--signal-up); }
+    .kpi-box-delta.down { color:var(--signal-down); }
+    .kpi-box-delta.neutral { color:var(--text-muted); }
 
-    .live-dot {
-      width: 6px; height: 6px;
-      background: var(--accent-copper);
-      animation: pulse 2.5s infinite ease-in-out;
-    }
+    .stocks-grid-2 { display:grid; grid-template-columns:1fr 1fr 280px; gap:14px; flex:1; }
+    .panel-block, .macro-panel { background:var(--bg-surface); backdrop-filter:blur(8px); border:1px solid var(--border-hairline); display:flex; flex-direction:column; }
+    .panel-header { display:flex; align-items:center; justify-content:space-between; padding:10px 14px; border-bottom:1px solid var(--border-hairline); background:rgba(255,255,255,.03); }
+    .panel-title { font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.12em; font-weight:500; }
+    .stock-row { display:grid; grid-template-columns:75px 1fr 100px 80px; align-items:center; padding:8px 14px; border-bottom:1px solid var(--border-hairline); }
+    .stock-row:last-child { border-bottom:none; }
+    .s-ticker { font-size:11px; font-weight:600; color:var(--text-bone); letter-spacing:.05em; }
+    .s-name { font-size:11px; color:var(--text-muted); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding-right:10px; }
+    .s-price { font-size:11px; font-weight:500; color:var(--text-bone); font-variant-numeric:tabular-nums; text-align:right; }
+    .s-pct { font-size:11px; font-weight:500; font-variant-numeric:tabular-nums; text-align:right; }
+    .s-pct.up { color:var(--signal-up); }
+    .s-pct.down { color:var(--signal-down); }
 
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
-    }
+    .macro-list { display:flex; flex-direction:column; flex:1; }
+    .macro-item { padding:12px 14px; border-bottom:1px solid var(--border-hairline); display:flex; flex-direction:column; gap:2px; }
+    .macro-item:last-child { border-bottom:none; }
+    .macro-label { font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.1em; }
+    .macro-value { font-size:20px; font-weight:600; color:var(--text-bone); font-variant-numeric:tabular-nums; line-height:1; }
+    .macro-sub { font-size:9px; color:var(--text-muted); display:flex; justify-content:space-between; }
 
-    .header-title {
-      font-family: 'Newsreader', serif;
-      font-size: 28px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      color: var(--text-bone);
-      line-height: 1;
-    }
+    .news-section { display:flex; flex-direction:column; gap:6px; }
+    .news-ticker-container { background:var(--bg-surface); backdrop-filter:blur(8px); border:1px solid var(--border-hairline); display:flex; align-items:center; overflow:hidden; height:34px; position:relative; }
+    .news-badge { background:var(--accent-copper); color:#021133; font-weight:600; font-size:10px; text-transform:uppercase; letter-spacing:.1em; padding:0 14px; height:100%; display:flex; align-items:center; white-space:nowrap; z-index:2; min-width:140px; justify-content:center; }
+    .news-badge.construction { background:#3B82F6; color:#FFF; }
+    .ticker-wrapper { flex:1; overflow:hidden; white-space:nowrap; position:relative; display:flex; align-items:center; }
+    .ticker-content { display:inline-flex; white-space:nowrap; animation:marquee 90s linear infinite; }
+    .ticker-item { display:inline-flex; align-items:center; font-size:11px; color:var(--text-bone); margin-right:36px; }
+    .ticker-bullet { color:var(--accent-copper); margin-right:10px; }
+    .construction .ticker-bullet { color:#60A5FA; }
+    @keyframes marquee { 0% { transform:translate3d(0,0,0); } 100% { transform:translate3d(-50%,0,0); } }
 
-    .header-sub {
-      font-size: 10px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .clock {
-      font-family: 'Newsreader', serif;
-      font-size: 32px;
-      font-weight: 400;
-      color: var(--text-bone);
-      font-variant-numeric: tabular-nums;
-      letter-spacing: 0.02em;
-      line-height: 1;
-    }
-
-    /* ── Layout ── */
-    .center-section {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      flex: 1;
-    }
-
-    .kpi-row-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-    }
-
-    .kpi-box {
-      background: var(--bg-surface);
-      backdrop-filter: blur(8px);
-      border: 1px solid var(--border-hairline);
-      padding: 12px 16px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .kpi-box-label {
-      font-size: 10px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .kpi-box-value {
-      font-size: 22px;
-      font-weight: 600;
-      color: var(--text-bone);
-      font-variant-numeric: tabular-nums;
-    }
-
-    .kpi-box-delta {
-      font-size: 11px;
-      font-weight: 500;
-    }
-
-    .kpi-box-delta.up { color: var(--signal-up); }
-    .kpi-box-delta.down { color: var(--signal-down); }
-    .kpi-box-delta.neutral { color: var(--text-muted); }
-
-    .stocks-grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr 280px;
-      gap: 14px;
-      flex: 1;
-    }
-
-    .panel-block {
-      background: var(--bg-surface);
-      backdrop-filter: blur(8px);
-      border: 1px solid var(--border-hairline);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .panel-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--border-hairline);
-      background: rgba(255, 255, 255, 0.03);
-    }
-
-    .panel-title {
-      font-size: 10px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 500;
-    }
-
-    .stock-row {
-      display: grid;
-      grid-template-columns: 75px 1fr 100px 80px;
-      align-items: center;
-      padding: 8px 14px;
-      border-bottom: 1px solid var(--border-hairline);
-    }
-
-    .stock-row:last-child { border-bottom: none; }
-
-    .s-ticker {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-bone);
-      letter-spacing: 0.05em;
-    }
-
-    .s-name {
-      font-size: 11px;
-      color: var(--text-muted);
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      padding-right: 10px;
-    }
-
-    .s-price {
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--text-bone);
-      font-variant-numeric: tabular-nums;
-      text-align: right;
-    }
-
-    .s-pct {
-      font-size: 11px;
-      font-weight: 500;
-      font-variant-numeric: tabular-nums;
-      text-align: right;
-    }
-
-    .s-pct.up { color: var(--signal-up); }
-    .s-pct.down { color: var(--signal-down); }
-
-    .macro-panel {
-      background: var(--bg-surface);
-      backdrop-filter: blur(8px);
-      border: 1px solid var(--border-hairline);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .macro-list {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .macro-item {
-      padding: 12px 14px;
-      border-bottom: 1px solid var(--border-hairline);
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-
-    .macro-item:last-child { border-bottom: none; }
-
-    .macro-label {
-      font-size: 10px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-    }
-
-    .macro-value {
-      font-size: 20px;
-      font-weight: 600;
-      color: var(--text-bone);
-      font-variant-numeric: tabular-nums;
-      line-height: 1;
-    }
-
-    .macro-sub {
-      font-size: 9px;
-      color: var(--text-muted);
-      display: flex;
-      justify-content: space-between;
-    }
-
-    /* ── News Ticker Section ── */
-    .news-section {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .news-ticker-container {
-      background: var(--bg-surface);
-      backdrop-filter: blur(8px);
-      border: 1px solid var(--border-hairline);
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      height: 34px;
-      position: relative;
-    }
-
-    .news-badge {
-      background: var(--accent-copper);
-      color: #021133;
-      font-weight: 600;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      padding: 0 14px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      white-space: nowrap;
-      z-index: 2;
-      min-width: 140px;
-      justify-content: center;
-    }
-
-    .news-badge.construction {
-      background: #3B82F6;
-      color: #FFFFFF;
-    }
-
-    .ticker-wrapper {
-      flex: 1;
-      overflow: hidden;
-      white-space: nowrap;
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-
-    .ticker-content {
-      display: inline-flex;
-      white-space: nowrap;
-      animation: marquee 90s linear infinite;
-    }
-
-    .ticker-item {
-      display: inline-flex;
-      align-items: center;
-      font-size: 11px;
-      color: var(--text-bone);
-      margin-right: 36px;
-    }
-
-    .ticker-bullet {
-      color: var(--accent-copper);
-      margin-right: 10px;
-    }
-
-    .construction .ticker-bullet {
-      color: #60A5FA;
-    }
-
-    @keyframes marquee {
-      0% { transform: translate3d(0, 0, 0); }
-      100% { transform: translate3d(-50%, 0, 0); }
-    }
-
-    /* ── Footer ── */
-    .footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 4px;
-      border-top: 1px solid var(--border-hairline);
-      font-size: 10px;
-      color: var(--text-muted);
-    }
-
-    .footer-right {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .refresh-btn {
-      background: transparent;
-      border: 1px solid var(--border-hairline);
-      color: var(--accent-copper);
-      font-size: 10px;
-      text-transform: uppercase;
-      padding: 3px 10px;
-      cursor: pointer;
-      font-family: inherit;
-    }
-
-    .refresh-btn:hover {
-      background: var(--accent-copper);
-      color: #021133;
-    }
-
-    .placeholder {
-      color: var(--text-muted);
-      opacity: 0.5;
-    }
+    .footer { display:flex; align-items:center; justify-content:space-between; padding-top:4px; border-top:1px solid var(--border-hairline); font-size:10px; color:var(--text-muted); }
+    .footer-right { display:flex; align-items:center; gap:16px; }
+    .refresh-btn { background:transparent; border:1px solid var(--border-hairline); color:var(--accent-copper); font-size:10px; text-transform:uppercase; padding:3px 10px; cursor:pointer; font-family:inherit; }
+    .refresh-btn:hover { background:var(--accent-copper); color:#021133; }
+    .placeholder { color:var(--text-muted); opacity:.5; }
   </style>
 </head>
 <body>
-
-  <!-- Header Topo -->
   <div class="header">
     <div class="header-left">
       <div class="header-meta">
@@ -400,7 +118,6 @@
   </div>
 
   <div class="center-section">
-    <!-- 3 Caixas Superiores -->
     <div class="kpi-row-3">
       <div class="kpi-box">
         <span class="kpi-box-label">Dólar Comercial</span>
@@ -419,93 +136,52 @@
       </div>
     </div>
 
-    <!-- Grade de Conteúdo Principal -->
     <div class="stocks-grid-2">
-      <!-- Bloco 1: Ações BR -->
       <div class="panel-block">
         <div class="panel-header">
           <span class="panel-title">Ibovespa — Ações BR</span>
           <span class="panel-title">B3 (08h / 12h / 16h)</span>
         </div>
-        <div id="br-stocks">
-          <div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div>
-        </div>
+        <div id="br-stocks"><div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div></div>
       </div>
 
-      <!-- Bloco 2: Ações Globais -->
       <div class="panel-block">
         <div class="panel-header">
           <span class="panel-title">Mercado Global — Tech</span>
           <span class="panel-title">NYSE / NASDAQ · AUTO</span>
         </div>
-        <div id="global-stocks">
-          <div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div>
-        </div>
+        <div id="global-stocks"><div class="stock-row"><span class="s-ticker placeholder">Carregando...</span></div></div>
       </div>
 
-      <!-- Bloco 3: Indicadores Econômicos -->
       <div class="macro-panel">
-        <div class="panel-header">
-          <span class="panel-title">Indicadores Econômicos</span>
-          <span class="panel-title">Macro</span>
-        </div>
+        <div class="panel-header"><span class="panel-title">Indicadores Econômicos</span><span class="panel-title">Macro</span></div>
         <div class="macro-list">
-          <div class="macro-item">
-            <span class="macro-label">Taxa Selic</span>
-            <span class="macro-value placeholder" id="selic-val">—</span>
-            <div class="macro-sub"><span>Meta Copom</span><span>Banco Central</span></div>
-          </div>
-          <div class="macro-item">
-            <span class="macro-label">Taxa CDI</span>
-            <span class="macro-value placeholder" id="cdi-val">—</span>
-            <div class="macro-sub"><span>Taxa Anualizada</span><span>B3 / Cetip</span></div>
-          </div>
-          <div class="macro-item">
-            <span class="macro-label">Inflação (IPCA)</span>
-            <span class="macro-value placeholder" id="ipca-val">—</span>
-            <div class="macro-sub"><span>Acumulado 12m</span><span>IBGE</span></div>
-          </div>
-          <div class="macro-item">
-            <span class="macro-label">IGP-M</span>
-            <span class="macro-value placeholder" id="igpm-val">—</span>
-            <div class="macro-sub"><span>Acumulado 12m</span><span>FGV / BCB</span></div>
-          </div>
+          <div class="macro-item"><span class="macro-label">Taxa Selic</span><span class="macro-value placeholder" id="selic-val">—</span><div class="macro-sub"><span>Meta Copom</span><span>Banco Central</span></div></div>
+          <div class="macro-item"><span class="macro-label">Taxa CDI</span><span class="macro-value placeholder" id="cdi-val">—</span><div class="macro-sub"><span>Taxa Anualizada</span><span>B3 / Cetip</span></div></div>
+          <div class="macro-item"><span class="macro-label">Inflação (IPCA)</span><span class="macro-value placeholder" id="ipca-val">—</span><div class="macro-sub"><span>Acumulado 12m</span><span>IBGE</span></div></div>
+          <div class="macro-item"><span class="macro-label">IGP-M</span><span class="macro-value placeholder" id="igpm-val">—</span><div class="macro-sub"><span>Acumulado 12m</span><span>FGV / BCB</span></div></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Faixas de Notícias no Rodapé -->
   <div class="news-section">
     <div class="news-ticker-container">
       <div class="news-badge">InfoMoney</div>
-      <div class="ticker-wrapper">
-        <div class="ticker-content" id="news-ticker">
-          <span class="ticker-item"><span class="ticker-bullet">◆</span>Sincronizando últimas notícias do InfoMoney...</span>
-        </div>
-      </div>
+      <div class="ticker-wrapper"><div class="ticker-content" id="news-ticker"><span class="ticker-item"><span class="ticker-bullet">◆</span>Sincronizando últimas notícias do InfoMoney...</span></div></div>
     </div>
-
     <div class="news-ticker-container construction">
       <div class="news-badge construction">INCC / SINAPI</div>
-      <div class="ticker-wrapper">
-        <div class="ticker-content" id="construction-ticker">
-          <span class="ticker-item"><span class="ticker-bullet">◆</span>Carregando indicadores da construção civil...</span>
-        </div>
-      </div>
+      <div class="ticker-wrapper"><div class="ticker-content" id="construction-ticker"><span class="ticker-item"><span class="ticker-bullet">◆</span>Carregando indicadores da construção civil...</span></div></div>
     </div>
   </div>
 
-  <!-- Footer -->
   <div class="footer">
     <span>Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI (08h, 12h, 16h) · IBGE · FGV · Yahoo Finance</span>
-    <div class="footer-right">
-      <span id="next-update"></span>
-      <button class="refresh-btn" onclick="fetchAll()">Atualizar</button>
-    </div>
+    <div class="footer-right"><span id="next-update"></span><button class="refresh-btn" onclick="fetchAll()">Atualizar</button></div>
   </div>
 
-<script src="app.js"></script>
-<script src="news-client.js"></script>
+<script src="news-client.js?v=20260911-1"></script>
+<script src="app.js?v=20260911-1"></script>
 </body>
 </html>
