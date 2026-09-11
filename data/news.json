@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-11T19:46:48.181Z",
+  "updatedAt": "2026-09-11T20:03:10.468Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo cai após salto na véspera, mas sobe 9% na semana com Oriente Médio",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-11092026/",
+      "pubDate": null
+    },
+    {
       "title": "Ancord escolhe Lorena Rizzini de Leonel para liderar Diretoria de Autorregulação",
       "link": "https://www.infomoney.com.br/mercados/ancord-escolhe-lorena-rizzini-de-leonel-para-liderar-diretoria-de-autorregulacao/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Safra: Investidores seguem cautelosos com a Bolsa e de olho em IA ao redor do mundo",
       "link": "https://www.infomoney.com.br/mercados/safra-investidores-seguem-cautelosos-com-a-bolsa-e-de-olho-em-ia-ao-redor-do-mundo/",
-      "pubDate": null
-    },
-    {
-      "title": "B3 anuncia que passará a divulgar \"Ibovespa em dólar\" a partir de segunda-feira",
-      "link": "https://www.infomoney.com.br/mercados/b3-anuncia-que-passara-a-divulgar-ibovespa-em-dolar-a-partir-de-segunda-feira/",
       "pubDate": null
     }
   ]
