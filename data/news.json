@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-11T15:09:20.948Z",
+  "updatedAt": "2026-09-11T15:11:53.413Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -49,6 +49,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com dados de inflação, eleições e STF",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-11092026/",
+      "pubDate": null
+    },
+    {
       "title": "Frete marítimo salta e pressiona mineradoras brasileiras: como afeta VALE3 e CMIN3?",
       "link": "https://www.infomoney.com.br/mercados/frete-maritimo-salta-e-pressiona-mineradoras-brasileiras-como-afeta-vale3-e-cmin3/",
       "pubDate": null
@@ -61,11 +66,6 @@
     {
       "title": "Cyrela (CYRE3) e Eztec (EZTC3) podem destravar valor com venda de torres corporativas",
       "link": "https://www.infomoney.com.br/mercados/cyrela-cyre3-e-eztec-eztc3-podem-destravar-valor-com-venda-de-torres-corporativas/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com dados de inflação, eleições e STF",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-11092026/",
       "pubDate": null
     }
   ]
