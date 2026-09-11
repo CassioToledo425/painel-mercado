@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'app.js'
+      - 'news-client.js'
       - 'scripts/**'
       - '.github/workflows/update-market-data.yml'
   workflow_dispatch:
@@ -40,11 +41,14 @@ jobs:
       - name: Remover token exposto do index e ativar novo motor
         run: node scripts/patch-index.mjs
 
-      - name: Atualizar dados
+      - name: Atualizar dados de mercado
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
           UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8,12,16 * * 1-5' }}
         run: node scripts/update-market-data.mjs
+
+      - name: Atualizar notícias do InfoMoney
+        run: node scripts/update-news.mjs
 
       - name: Publicar alterações geradas
         shell: bash
