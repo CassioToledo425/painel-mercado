@@ -1,0 +1,62 @@
+name: Atualizar dados do mercado
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app.js'
+      - 'scripts/**'
+      - '.github/workflows/update-market-data.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8,12,16 * * 1-5'
+      timezone: 'America/Sao_Paulo'
+    - cron: '10,25,40,55 10-17 * * 1-5'
+      timezone: 'America/Sao_Paulo'
+    - cron: '10 18 * * 1-5'
+      timezone: 'America/Sao_Paulo'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Remover token exposto do index e ativar novo motor
+        run: node scripts/patch-index.mjs
+
+      - name: Atualizar dados
+        env:
+          BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
+          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8,12,16 * * 1-5' }}
+        run: node scripts/update-market-data.mjs
+
+      - name: Publicar alterações geradas
+        shell: bash
+        run: |
+          if git diff --quiet -- index.html data/; then
+            echo "Nenhuma alteração gerada."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/
+          git commit -m "chore: atualiza motor e dados de mercado"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
