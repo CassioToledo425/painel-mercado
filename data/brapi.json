@@ -1,64 +1,57 @@
 {
-  "status": "fallback",
-  "updatedAt": "2026-09-11T14:54:09.061Z",
-  "source": "Yahoo Finance bootstrap",
+  "status": "ok",
+  "updatedAt": "2026-09-11T15:05:15.515Z",
+  "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
-      "name": "Vale ON",
-      "price": 77.44,
-      "changePercent": -1.0098427713153602,
-      "marketTime": 1789137542,
-      "stale": false
+      "name": "VALE3",
+      "price": 77.83,
+      "changePercent": -0.51,
+      "marketTime": "2026-09-11T15:04:30.000Z"
     },
     {
       "symbol": "PETR4",
-      "name": "Petrobras PN",
-      "price": 48.56,
-      "changePercent": -1.1400651465797949,
-      "marketTime": 1789137539,
-      "stale": false
+      "name": "PETR4",
+      "price": 48.64,
+      "changePercent": -0.98,
+      "marketTime": "2026-09-11T15:04:30.000Z"
     },
     {
       "symbol": "ITUB4",
-      "name": "Itaú Unibanco",
-      "price": 42.27,
-      "changePercent": -0.18890200708382124,
-      "marketTime": 1789137547,
-      "stale": false
+      "name": "ITUB4",
+      "price": 42.44,
+      "changePercent": 0.21,
+      "marketTime": "2026-09-11T15:04:30.000Z"
     },
     {
       "symbol": "BBDC4",
-      "name": "Bradesco PN",
-      "price": 18.46,
-      "changePercent": -0.1082251082251059,
-      "marketTime": 1789137544,
-      "stale": false
+      "name": "BBDC4",
+      "price": 18.55,
+      "changePercent": 0.38,
+      "marketTime": "2026-09-11T15:04:30.000Z"
     },
     {
       "symbol": "WEGE3",
-      "name": "WEG ON",
-      "price": 51.38,
-      "changePercent": -1.5142802376844913,
-      "marketTime": 1789137531,
-      "stale": false
+      "name": "WEGE3",
+      "price": 51.5,
+      "changePercent": -1.28,
+      "marketTime": "2026-09-11T15:04:30.000Z"
     },
     {
       "symbol": "MGLU3",
-      "name": "Magazine Luiza",
-      "price": 5.72,
-      "changePercent": -3.703703703703714,
-      "marketTime": 1789137539,
-      "stale": false
+      "name": "MGLU3",
+      "price": 5.74,
+      "changePercent": -3.37,
+      "marketTime": "2026-09-11T15:04:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
-    "name": "Ibovespa",
-    "price": 186646.56,
-    "changePercent": -0.8615563083806902,
-    "marketTime": 1789137540,
-    "stale": false
+    "name": "IBOVESPA",
+    "price": 186952.8,
+    "changePercent": -0.7,
+    "marketTime": "2026-09-11T15:04:41.000Z"
   }
 }
