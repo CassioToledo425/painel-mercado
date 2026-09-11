@@ -6,7 +6,8 @@ on:
     paths:
       - 'app.js'
       - 'news-client.js'
-      - 'scripts/**'
+      - 'scripts/update-market-data.mjs'
+      - 'scripts/update-news.mjs'
       - '.github/workflows/update-market-data.yml'
   workflow_dispatch:
   schedule:
@@ -38,9 +39,6 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Remover token exposto do index e ativar novo motor
-        run: node scripts/patch-index.mjs
-
       - name: Atualizar dados de mercado
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
@@ -53,14 +51,14 @@ jobs:
       - name: Publicar alterações geradas
         shell: bash
         run: |
-          if git diff --quiet -- index.html data/; then
+          if git diff --quiet -- data/; then
             echo "Nenhuma alteração gerada."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data/
-          git commit -m "chore: atualiza motor e dados de mercado"
+          git add data/
+          git commit -m "chore: atualiza dados de mercado"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
