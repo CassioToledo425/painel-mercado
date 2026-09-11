@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-11T20:39:25.485Z",
+  "updatedAt": "2026-09-11T20:53:30.642Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Bolsas de NY sobem hoje com alívio do petróleo, mas caem na semana com Fed no radar",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-sobem-hoje-com-alivio-do-petroleo-mas-caem-na-semana-com-fed-no-radar/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa cai na sessão com mercado em busca de proteção, mas avança 1,1% na semana",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-ignora-ny-e-ipca-e-cai-com-temores-politicos-e-queda-das-commodities/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa tem 4ª semana seguida em alta, mesmo com queda de hoje; Dólar sobe",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-11092026/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "Dólar hoje fecha em alta após Fachin determinar retirada de sigilos do caso Master",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-11092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Taxas dos DIs zeram perdas com receio de fim do sigilo no caso Master atingir Flávio",
-      "link": "https://www.infomoney.com.br/mercados/taxas-dos-dis-zeram-perdas-com-receio-de-fim-do-sigilo-no-caso-master-atingir-flavio/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo cai após salto na véspera, mas sobe 9% na semana com Oriente Médio",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-11092026/",
       "pubDate": null
     }
   ]
