@@ -1,0 +1,285 @@
+/* UX TV — contraste e legibilidade sem alterar a estrutura do painel */
+:root {
+  --bg-void: #020B1F;
+  --bg-surface: rgba(5, 24, 58, 0.94);
+  --border-hairline: rgba(255, 255, 255, 0.26);
+  --text-bone: #F8FBFF;
+  --text-muted: #C2D1E6;
+  --accent-copper: #FFC857;
+  --signal-up: #5EE58A;
+  --signal-down: #FF7A7A;
+}
+
+html,
+body {
+  background-color: var(--bg-void);
+  background-image:
+    linear-gradient(rgba(1, 12, 32, 0.78), rgba(1, 12, 32, 0.88)),
+    url('bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--text-bone);
+  font-size: 14px;
+}
+
+body {
+  max-width: 1920px;
+  padding: 22px 34px 18px;
+  gap: 16px;
+}
+
+.header {
+  padding-bottom: 14px;
+  border-bottom-color: rgba(255, 255, 255, 0.34);
+}
+
+.header-left {
+  gap: 6px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  box-shadow: 0 0 12px rgba(255, 200, 87, 0.55);
+}
+
+.header-title {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.05;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
+}
+
+.header-sub {
+  font-size: 11px;
+  color: #D6E1F0;
+  letter-spacing: 0.09em;
+}
+
+.clock {
+  font-size: 40px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
+}
+
+.center-section {
+  gap: 16px;
+}
+
+.kpi-row-3,
+.stocks-grid-2 {
+  gap: 16px;
+}
+
+.kpi-box,
+.panel-block,
+.macro-panel,
+.news-ticker-container {
+  background: var(--bg-surface);
+  border-color: var(--border-hairline);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.kpi-box {
+  padding: 16px 18px;
+  gap: 5px;
+  min-height: 92px;
+  justify-content: center;
+}
+
+.kpi-box-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #D7E2F0;
+  letter-spacing: 0.075em;
+}
+
+.kpi-box-value {
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 600;
+  color: #FFFFFF;
+  letter-spacing: 0.01em;
+}
+
+.kpi-box-delta {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.kpi-box-delta.up,
+.s-pct.up {
+  color: var(--signal-up);
+}
+
+.kpi-box-delta.down,
+.s-pct.down {
+  color: var(--signal-down);
+}
+
+.kpi-box-delta.neutral {
+  color: #B9C9DD;
+}
+
+.panel-header {
+  min-height: 40px;
+  padding: 11px 15px;
+  background: rgba(255, 255, 255, 0.055);
+  border-bottom-color: rgba(255, 255, 255, 0.24);
+}
+
+.panel-title {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #E4ECF7;
+  letter-spacing: 0.095em;
+}
+
+.panel-title:last-child {
+  color: #C9D8EA;
+}
+
+.stock-row {
+  grid-template-columns: 82px 1fr 112px 88px;
+  min-height: 44px;
+  padding: 10px 15px;
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+.stock-row:nth-child(even) {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.s-ticker {
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.045em;
+}
+
+.s-name {
+  font-size: 12.5px;
+  color: #CEDAEC;
+  padding-right: 12px;
+}
+
+.s-price {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.s-pct {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.macro-item {
+  padding: 14px 15px;
+  gap: 5px;
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+.macro-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #D7E2F0;
+  letter-spacing: 0.075em;
+}
+
+.macro-value {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.08;
+  color: #FFFFFF;
+}
+
+.macro-sub {
+  font-size: 10.5px;
+  color: #B9C9DD;
+  line-height: 1.2;
+}
+
+.news-section {
+  gap: 8px;
+}
+
+.news-ticker-container {
+  height: 42px;
+}
+
+.news-badge {
+  min-width: 150px;
+  padding: 0 16px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #061329;
+  letter-spacing: 0.08em;
+}
+
+.news-badge.construction {
+  background: #4F9BFF;
+  color: #FFFFFF;
+}
+
+.ticker-item {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #F2F6FB;
+  margin-right: 42px;
+}
+
+.ticker-bullet {
+  margin-right: 12px;
+}
+
+.ticker-content {
+  animation-duration: 105s;
+}
+
+.footer {
+  padding-top: 7px;
+  font-size: 10.5px;
+  color: #B7C6D9;
+  border-top-color: rgba(255, 255, 255, 0.22);
+}
+
+.footer-right {
+  gap: 18px;
+}
+
+.refresh-btn {
+  border-color: rgba(255, 200, 87, 0.5);
+  color: #FFD77C;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 5px 12px;
+}
+
+.placeholder {
+  color: #AFC0D5;
+  opacity: 0.72;
+}
+
+@media (max-width: 1250px) {
+  body {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .stock-row {
+    grid-template-columns: 72px 1fr 96px 78px;
+  }
+
+  .s-name,
+  .s-price,
+  .s-pct {
+    font-size: 12px;
+  }
+}
