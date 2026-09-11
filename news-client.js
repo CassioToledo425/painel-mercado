@@ -1,36 +1,49 @@
-// Substitui a coleta direta via rss2json por um JSON gerado pelo GitHub Actions.
-fetchInfoMoneyNews = async function fetchInfoMoneyNewsFromLocalData() {
-  try {
-    const { data, fromNetwork } = await fetchStaticJson('./data/news.json', 'news-json');
-    const titles = Array.isArray(data?.items)
-      ? data.items
-          .slice(0, 15)
-          .map((item) => String(item?.title || '').trim())
-          .filter(Boolean)
-      : [];
+// Carrega as notícias locais ANTES do app principal sem depender de rss2json.
+// O app antigo ainda chama a URL do rss2json; interceptamos somente essa chamada
+// e devolvemos o data/news.json gerado pelo GitHub Actions.
+(() => {
+  const nativeFetch = window.fetch.bind(window);
 
-    if (!titles.length) throw new Error('news.json sem manchetes');
+  window.fetch = async function painelFetch(input, init = {}) {
+    const url = typeof input === 'string' ? input : (input?.url || '');
+    const isInfoMoneyRss2Json =
+      url.startsWith('https://api.rss2json.com/v1/api.json') &&
+      url.toLowerCase().includes('infomoney');
 
-    setInfiniteTicker('news-ticker', titles);
-    return fromNetwork && data?.status === 'ok';
-  } catch (error) {
-    console.error('InfoMoney local:', error);
-    const cachedPayload = readCache('news-json');
-    const cachedTitles = Array.isArray(cachedPayload?.items)
-      ? cachedPayload.items
-          .slice(0, 15)
-          .map((item) => String(item?.title || '').trim())
-          .filter(Boolean)
-      : [];
-
-    if (cachedTitles.length) {
-      setInfiniteTicker('news-ticker', cachedTitles.map((title) => `${title} · último feed válido`));
-    } else {
-      setInfiniteTicker('news-ticker', ['InfoMoney temporariamente indisponível']);
+    if (!isInfoMoneyRss2Json) {
+      return nativeFetch(input, init);
     }
-    return false;
-  }
-};
 
-// Corrige imediatamente a faixa de notícias após o app principal carregar.
-fetchInfoMoneyNews();
+    const localUrl = `./data/news.json?v=${Date.now()}`;
+    const response = await nativeFetch(localUrl, {
+      cache: 'no-store',
+      signal: init?.signal,
+    });
+
+    if (!response.ok) {
+      throw new Error(`news.json HTTP ${response.status}`);
+    }
+
+    const payload = await response.json();
+    const items = Array.isArray(payload?.items)
+      ? payload.items.slice(0, 15).map((item) => ({
+          title: String(item?.title || '').trim(),
+          link: item?.link || '',
+          pubDate: item?.pubDate || null,
+        })).filter((item) => item.title)
+      : [];
+
+    return new Response(
+      JSON.stringify({
+        status: items.length ? 'ok' : 'error',
+        items,
+        source: payload?.source || 'InfoMoney local',
+        updatedAt: payload?.updatedAt || null,
+      }),
+      {
+        status: 200,
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      }
+    );
+  };
+})();
