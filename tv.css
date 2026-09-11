@@ -307,6 +307,11 @@ body > * {
   animation-duration: 105s;
 }
 
+/* O feed do InfoMoney tem mais texto; velocidade menor melhora a leitura na TV. */
+#news-ticker {
+  animation-duration: 180s;
+}
+
 .footer {
   flex: 0 0 auto;
   padding-top: 4px;
