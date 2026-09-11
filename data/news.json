@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-11T20:23:23.716Z",
+  "updatedAt": "2026-09-11T20:39:25.485Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa tem 4ª semana seguida em alta, mesmo com queda de hoje; Dólar sobe",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-11092026/",
+      "pubDate": null
+    },
+    {
       "title": "Dólar hoje fecha em alta após Fachin determinar retirada de sigilos do caso Master",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-11092026/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Petróleo cai após salto na véspera, mas sobe 9% na semana com Oriente Médio",
       "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-11092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Ancord escolhe Lorena Rizzini de Leonel para liderar Diretoria de Autorregulação",
-      "link": "https://www.infomoney.com.br/mercados/ancord-escolhe-lorena-rizzini-de-leonel-para-liderar-diretoria-de-autorregulacao/",
       "pubDate": null
     }
   ]
