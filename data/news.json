@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-11T19:04:47.449Z",
+  "updatedAt": "2026-09-11T19:21:09.579Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Dólar hoje acelera ganhos após Fachin determinar retirada de sigilos do caso Master",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-11092026/",
+      "pubDate": null
+    },
+    {
       "title": "Safra: Investidores seguem cautelosos com a Bolsa e de olho em IA ao redor do mundo",
       "link": "https://www.infomoney.com.br/mercados/safra-investidores-seguem-cautelosos-com-a-bolsa-e-de-olho-em-ia-ao-redor-do-mundo/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Petrobras: por que chega mais forte a esta eleição – e isso é subestimado por mercado",
       "link": "https://www.infomoney.com.br/mercados/petrobras-por-que-chega-mais-forte-a-esta-eleicao-e-isso-e-subestimado-por-mercado/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas da Europa fecham em alta com queda do petróleo",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-da-europa-fecham-em-alta-com-queda-do-petroleo/",
       "pubDate": null
     }
   ]
