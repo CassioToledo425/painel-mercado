@@ -1,0 +1,64 @@
+{
+  "status": "fallback",
+  "updatedAt": "2026-09-11T14:54:09.061Z",
+  "source": "Yahoo Finance bootstrap",
+  "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
+  "stocks": [
+    {
+      "symbol": "VALE3",
+      "name": "Vale ON",
+      "price": 77.44,
+      "changePercent": -1.0098427713153602,
+      "marketTime": 1789137542,
+      "stale": false
+    },
+    {
+      "symbol": "PETR4",
+      "name": "Petrobras PN",
+      "price": 48.56,
+      "changePercent": -1.1400651465797949,
+      "marketTime": 1789137539,
+      "stale": false
+    },
+    {
+      "symbol": "ITUB4",
+      "name": "Itaú Unibanco",
+      "price": 42.27,
+      "changePercent": -0.18890200708382124,
+      "marketTime": 1789137547,
+      "stale": false
+    },
+    {
+      "symbol": "BBDC4",
+      "name": "Bradesco PN",
+      "price": 18.46,
+      "changePercent": -0.1082251082251059,
+      "marketTime": 1789137544,
+      "stale": false
+    },
+    {
+      "symbol": "WEGE3",
+      "name": "WEG ON",
+      "price": 51.38,
+      "changePercent": -1.5142802376844913,
+      "marketTime": 1789137531,
+      "stale": false
+    },
+    {
+      "symbol": "MGLU3",
+      "name": "Magazine Luiza",
+      "price": 5.72,
+      "changePercent": -3.703703703703714,
+      "marketTime": 1789137539,
+      "stale": false
+    }
+  ],
+  "ibovespa": {
+    "symbol": "^BVSP",
+    "name": "Ibovespa",
+    "price": 186646.56,
+    "changePercent": -0.8615563083806902,
+    "marketTime": 1789137540,
+    "stale": false
+  }
+}
