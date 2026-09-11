@@ -3,26 +3,29 @@ import { readFile, writeFile } from 'node:fs/promises';
 const file = 'index.html';
 let html = await readFile(file, 'utf8');
 
-if (!html.includes('<script src="app.js"></script>')) {
-  const inline = /<script>\s*const\s+BRAPI_TOKEN\s*=[\s\S]*?<\/script>/;
-  if (!inline.test(html)) throw new Error('Script antigo com BRAPI_TOKEN não encontrado.');
-  html = html.replace(inline, '<script src="app.js"></script>');
+const appScript = /<script\s+src=["']app\.js(?:\?[^"']*)?["']\s*><\/script>/i;
+const newsScript = /<script\s+src=["']news-client\.js(?:\?[^"']*)?["']\s*><\/script>/i;
+
+// Migração legada: só atua se o app.js ainda não existir, com ou sem versão de cache.
+if (!appScript.test(html)) {
+  const inlineLegacy = /<script>\s*const\s+BRAPI_TOKEN\s*=[\s\S]*?<\/script>/i;
+  if (!inlineLegacy.test(html)) {
+    throw new Error('Não foi encontrado app.js nem o script legado com BRAPI_TOKEN.');
+  }
+  html = html.replace(inlineLegacy, '<script src="app.js"></script>');
 }
 
-if (!html.includes('<script src="news-client.js"></script>')) {
-  html = html.replace(
-    '<script src="app.js"></script>',
-    '<script src="app.js"></script>\n<script src="news-client.js"></script>'
-  );
+// O news-client precisa carregar antes do app.js para interceptar a chamada antiga do feed.
+if (!newsScript.test(html)) {
+  html = html.replace(appScript, (appTag) => `<script src="news-client.js"></script>\n${appTag}`);
 }
 
-html = html.replace('NYSE / NASDAQ</span>', 'NYSE / NASDAQ · AUTO</span>');
-html = html.replace(/NYSE \/ NASDAQ(?: · AUTO)+<\/span>/, 'NYSE / NASDAQ · AUTO</span>');
+html = html.replace(/NYSE \/ NASDAQ(?: · AUTO)*<\/span>/g, 'NYSE / NASDAQ · AUTO</span>');
 
 html = html.replace(
-  /Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI \(08h, 12h, 16h\) · IBGE · FGV(?: · Yahoo Finance)*/,
+  /Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI \(08h, 12h, 16h\) · IBGE · FGV(?: · Yahoo Finance)*/g,
   'Fontes: InfoMoney · AwesomeAPI · BCB · BRAPI (08h, 12h, 16h) · IBGE · FGV · Yahoo Finance'
 );
 
 await writeFile(file, html, 'utf8');
-console.log('index.html atualizado: motor seguro, feed local e rodapé normalizado.');
+console.log('index.html validado/migrado com sucesso.');
