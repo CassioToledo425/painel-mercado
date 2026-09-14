@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T20:23:09.752Z",
+  "updatedAt": "2026-09-14T20:39:35.972Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,23 +29,23 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa fecha em queda, com exterior, IA e eleições em foco; Vale despenca 3%",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Bolsas de NY fecham em queda com alerta de CEOs sobre IA e petróleo acima dos US$ 100",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-queda-com-alerta-de-ceos-sobre-ia-e-petroleo-acima-dos-us-100/",
+      "pubDate": null
+    },
+    {
+      "title": "Não é só o temor com IA: o que fez o Ibovespa cair 0,91% e o dólar subir nesta 2ª",
+      "link": "https://www.infomoney.com.br/mercados/nao-e-so-o-temor-com-ia-o-que-faz-o-ibovespa-cair-15-e-o-dolar-subir-nesta-segunda/",
+      "pubDate": null
+    },
+    {
       "title": "Taxas longas sobem em sessão de alta do petróleo e novas pesquisas eleitorais",
       "link": "https://www.infomoney.com.br/mercados/taxas-longas-sobem-em-sessao-de-alta-do-petroleo-e-novas-pesquisas-eleitorais/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje sobe quase 0,5% e se aproxima dos R$ 5,15, mas fecha longe das máximas",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-14092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo sobe com paralisação de oleoduto saudita, mas se afasta das máximas do dia",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-14092026/",
-      "pubDate": null
-    },
-    {
-      "title": "SLC e São Martinho sobem no mês com rali do açúcar, mas BofA tem venda para ações",
-      "link": "https://www.infomoney.com.br/mercados/slc-e-sao-martinho-sobem-no-mes-com-rali-do-acucar-mas-bofa-tem-venda-para-acoes/",
       "pubDate": null
     }
   ]
