@@ -1,6 +1,6 @@
 {
-  "status": "stale",
-  "updatedAt": "2026-09-14T11:05:49.286Z",
+  "status": "ok",
+  "updatedAt": "2026-09-14T13:52:13.571Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,30 +29,24 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta segunda",
+      "title": "Oncoclínicas elege Maurício Hasson como novo diretor financeiro",
+      "link": "https://www.infomoney.com.br/mercados/oncoclinicas-elege-mauricio-hasson-como-novo-diretor-financeiro/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai mais de 1% com exterior e Brasília em foco",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
       "pubDate": null
     },
     {
-      "title": "SLC (SLCE3) aprova emissão de cédulas de produto rural no valor de R$ 515,5 mi",
-      "link": "https://www.infomoney.com.br/mercados/slc-slce3-aprova-emissao-de-cedulas-de-produto-rural-no-valor-de-r-5155-mi/",
+      "title": "Dólar hoje avança sobre real com exterior e política brasileira no radar",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-14092026/",
       "pubDate": null
     },
     {
-      "title": "Emergentes podem resistir ao risco Fed com petróleo e guerra? Analistas veem que sim",
-      "link": "https://www.infomoney.com.br/mercados/emergentes-podem-resistir-ao-risco-fed-com-petroleo-e-guerra-analistas-veem-que-sim/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras recebe R$ 2,6 bi em subsídios ao diesel e total chega a R$ 9,5 bi",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-recebe-r-26-bi-em-subsidios-ao-diesel-e-total-chega-a-r-95-bi/",
+      "title": "WDC propõe comprar empresa de TI Teki por R$900 mil",
+      "link": "https://www.infomoney.com.br/mercados/wdc-propoe-comprar-empresa-de-ti-teki-por-r900-mil/",
       "pubDate": null
     }
-  ],
-  "lastAttemptAt": "2026-09-14T13:27:08.201Z",
-  "warning": "Falha ao consultar o InfoMoney; mantidas as últimas manchetes válidas.",
-  "errors": [
-    "RSS: feed RSS sem itens reconhecíveis",
-    "HTML: This operation was aborted"
   ]
 }
