@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T20:03:31.447Z",
+  "updatedAt": "2026-09-14T20:23:09.752Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Taxas longas sobem em sessão de alta do petróleo e novas pesquisas eleitorais",
+      "link": "https://www.infomoney.com.br/mercados/taxas-longas-sobem-em-sessao-de-alta-do-petroleo-e-novas-pesquisas-eleitorais/",
+      "pubDate": null
+    },
+    {
+      "title": "Dólar hoje sobe quase 0,5% e se aproxima dos R$ 5,15, mas fecha longe das máximas",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-14092026/",
+      "pubDate": null
+    },
+    {
       "title": "Petróleo sobe com paralisação de oleoduto saudita, mas se afasta das máximas do dia",
       "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-14092026/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "SLC e São Martinho sobem no mês com rali do açúcar, mas BofA tem venda para ações",
       "link": "https://www.infomoney.com.br/mercados/slc-e-sao-martinho-sobem-no-mes-com-rali-do-acucar-mas-bofa-tem-venda-para-acoes/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com exterior, em semana decisiva por juros",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Como o mercado vê setor de petróleo na B3? Petrobras segue positiva, apesar de alerta",
-      "link": "https://www.infomoney.com.br/mercados/como-o-mercado-ve-setor-de-petroleo-na-b3-petrobras-segue-positiva-apesar-de-alerta/",
       "pubDate": null
     }
   ]
