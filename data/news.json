@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T19:10:49.526Z",
+  "updatedAt": "2026-09-14T19:36:11.764Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo sobe com paralisação de oleoduto saudita, mas se afasta das máximas do dia",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-14092026/",
+      "pubDate": null
+    },
+    {
       "title": "SLC e São Martinho sobem no mês com rali do açúcar, mas BofA tem venda para ações",
       "link": "https://www.infomoney.com.br/mercados/slc-e-sao-martinho-sobem-no-mes-com-rali-do-acucar-mas-bofa-tem-venda-para-acoes/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Como o mercado vê setor de petróleo na B3? Petrobras segue positiva, apesar de alerta",
       "link": "https://www.infomoney.com.br/mercados/como-o-mercado-ve-setor-de-petroleo-na-b3-petrobras-segue-positiva-apesar-de-alerta/",
-      "pubDate": null
-    },
-    {
-      "title": "BofA vê Selic a 11,25% em 2027 e aponta ações que podem ganhar com cortes",
-      "link": "https://www.infomoney.com.br/mercados/bofa-ve-selic-a-1125-em-2027-e-aponta-acoes-que-podem-ganhar-com-cortes/",
       "pubDate": null
     }
   ]
