@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T20:53:58.037Z",
+  "updatedAt": "2026-09-14T21:10:40.540Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Com El Niño, açúcar pode ser a commodity \"super quente\" de 2027, diz ex-Wilmar",
+      "link": "https://www.infomoney.com.br/mercados/com-el-nino-acucar-pode-ser-a-commodity-super-quente-de-2027-diz-ex-wilmar/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa fecha em queda, com exterior, IA e eleições em foco; Vale despenca 3%",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Não é só o temor com IA: o que fez o Ibovespa cair 0,91% e o dólar subir nesta 2ª",
       "link": "https://www.infomoney.com.br/mercados/nao-e-so-o-temor-com-ia-o-que-faz-o-ibovespa-cair-15-e-o-dolar-subir-nesta-segunda/",
-      "pubDate": null
-    },
-    {
-      "title": "Taxas longas sobem em sessão de alta do petróleo e novas pesquisas eleitorais",
-      "link": "https://www.infomoney.com.br/mercados/taxas-longas-sobem-em-sessao-de-alta-do-petroleo-e-novas-pesquisas-eleitorais/",
       "pubDate": null
     }
   ]
