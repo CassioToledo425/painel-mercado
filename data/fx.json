@@ -1,8 +1,16 @@
 {
-  "status": "error",
-  "updatedAt": "2026-09-14T17:51:05.984Z",
-  "source": "AwesomeAPI via GitHub Actions",
-  "USDBRL": null,
-  "EURBRL": null,
-  "error": "HTTP 429"
+  "status": "ok",
+  "updatedAt": "2026-09-14T17:52:52.164Z",
+  "source": "Yahoo Finance FX via GitHub Actions",
+  "schedule": "08:00 + 10:10–18:10 a cada 15 min · America/Sao_Paulo",
+  "USDBRL": {
+    "bid": 5.1478,
+    "pctChange": 0.42136475361867043,
+    "timestamp": 1789408370
+  },
+  "EURBRL": {
+    "bid": 5.951,
+    "pctChange": 0.07904074802818062,
+    "timestamp": 1789408139
+  }
 }
