@@ -1,0 +1,8 @@
+{
+  "status": "error",
+  "updatedAt": "2026-09-14T17:51:05.984Z",
+  "source": "AwesomeAPI via GitHub Actions",
+  "USDBRL": null,
+  "EURBRL": null,
+  "error": "HTTP 429"
+}
