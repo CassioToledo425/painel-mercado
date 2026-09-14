@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T16:12:51.296Z",
+  "updatedAt": "2026-09-14T16:37:26.109Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com exterior e Brasília em foco",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
+      "pubDate": null
+    },
+    {
       "title": "Bolsas da Europa fecham em queda diante de temores com IA e petróleo alto",
       "link": "https://www.infomoney.com.br/mercados/bolsas-da-europa-fecham-em-queda-diante-de-temores-com-ia-e-petroleo-alto/",
       "pubDate": null
@@ -36,16 +41,6 @@
     {
       "title": "AUAU3: “Estamos fazendo a melhor fusão do varejo”, diz CEO da Petz Cobasi",
       "link": "https://www.infomoney.com.br/mercados/auau3-estamos-fazendo-a-melhor-fusao-do-varejo-diz-ceo-da-petz-cobasi/",
-      "pubDate": null
-    },
-    {
-      "title": "Santander mantém MBRF como favorita e vê cenário difícil para frigoríficos nos EUA",
-      "link": "https://www.infomoney.com.br/mercados/santander-mantem-mbrf-como-favorita-e-ve-cenario-dificil-para-frigorificos-nos-eua/",
-      "pubDate": null
-    },
-    {
-      "title": "Rendimento de títulos dos EUA de 10 anos atinge 5%, nível mais alto desde 2023",
-      "link": "https://www.infomoney.com.br/mercados/rendimento-de-titulos-dos-eua-de-10-anos-atinge-5-nivel-mais-alto-desde-2023/",
       "pubDate": null
     }
   ]
