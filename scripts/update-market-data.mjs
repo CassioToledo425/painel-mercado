@@ -5,6 +5,7 @@ const DATA_DIR = path.resolve('data');
 await mkdir(DATA_DIR, { recursive: true });
 
 const UPDATE_BRAPI = String(process.env.UPDATE_BRAPI ?? 'false') === 'true';
+const UPDATE_FX = String(process.env.UPDATE_FX ?? 'false') === 'true';
 const BRAPI_TOKEN = process.env.BRAPI_TOKEN ?? '';
 const B3 = [
   ['VALE3', 'VALE3.SA', 'Vale ON'],
@@ -73,6 +74,69 @@ async function fetchBrapi(symbol, name) {
   const changePercent = num(q?.regularMarketChangePercent);
   if (price === null || changePercent === null) throw new Error('cotação inválida');
   return { symbol, name: q?.shortName ?? name, price, changePercent, marketTime: q?.regularMarketTime ?? null };
+}
+
+async function updateFX() {
+  if (!UPDATE_FX) {
+    const existing = await readPrevious('fx.json');
+    if (existing) return;
+    console.log('[FX] Sem arquivo inicial: criando bootstrap pela AwesomeAPI.');
+  }
+
+  const previous = await readPrevious('fx.json');
+
+  try {
+    const data = await getJson('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL', {
+      headers: {
+        'user-agent': 'Mozilla/5.0 (compatible; PainelMercado/1.0)',
+        accept: 'application/json',
+      },
+    });
+
+    const usd = data?.USDBRL;
+    const eur = data?.EURBRL;
+    if (!usd || !eur || num(usd.bid) === null || num(eur.bid) === null) {
+      throw new Error('câmbio incompleto');
+    }
+
+    await writeJson('fx.json', {
+      status: 'ok',
+      updatedAt: nowIso(),
+      source: 'AwesomeAPI via GitHub Actions',
+      schedule: '08:00 + 10:10–18:10 a cada 15 min · America/Sao_Paulo',
+      USDBRL: {
+        bid: num(usd.bid),
+        pctChange: num(usd.pctChange),
+        timestamp: usd.timestamp ?? null,
+      },
+      EURBRL: {
+        bid: num(eur.bid),
+        pctChange: num(eur.pctChange),
+        timestamp: eur.timestamp ?? null,
+      },
+    });
+    console.log('[FX] Dólar e Euro atualizados pela AwesomeAPI.');
+  } catch (error) {
+    console.error(`[FX] ${error.message}`);
+    if (previous?.USDBRL && previous?.EURBRL) {
+      await writeJson('fx.json', {
+        ...previous,
+        status: 'stale',
+        lastAttemptAt: nowIso(),
+        warning: 'Falha temporária na AwesomeAPI; mantido o último câmbio válido.',
+      });
+      return;
+    }
+
+    await writeJson('fx.json', {
+      status: 'error',
+      updatedAt: nowIso(),
+      source: 'AwesomeAPI via GitHub Actions',
+      USDBRL: null,
+      EURBRL: null,
+      error: error.message,
+    });
+  }
 }
 
 async function updateB3() {
@@ -167,5 +231,6 @@ async function updateGlobal() {
   });
 }
 
+await updateFX();
 await updateB3();
 await updateGlobal();
