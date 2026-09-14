@@ -6,12 +6,15 @@ on:
     paths:
       - 'app.js'
       - 'news-client.js'
+      - 'fx-client.js'
       - 'scripts/update-market-data.mjs'
       - 'scripts/update-news.mjs'
       - '.github/workflows/update-market-data.yml'
   workflow_dispatch:
   schedule:
-    - cron: '0 8,12,16 * * 1-5'
+    - cron: '0 8 * * 1-5'
+      timezone: 'America/Sao_Paulo'
+    - cron: '0 12,16 * * 1-5'
       timezone: 'America/Sao_Paulo'
     - cron: '10,25,40,55 10-17 * * 1-5'
       timezone: 'America/Sao_Paulo'
@@ -42,7 +45,8 @@ jobs:
       - name: Atualizar dados de mercado
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
-          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8,12,16 * * 1-5' }}
+          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8 * * 1-5' || github.event.schedule == '0 12,16 * * 1-5' }}
+          UPDATE_FX: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8 * * 1-5' || github.event.schedule == '10,25,40,55 10-17 * * 1-5' || github.event.schedule == '10 18 * * 1-5' }}
         run: node scripts/update-market-data.mjs
 
       - name: Atualizar notícias do InfoMoney
