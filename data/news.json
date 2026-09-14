@@ -1,5 +1,5 @@
 {
-  "status": "ok",
+  "status": "stale",
   "updatedAt": "2026-09-14T11:05:49.286Z",
   "source": "InfoMoney página Mercados",
   "items": [
@@ -48,5 +48,11 @@
       "link": "https://www.infomoney.com.br/mercados/petrobras-recebe-r-26-bi-em-subsidios-ao-diesel-e-total-chega-a-r-95-bi/",
       "pubDate": null
     }
+  ],
+  "lastAttemptAt": "2026-09-14T13:27:08.201Z",
+  "warning": "Falha ao consultar o InfoMoney; mantidas as últimas manchetes válidas.",
+  "errors": [
+    "RSS: feed RSS sem itens reconhecíveis",
+    "HTML: This operation was aborted"
   ]
 }
