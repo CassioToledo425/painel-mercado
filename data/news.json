@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T14:54:05.427Z",
+  "updatedAt": "2026-09-14T15:07:53.065Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Rendimento de títulos dos EUA de 10 anos atinge 5%, nível mais alto desde 2023",
+      "link": "https://www.infomoney.com.br/mercados/rendimento-de-titulos-dos-eua-de-10-anos-atinge-5-nivel-mais-alto-desde-2023/",
+      "pubDate": null
+    },
+    {
+      "title": "Vale negocia com desconto menor do que parece ante concorrentes, diz XP",
+      "link": "https://www.infomoney.com.br/mercados/vale-negocia-com-desconto-menor-do-que-parece-ante-concorrentes-diz-xp/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai mais de 1% com exterior e Brasília em foco",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "Nasdaq pesa e temores de desaceleração em IA afetam Nvidia e fabricantes de chips",
       "link": "https://www.infomoney.com.br/mercados/nasdaq-pesa-e-temores-de-desaceleracao-em-ia-afetam-nvidia-e-fabricantes-de-chips/",
-      "pubDate": null
-    },
-    {
-      "title": "Não é só o temor com IA: o que faz o Ibovespa cair 1,5% e o dólar subir nesta segunda",
-      "link": "https://www.infomoney.com.br/mercados/nao-e-so-o-temor-com-ia-o-que-faz-o-ibovespa-cair-15-e-o-dolar-subir-nesta-segunda/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje sobe com exterior e política no radar",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-14092026/",
       "pubDate": null
     }
   ]
