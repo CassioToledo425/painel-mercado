@@ -77,45 +77,33 @@ async function fetchBrapi(symbol, name) {
 }
 
 async function updateFX() {
-  if (!UPDATE_FX) {
-    const existing = await readPrevious('fx.json');
-    if (existing) return;
-    console.log('[FX] Sem arquivo inicial: criando bootstrap pela AwesomeAPI.');
-  }
-
   const previous = await readPrevious('fx.json');
+  if (!UPDATE_FX && previous?.status === 'ok' && previous?.USDBRL && previous?.EURBRL) return;
+  if (!UPDATE_FX) console.log('[FX] Sem câmbio válido: criando bootstrap via Yahoo Finance.');
 
   try {
-    const data = await getJson('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL', {
-      headers: {
-        'user-agent': 'Mozilla/5.0 (compatible; PainelMercado/1.0)',
-        accept: 'application/json',
-      },
-    });
-
-    const usd = data?.USDBRL;
-    const eur = data?.EURBRL;
-    if (!usd || !eur || num(usd.bid) === null || num(eur.bid) === null) {
-      throw new Error('câmbio incompleto');
-    }
+    const [usd, eur] = await Promise.all([
+      fetchYahoo('BRL=X', 'USD/BRL'),
+      fetchYahoo('EURBRL=X', 'EUR/BRL'),
+    ]);
 
     await writeJson('fx.json', {
       status: 'ok',
       updatedAt: nowIso(),
-      source: 'AwesomeAPI via GitHub Actions',
+      source: 'Yahoo Finance FX via GitHub Actions',
       schedule: '08:00 + 10:10–18:10 a cada 15 min · America/Sao_Paulo',
       USDBRL: {
-        bid: num(usd.bid),
-        pctChange: num(usd.pctChange),
-        timestamp: usd.timestamp ?? null,
+        bid: usd.price,
+        pctChange: usd.changePercent,
+        timestamp: usd.marketTime,
       },
       EURBRL: {
-        bid: num(eur.bid),
-        pctChange: num(eur.pctChange),
-        timestamp: eur.timestamp ?? null,
+        bid: eur.price,
+        pctChange: eur.changePercent,
+        timestamp: eur.marketTime,
       },
     });
-    console.log('[FX] Dólar e Euro atualizados pela AwesomeAPI.');
+    console.log('[FX] Dólar e Euro atualizados via Yahoo Finance.');
   } catch (error) {
     console.error(`[FX] ${error.message}`);
     if (previous?.USDBRL && previous?.EURBRL) {
@@ -123,7 +111,7 @@ async function updateFX() {
         ...previous,
         status: 'stale',
         lastAttemptAt: nowIso(),
-        warning: 'Falha temporária na AwesomeAPI; mantido o último câmbio válido.',
+        warning: 'Falha temporária na atualização do câmbio; mantido o último dado válido.',
       });
       return;
     }
@@ -131,7 +119,7 @@ async function updateFX() {
     await writeJson('fx.json', {
       status: 'error',
       updatedAt: nowIso(),
-      source: 'AwesomeAPI via GitHub Actions',
+      source: 'Yahoo Finance FX via GitHub Actions',
       USDBRL: null,
       EURBRL: null,
       error: error.message,
