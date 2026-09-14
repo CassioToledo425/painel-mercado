@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T15:07:53.065Z",
+  "updatedAt": "2026-09-14T15:13:22.497Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Santander mantém MBRF como favorita e vê cenário difícil para frigoríficos nos EUA",
+      "link": "https://www.infomoney.com.br/mercados/santander-mantem-mbrf-como-favorita-e-ve-cenario-dificil-para-frigorificos-nos-eua/",
+      "pubDate": null
+    },
+    {
       "title": "Rendimento de títulos dos EUA de 10 anos atinge 5%, nível mais alto desde 2023",
       "link": "https://www.infomoney.com.br/mercados/rendimento-de-titulos-dos-eua-de-10-anos-atinge-5-nivel-mais-alto-desde-2023/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai mais de 1% com exterior e Brasília em foco",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Nasdaq pesa e temores de desaceleração em IA afetam Nvidia e fabricantes de chips",
-      "link": "https://www.infomoney.com.br/mercados/nasdaq-pesa-e-temores-de-desaceleracao-em-ia-afetam-nvidia-e-fabricantes-de-chips/",
       "pubDate": null
     }
   ]
