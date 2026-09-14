@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-14T13:52:13.571Z",
+  "updatedAt": "2026-09-14T14:08:17.715Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Dólar hoje sobe 1% e se aproxima de R$ 5,20 com exterior e política no radar",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-14092026/",
+      "pubDate": null
+    },
+    {
       "title": "Oncoclínicas elege Maurício Hasson como novo diretor financeiro",
       "link": "https://www.infomoney.com.br/mercados/oncoclinicas-elege-mauricio-hasson-como-novo-diretor-financeiro/",
       "pubDate": null
@@ -36,16 +41,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai mais de 1% com exterior e Brasília em foco",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje avança sobre real com exterior e política brasileira no radar",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-14092026/",
-      "pubDate": null
-    },
-    {
-      "title": "WDC propõe comprar empresa de TI Teki por R$900 mil",
-      "link": "https://www.infomoney.com.br/mercados/wdc-propoe-comprar-empresa-de-ti-teki-por-r900-mil/",
       "pubDate": null
     }
   ]
