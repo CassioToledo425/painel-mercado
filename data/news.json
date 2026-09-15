@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T18:24:27.425Z",
+  "updatedAt": "2026-09-15T18:43:13.499Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com PETR4 e ambiente político",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-15092026/",
+      "pubDate": null
+    },
+    {
       "title": "É hora de aumentar exposição a ações \"bond proxies\", dizem bancos; veja preferidas",
       "link": "https://www.infomoney.com.br/mercados/e-hora-de-aumentar-exposicao-a-acoes-bond-proxies-dizem-bancos-veja-preferidas/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Panamá-Mercosul: acordo pode ampliar mercado para brasileiros, diz embaixador",
       "link": "https://www.infomoney.com.br/mercados/panama-mercosul-acordo-pode-ampliar-mercado-para-brasileiros-diz-embaixador/",
-      "pubDate": null
-    },
-    {
-      "title": "Minério a US$ 95 desafia setor em meio à alta dos fretes: VALE3 e CMIN3 sob pressão?",
-      "link": "https://www.infomoney.com.br/mercados/minerio-a-us-95-desafia-setor-em-meio-a-alta-dos-fretes-vale3-e-cmin3-sob-pressao/",
       "pubDate": null
     }
   ]
