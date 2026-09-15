@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T19:22:08.867Z",
+  "updatedAt": "2026-09-15T19:37:05.622Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "LVMH vê ações caírem 55% desde 2023 e deixa ranking de 10 maiores empresas da Europa",
+      "link": "https://www.infomoney.com.br/mercados/lvmh-ve-acoes-cairem-55-desde-2023-e-deixa-ranking-de-10-maiores-empresas-da-europa/",
+      "pubDate": null
+    },
+    {
+      "title": "Citi monta estratégia para diferentes resultados eleitorais e eleva ações de duration",
+      "link": "https://www.infomoney.com.br/mercados/citi-monta-estrategia-para-diferentes-resultados-eleitorais-e-eleva-acoes-de-duration/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com PETR4 e ambiente político",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-15092026/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "É hora de aumentar exposição a ações \"bond proxies\", dizem bancos; veja preferidas",
       "link": "https://www.infomoney.com.br/mercados/e-hora-de-aumentar-exposicao-a-acoes-bond-proxies-dizem-bancos-veja-preferidas/",
-      "pubDate": null
-    },
-    {
-      "title": "Por que a Petrobras (PETR3;PETR4) está subindo forte hoje? Ações avançam mais de 3%",
-      "link": "https://www.infomoney.com.br/mercados/por-que-a-petrobras-petr3petr4-esta-subindo-forte-hoje-acoes-avancam-mais-de-3/",
-      "pubDate": null
-    },
-    {
-      "title": "Panamá-Mercosul: acordo pode ampliar mercado para brasileiros, diz embaixador",
-      "link": "https://www.infomoney.com.br/mercados/panama-mercosul-acordo-pode-ampliar-mercado-para-brasileiros-diz-embaixador/",
       "pubDate": null
     }
   ]
