@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T20:04:22.019Z",
+  "updatedAt": "2026-09-15T20:22:37.972Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Taxas dos DIs sobem impulsionadas por Treasuries e petróleo",
+      "link": "https://www.infomoney.com.br/mercados/taxas-dos-dis-sobem-impulsionadas-por-treasuries-e-petroleo/",
+      "pubDate": null
+    },
+    {
       "title": "Syngenta entra com pedido de IPO para levantar ao menos US$5 bi, dizem fontes",
       "link": "https://www.infomoney.com.br/mercados/syngenta-entra-com-pedido-de-ipo-para-levantar-ao-menos-us5-bi-dizem-fontes/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "LVMH vê ações caírem 55% desde 2023 e deixa ranking de 10 maiores empresas da Europa",
       "link": "https://www.infomoney.com.br/mercados/lvmh-ve-acoes-cairem-55-desde-2023-e-deixa-ranking-de-10-maiores-empresas-da-europa/",
-      "pubDate": null
-    },
-    {
-      "title": "Citi monta estratégia para diferentes resultados eleitorais e eleva ações de duration",
-      "link": "https://www.infomoney.com.br/mercados/citi-monta-estrategia-para-diferentes-resultados-eleitorais-e-eleva-acoes-de-duration/",
       "pubDate": null
     }
   ]
