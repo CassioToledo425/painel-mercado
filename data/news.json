@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T16:02:59.475Z",
+  "updatedAt": "2026-09-15T16:23:53.785Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Panamá-Mercosul: acordo pode ampliar mercado para brasileiros, diz embaixador",
+      "link": "https://www.infomoney.com.br/mercados/panama-mercosul-acordo-pode-ampliar-mercado-para-brasileiros-diz-embaixador/",
+      "pubDate": null
+    },
+    {
       "title": "Minério a US$ 95 desafia setor em meio à alta dos fretes: VALE3 e CMIN3 sob pressão?",
       "link": "https://www.infomoney.com.br/mercados/minerio-a-us-95-desafia-setor-em-meio-a-alta-dos-fretes-vale3-e-cmin3-sob-pressao/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Rendimentos dos títulos globais atingem novas máximas",
       "link": "https://www.infomoney.com.br/mercados/rendimentos-dos-titulos-globais-atingem-novas-maximas/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa avança com julgamento no STF em foco",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-15092026/",
       "pubDate": null
     }
   ]
