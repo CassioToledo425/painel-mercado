@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T20:51:33.903Z",
+  "updatedAt": "2026-09-15T21:05:37.077Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Petrobras assegura alta do Ibovespa em pregão com STF no foco antes de Fed e Copom",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-tem-leve-alta-de-olho-em-sessao-no-stf-e-eleicao/",
+      "pubDate": null
+    },
+    {
       "title": "WEG (WEGE3): Conselho de Administração aprova pagamento de R$ 450 milhões em JCP",
       "link": "https://www.infomoney.com.br/mercados/weg-wege3-conselho-de-administracao-aprova-pagamento-de-r-450-milhoes-em-jcp/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Por que a Petrobras (PETR3;PETR4) subiu forte hoje? Ações avançaram mais de 3%",
       "link": "https://www.infomoney.com.br/mercados/por-que-a-petrobras-petr3petr4-esta-subindo-forte-hoje-acoes-avancam-mais-de-3/",
-      "pubDate": null
-    },
-    {
-      "title": "Wall Street cai com alta do petróleo e o rendimento dos Treasuries ultrapassando 5%",
-      "link": "https://www.infomoney.com.br/mercados/wall-street-cai-por-nervosismo-com-alta-do-petroleo-e-de-rendimentos-dos-treasuries/",
       "pubDate": null
     }
   ]
