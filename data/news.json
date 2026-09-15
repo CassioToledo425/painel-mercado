@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T15:23:22.301Z",
+  "updatedAt": "2026-09-15T15:40:34.214Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa avança com julgamento no STF em foco",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-15092026/",
+      "pubDate": null
+    },
+    {
       "title": "Wall Street cai por nervosismo com alta do petróleo e de rendimentos dos Treasuries",
       "link": "https://www.infomoney.com.br/mercados/wall-street-cai-por-nervosismo-com-alta-do-petroleo-e-de-rendimentos-dos-treasuries/",
       "pubDate": null
@@ -39,13 +44,8 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa tem leve alta, de olho em sessão no STF e eleição",
+      "title": "Ibovespa tem alta, de olho em sessão no STF e eleição",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-tem-leve-alta-de-olho-em-sessao-no-stf-e-eleicao/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa oscila em dia de sessão histórica no STF",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-15092026/",
       "pubDate": null
     }
   ]
