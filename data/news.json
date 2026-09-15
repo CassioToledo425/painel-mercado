@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T14:24:27.144Z",
+  "updatedAt": "2026-09-15T14:41:42.115Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Guerra no império Ray-Ban: herdeiro ataca CEO e executivos fecham cerco",
+      "link": "https://www.infomoney.com.br/mercados/guerra-no-imperio-ray-ban-herdeiro-ataca-ceo-e-executivos-fecham-cerco/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa oscila em dia de sessão histórica no STF",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-15092026/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Minério cai à medida que oferta aumenta e custos do coque pressionam as siderúrgicas",
       "link": "https://www.infomoney.com.br/mercados/minerio-cai-a-medida-que-oferta-aumenta-e-custos-do-coque-pressionam-as-siderurgicas/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras acelera produção em agosto e pode superar 3 mi de barris por dia, diz BBI",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-acelera-producao-em-agosto-e-pode-superar-3-mi-de-barris-por-dia-diz-bbi/",
       "pubDate": null
     }
   ]
