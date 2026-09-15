@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-15T17:21:26.566Z",
+  "updatedAt": "2026-09-15T17:35:41.450Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Por que a Petrobras (PETR3;PETR4) está subindo forte hoje? Ações avançam mais de 3%",
+      "link": "https://www.infomoney.com.br/mercados/por-que-a-petrobras-petr3petr4-esta-subindo-forte-hoje-acoes-avancam-mais-de-3/",
+      "pubDate": null
+    },
+    {
       "title": "Panamá-Mercosul: acordo pode ampliar mercado para brasileiros, diz embaixador",
       "link": "https://www.infomoney.com.br/mercados/panama-mercosul-acordo-pode-ampliar-mercado-para-brasileiros-diz-embaixador/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Superávit comercial do Brasil deve superar US$90 bi em 2026, diz Márcio Rosa",
       "link": "https://www.infomoney.com.br/mercados/superavit-comercial-do-brasil-deve-superar-us90-bi-em-2026-diz-marcio-rosa/",
-      "pubDate": null
-    },
-    {
-      "title": "Rendimentos dos títulos globais atingem novas máximas",
-      "link": "https://www.infomoney.com.br/mercados/rendimentos-dos-titulos-globais-atingem-novas-maximas/",
       "pubDate": null
     }
   ]
