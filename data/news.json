@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T14:27:36.116Z",
+  "updatedAt": "2026-09-16T14:51:55.734Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Sanepar (SAPR11): XP vê privatização mais distante e corta recomendação para neutra",
+      "link": "https://www.infomoney.com.br/mercados/sanepar-sapr11-xp-ve-privatizacao-mais-distante-e-corta-recomendacao-para-neutra/",
+      "pubDate": null
+    },
+    {
+      "title": "BofA inicia cobertura da Bradsaúde com recomendação de compra",
+      "link": "https://www.infomoney.com.br/mercados/bofa-inicia-cobertura-da-bradsaude-com-recomendacao-de-compra/",
+      "pubDate": null
+    },
+    {
       "title": "Dólar hoje vira para alta em dia de decisões de juros do Fed e Copom",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-16092026/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai e perde os 185 mil com juros em foco",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
-      "pubDate": null
-    },
-    {
-      "title": "BBA reduz projeções para bancos e rebaixa Nubank; Bradesco é único bancão com compra",
-      "link": "https://www.infomoney.com.br/mercados/itau-bba-reduz-projecoes-para-bancos-e-rebaixa-nubank-bradesco-e-unico-bancao-com-compra/",
-      "pubDate": null
-    },
-    {
-      "title": "Campo de petróleo Bacalhau está produzindo próximo ao nível de platô, diz Equinor",
-      "link": "https://www.infomoney.com.br/mercados/campo-de-petroleo-bacalhau-esta-produzindo-proximo-ao-nivel-de-plato-diz-equinor/",
       "pubDate": null
     }
   ]
