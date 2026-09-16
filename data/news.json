@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T19:23:36.073Z",
+  "updatedAt": "2026-09-16T19:38:42.291Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo cai com reunião EUA-houthis, apesar de ataques contra Arábia Saudita",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-16092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa recua após decisão do Fed e antes do Copom",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
+      "pubDate": null
+    },
+    {
       "title": "IA da OpenAI testou vulnerabilidades da Hugging Face meses antes de ataque",
       "link": "https://www.infomoney.com.br/mercados/ia-da-openai-testou-vulnerabilidades-da-hugging-face-meses-antes-de-ataque/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "Dólar tem leve alta após Fomc e com decisão do Copom no radar",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-16092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa acelera queda após alta de juros pelo Fed e com queda de Petrobras",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-petrobras-stf-federal-reserve-copom-160926/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa tem leve recuo em meio à SuperQuarta",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
       "pubDate": null
     }
   ]
