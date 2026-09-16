@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T18:26:20.369Z",
+  "updatedAt": "2026-09-16T18:52:12.180Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,8 +29,13 @@
       "pubDate": null
     },
     {
-      "title": "Nas redes, crise do STF tem efeito limitado sobre decisão eleitoral, diz levantamento",
-      "link": "https://www.infomoney.com.br/mercados/nas-redes-crise-do-stf-tem-efeito-limitado-sobre-decisao-eleitoral-diz-levantamento/",
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa tem leve recuo em meio à SuperQuarta",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Etanol puxa alta dos combustíveis na 1ª quinzena de setembro, aponta IPTL",
+      "link": "https://www.infomoney.com.br/mercados/etanol-puxa-alta-dos-combustiveis-na-1a-quinzena-de-setembro-aponta-iptl/",
       "pubDate": null
     },
     {
@@ -41,11 +46,6 @@
     {
       "title": "JPMorgan reduz previsão de lucro para Banco do Brasil e corta preço-alvo da ação",
       "link": "https://www.infomoney.com.br/mercados/jpmorgan-reduz-previsao-de-lucro-para-banco-do-brasil-e-corta-preco-alvo-da-acao/",
-      "pubDate": null
-    },
-    {
-      "title": "WEG (WEGE3): reembolso de tarifas dos EUA pode elevar margem acima das projeções",
-      "link": "https://www.infomoney.com.br/mercados/weg-wege3-reembolso-de-tarifas-dos-eua-pode-elevar-margem-acima-das-projecoes/",
       "pubDate": null
     }
   ]
