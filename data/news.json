@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T17:02:53.087Z",
+  "updatedAt": "2026-09-16T17:21:28.063Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Goldman: Cyrela e Direcional sobem, mas estão baratas frente outros ciclos eleitorais",
+      "link": "https://www.infomoney.com.br/mercados/goldman-cyrela-e-direcional-sobem-mas-estao-baratas-frente-outros-ciclos-eleitorais/",
+      "pubDate": null
+    },
+    {
       "title": "JPMorgan reduz previsão de lucro para Banco do Brasil e corta preço-alvo da ação",
       "link": "https://www.infomoney.com.br/mercados/jpmorgan-reduz-previsao-de-lucro-para-banco-do-brasil-e-corta-preco-alvo-da-acao/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "WEG (WEGE3): reembolso de tarifas dos EUA pode elevar margem acima das projeções",
       "link": "https://www.infomoney.com.br/mercados/weg-wege3-reembolso-de-tarifas-dos-eua-pode-elevar-margem-acima-das-projecoes/",
-      "pubDate": null
-    },
-    {
-      "title": "Volks lidera lista Fortune 500 Europa pelo 3º ano; finanças e energia são destaque",
-      "link": "https://www.infomoney.com.br/mercados/volks-lidera-lista-fortune-500-europa-pelo-3o-ano-financas-e-energia-sao-destaque/",
       "pubDate": null
     }
   ]
