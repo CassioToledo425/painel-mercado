@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T13:25:37.711Z",
+  "updatedAt": "2026-09-16T13:52:24.009Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,7 +29,12 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai e perde os 186 mil com juros em foco",
+      "title": "Dólar hoje vira para alta em dia de decisões de juros do Fed e Copom",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-16092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai e perde os 185 mil com juros em foco",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
       "pubDate": null
     },
@@ -41,11 +46,6 @@
     {
       "title": "Campo de petróleo Bacalhau está produzindo próximo ao nível de platô, diz Equinor",
       "link": "https://www.infomoney.com.br/mercados/campo-de-petroleo-bacalhau-esta-produzindo-proximo-ao-nivel-de-plato-diz-equinor/",
-      "pubDate": null
-    },
-    {
-      "title": "Minério de ferro fecha em ligeira alta com expectativa de estímulos na China",
-      "link": "https://www.infomoney.com.br/mercados/minerio-de-ferro-fecha-em-ligeira-alta-com-expectativa-de-estimulos-na-china/",
       "pubDate": null
     }
   ]
