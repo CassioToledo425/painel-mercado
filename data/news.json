@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T17:51:13.608Z",
+  "updatedAt": "2026-09-16T18:06:05.391Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Nas redes, crise do STF tem efeito limitado sobre decisão eleitoral, diz levantamento",
+      "link": "https://www.infomoney.com.br/mercados/nas-redes-crise-do-stf-tem-efeito-limitado-sobre-decisao-eleitoral-diz-levantamento/",
+      "pubDate": null
+    },
+    {
       "title": "Goldman: Cyrela e Direcional sobem, mas estão baratas frente outros ciclos eleitorais",
       "link": "https://www.infomoney.com.br/mercados/goldman-cyrela-e-direcional-sobem-mas-estao-baratas-frente-outros-ciclos-eleitorais/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "WEG (WEGE3): reembolso de tarifas dos EUA pode elevar margem acima das projeções",
       "link": "https://www.infomoney.com.br/mercados/weg-wege3-reembolso-de-tarifas-dos-eua-pode-elevar-margem-acima-das-projecoes/",
-      "pubDate": null
-    },
-    {
-      "title": "Volks lidera lista Fortune 500 Europa pelo 3º ano; finanças e energia são destaque",
-      "link": "https://www.infomoney.com.br/mercados/volks-lidera-lista-fortune-500-europa-pelo-3o-ano-financas-e-energia-sao-destaque/",
       "pubDate": null
     }
   ]
