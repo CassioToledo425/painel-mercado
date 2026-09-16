@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T14:51:55.734Z",
+  "updatedAt": "2026-09-16T15:06:25.668Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "UBS BB corta ação da Braskem para venda sem enxergar \"saída fácil\"; ação desaba 13%",
+      "link": "https://www.infomoney.com.br/mercados/brkm5-ubs-bb-corta-acao-da-braskem-para-venda-sem-enxergar-saida-facil-acao-desaba/",
+      "pubDate": null
+    },
+    {
+      "title": "Nasdaq e S&P 500 sobem antes da decisão do Fed",
+      "link": "https://www.infomoney.com.br/mercados/nasdaq-e-sp-500-wall-street-decisao-fed-16092026/",
+      "pubDate": null
+    },
+    {
       "title": "Sanepar (SAPR11): XP vê privatização mais distante e corta recomendação para neutra",
       "link": "https://www.infomoney.com.br/mercados/sanepar-sapr11-xp-ve-privatizacao-mais-distante-e-corta-recomendacao-para-neutra/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "BofA inicia cobertura da Bradsaúde com recomendação de compra",
       "link": "https://www.infomoney.com.br/mercados/bofa-inicia-cobertura-da-bradsaude-com-recomendacao-de-compra/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje vira para alta em dia de decisões de juros do Fed e Copom",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-16092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai e perde os 185 mil com juros em foco",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
       "pubDate": null
     }
   ]
