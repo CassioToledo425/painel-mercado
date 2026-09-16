@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T16:04:29.022Z",
+  "updatedAt": "2026-09-16T16:24:17.286Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Ministros envolvidos no caso Master precisam ser afastados e presos, diz Renan Santos",
+      "link": "https://www.infomoney.com.br/mercados/ministros-envolvidos-no-caso-master-precisam-ser-afastados-e-presos-diz-renan-santos/",
+      "pubDate": null
+    },
+    {
+      "title": "WEG (WEGE3): reembolso de tarifas dos EUA pode elevar margem acima das projeções",
+      "link": "https://www.infomoney.com.br/mercados/weg-wege3-reembolso-de-tarifas-dos-eua-pode-elevar-margem-acima-das-projecoes/",
+      "pubDate": null
+    },
+    {
       "title": "Volks lidera lista Fortune 500 Europa pelo 3º ano; finanças e energia são destaque",
       "link": "https://www.infomoney.com.br/mercados/volks-lidera-lista-fortune-500-europa-pelo-3o-ano-financas-e-energia-sao-destaque/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "Microsoft critica abordagem da Anthropic em relação à consciência da IA",
       "link": "https://www.infomoney.com.br/mercados/microsoft-critica-abordagem-da-anthropic-em-relacao-a-consciencia-da-ia/",
-      "pubDate": null
-    },
-    {
-      "title": "Nvidia, Google e Emerald AI lançam aliança para flexibilizar energia em data centers",
-      "link": "https://www.infomoney.com.br/mercados/nvidia-google-e-emerald-ai-lancam-alianca-para-flexibilizar-energia-em-data-centers/",
-      "pubDate": null
-    },
-    {
-      "title": "B3: Regime Fácil completa 6 meses e soma R$ 161 milhões em captações",
-      "link": "https://www.infomoney.com.br/mercados/b3-regime-facil-completa-6-meses-e-soma-r-161-milhoes-em-captacoes/",
       "pubDate": null
     }
   ]
