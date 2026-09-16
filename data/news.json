@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T19:06:35.415Z",
+  "updatedAt": "2026-09-16T19:23:36.073Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "IA da OpenAI testou vulnerabilidades da Hugging Face meses antes de ataque",
+      "link": "https://www.infomoney.com.br/mercados/ia-da-openai-testou-vulnerabilidades-da-hugging-face-meses-antes-de-ataque/",
+      "pubDate": null
+    },
+    {
       "title": "Dólar tem leve alta após Fomc e com decisão do Copom no radar",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-16092026/",
       "pubDate": null
@@ -41,11 +46,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa tem leve recuo em meio à SuperQuarta",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Etanol puxa alta dos combustíveis na 1ª quinzena de setembro, aponta IPTL",
-      "link": "https://www.infomoney.com.br/mercados/etanol-puxa-alta-dos-combustiveis-na-1a-quinzena-de-setembro-aponta-iptl/",
       "pubDate": null
     }
   ]
