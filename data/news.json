@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-16T20:05:24.003Z",
+  "updatedAt": "2026-09-16T20:24:10.712Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,16 @@
       "pubDate": null
     },
     {
+      "title": "Presidente do Parlamento do Irã diz que alta de juros do Fed não podem reabrir Ormuz",
+      "link": "https://www.infomoney.com.br/mercados/presidente-do-parlamento-do-ira-diz-que-alta-de-juros-do-fed-nao-podem-reabrir-ormuz/",
+      "pubDate": null
+    },
+    {
+      "title": "Taxas de DIs longas caem com cenário eleitoral no radar antes do Copom",
+      "link": "https://www.infomoney.com.br/mercados/taxas-de-dis-longas-caem-com-cenario-eleitoral-no-radar-antes-do-copom/",
+      "pubDate": null
+    },
+    {
       "title": "Petróleo cai com reunião EUA-houthis, apesar de ataques contra Arábia Saudita",
       "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-16092026/",
       "pubDate": null
@@ -36,16 +46,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa recua após decisão do Fed e antes do Copom",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16092026/",
-      "pubDate": null
-    },
-    {
-      "title": "IA da OpenAI testou vulnerabilidades da Hugging Face meses antes de ataque",
-      "link": "https://www.infomoney.com.br/mercados/ia-da-openai-testou-vulnerabilidades-da-hugging-face-meses-antes-de-ataque/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar tem leve alta após Fomc e com decisão do Copom no radar",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-16092026/",
       "pubDate": null
     }
   ]
