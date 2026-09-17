@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T19:49:26.430Z",
+  "updatedAt": "2026-09-17T20:03:13.348Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Taxas de DIs fecham em baixa após nova pesquisa favorável a Flávio Bolsonaro",
+      "link": "https://www.infomoney.com.br/mercados/taxas-de-dis-fecham-em-baixa-apos-nova-pesquisa-favoravel-a-flavio-bolsonaro/",
+      "pubDate": null
+    },
+    {
+      "title": "Petróleo cai com sinais diplomáticos no Oriente Médio contendo pressão sobre oferta",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-17092026/",
+      "pubDate": null
+    },
+    {
       "title": "XP vê excesso de pessimismo com IA e aposta em reprecificação da Totvs",
       "link": "https://www.infomoney.com.br/mercados/tots3-xp-ve-excesso-de-pessimismo-com-ia-e-aposta-em-reprecificacao-da-totvs/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Selic caiu: o que muda para ações de consumo, imóveis e bancos na Bolsa",
       "link": "https://www.infomoney.com.br/mercados/selic-acoes-consumo-imobiliario-bancos/",
-      "pubDate": null
-    },
-    {
-      "title": "IGC reduz previsão para safra mundial de milho de 2026/27",
-      "link": "https://www.infomoney.com.br/mercados/igc-reduz-previsao-para-safra-mundial-de-milho-de-2026-27/",
-      "pubDate": null
-    },
-    {
-      "title": "Casas Bahia precisa reenquadrar ação acima de R$ 1 até março de 2027; BHIA3 salta 12%",
-      "link": "https://www.infomoney.com.br/mercados/casas-bahia-bhia3-precisa-reenquadrar-acao-acima-de-r-1-ate-marco-de-2027/",
       "pubDate": null
     }
   ]
