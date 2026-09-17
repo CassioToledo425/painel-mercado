@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T15:24:10.103Z",
+  "updatedAt": "2026-09-17T15:40:16.947Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Dólar hoje ronda estabilidade após anúncio de reajuste no Bolsa Família",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-17092026/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa agora oscila com fiscal e juros no radar",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
       "pubDate": null
@@ -31,11 +36,6 @@
     {
       "title": "Ibovespa cai 3 mil pontos após anúncio do Bolsa Família, mas recupera: qual impacto?",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-perde-3-mil-pontos-apos-anuncio-do-bolsa-familia-mas-recupera-como-afeta/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje vira para alta após anúncio de reajuste no Bolsa Família",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-17092026/",
       "pubDate": null
     },
     {
