@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T19:06:29.488Z",
+  "updatedAt": "2026-09-17T19:22:37.509Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Selic caiu: o que muda para ações de consumo, imóveis e bancos na Bolsa",
+      "link": "https://www.infomoney.com.br/mercados/selic-acoes-consumo-imobiliario-bancos/",
+      "pubDate": null
+    },
+    {
       "title": "IGC reduz previsão para safra mundial de milho de 2026/27",
       "link": "https://www.infomoney.com.br/mercados/igc-reduz-previsao-para-safra-mundial-de-milho-de-2026-27/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "XP: Eventual desaceleração da inovação em IA não significa pausa no desenvolvimento",
       "link": "https://www.infomoney.com.br/mercados/xp-eventual-desaceleracao-da-inovacao-em-ia-nao-significa-pausa-no-desenvolvimento/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com VALE3, PETR4, bancos e exterior",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
       "pubDate": null
     }
   ]
