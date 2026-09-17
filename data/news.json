@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T15:40:16.947Z",
+  "updatedAt": "2026-09-17T16:03:28.855Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Dividendos de 33 FIIs superam CDI após nova queda da Selic, mas cotas decepcionam",
+      "link": "https://www.infomoney.com.br/mercados/dividendos-de-33-fiis-superam-cdi-apos-nova-queda-da-selic-mas-cotas-decepcionam/",
+      "pubDate": null
+    },
+    {
+      "title": "Estrangeiro voltou à Bolsa; Selic menor e Fed mais duro podem frear o rali?",
+      "link": "https://www.infomoney.com.br/mercados/fluxo-estrangeiro-bolsa-selic-fed/",
+      "pubDate": null
+    },
+    {
       "title": "Dólar hoje ronda estabilidade após anúncio de reajuste no Bolsa Família",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-17092026/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa agora oscila com fiscal e juros no radar",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa cai 3 mil pontos após anúncio do Bolsa Família, mas recupera: qual impacto?",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-perde-3-mil-pontos-apos-anuncio-do-bolsa-familia-mas-recupera-como-afeta/",
-      "pubDate": null
-    },
-    {
-      "title": "Vendas superam lançamentos em SP e Goldman reforça preferência por Cury e Cyrela",
-      "link": "https://www.infomoney.com.br/mercados/vendas-superam-lancamentos-em-sp-e-goldman-reforca-preferencia-por-cury-e-cyrela/",
       "pubDate": null
     }
   ]
