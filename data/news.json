@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T17:20:51.756Z",
+  "updatedAt": "2026-09-17T17:35:17.591Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Ações europeias sobem após alta de juros pelo Fed e com recuo do petróleo",
+      "link": "https://www.infomoney.com.br/mercados/acoes-europeias-sobem-apos-alta-de-juros-pelo-fed-e-com-recuo-do-petroleo/",
+      "pubDate": null
+    },
+    {
       "title": "Méliuz (CASH3) vê crescimento voltar ao foco e amplia caminhos de monetização, diz XP",
       "link": "https://www.infomoney.com.br/mercados/meliuz-cash3-ve-crescimento-voltar-ao-foco-e-amplia-caminhos-de-monetizacao-diz-xp/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Marcopolo: XP rebaixa recomendação e atualiza preço-alvo para R$ 5; POMO4 cai forte",
       "link": "https://www.infomoney.com.br/mercados/marcopolo-xp-rebaixa-recomendacao-e-atualiza-preco-alvo-para-r-5-pomo4-cai-forte/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa sobe após cair até 3 mil pontos com \"efeito Bolsa Família\": o que explica?",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-perde-3-mil-pontos-apos-anuncio-do-bolsa-familia-mas-recupera-como-afeta/",
       "pubDate": null
     }
   ]
