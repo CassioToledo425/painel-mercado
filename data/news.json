@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T19:37:14.271Z",
+  "updatedAt": "2026-09-17T19:49:26.430Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "XP vê excesso de pessimismo com IA e aposta em reprecificação da Totvs",
+      "link": "https://www.infomoney.com.br/mercados/tots3-xp-ve-excesso-de-pessimismo-com-ia-e-aposta-em-reprecificacao-da-totvs/",
+      "pubDate": null
+    },
+    {
       "title": "Selic caiu: o que muda para ações de consumo, imóveis e bancos na Bolsa",
       "link": "https://www.infomoney.com.br/mercados/selic-acoes-consumo-imobiliario-bancos/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Casas Bahia precisa reenquadrar ação acima de R$ 1 até março de 2027; BHIA3 salta 12%",
       "link": "https://www.infomoney.com.br/mercados/casas-bahia-bhia3-precisa-reenquadrar-acao-acima-de-r-1-ate-marco-de-2027/",
-      "pubDate": null
-    },
-    {
-      "title": "XP: Eventual desaceleração da inovação em IA não significa pausa no desenvolvimento",
-      "link": "https://www.infomoney.com.br/mercados/xp-eventual-desaceleracao-da-inovacao-em-ia-nao-significa-pausa-no-desenvolvimento/",
       "pubDate": null
     }
   ]
