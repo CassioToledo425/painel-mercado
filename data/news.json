@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T14:03:22.719Z",
+  "updatedAt": "2026-09-17T14:25:41.160Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -29,6 +29,11 @@
       "pubDate": null
     },
     {
+      "title": "Dólar hoje vira para alta após anúncio de reajuste no Bolsa Família",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-17092026/",
+      "pubDate": null
+    },
+    {
       "title": "Vendas superam lançamentos em SP e Goldman reforça preferência por Cury e Cyrela",
       "link": "https://www.infomoney.com.br/mercados/vendas-superam-lancamentos-em-sp-e-goldman-reforca-preferencia-por-cury-e-cyrela/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa vira para queda com preocupações fiscais no radar",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Minério de ferro sobe com reposição de estoques na China antes de feriado nacional",
-      "link": "https://www.infomoney.com.br/mercados/minerio-de-ferro-sobe-com-reposicao-de-estoques-na-china-antes-de-feriado-nacional/",
       "pubDate": null
     }
   ]
