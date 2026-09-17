@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T18:26:50.863Z",
+  "updatedAt": "2026-09-17T18:52:30.601Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "XP: Eventual desaceleração da inovação em IA não significa pausa no desenvolvimento",
+      "link": "https://www.infomoney.com.br/mercados/xp-eventual-desaceleracao-da-inovacao-em-ia-nao-significa-pausa-no-desenvolvimento/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com VALE3, PETR4, bancos e exterior",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Méliuz (CASH3) vê crescimento voltar ao foco e amplia caminhos de monetização, diz XP",
       "link": "https://www.infomoney.com.br/mercados/meliuz-cash3-ve-crescimento-voltar-ao-foco-e-amplia-caminhos-de-monetizacao-diz-xp/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras: alta de R$ 1 no diesel é suficiente? Analistas veem defasagem persistente",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-petr4-alta-de-r-1-no-diesel-e-suficiente-analistas-veem-defasagem-persistente/",
       "pubDate": null
     }
   ]
