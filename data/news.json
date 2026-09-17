@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T16:24:20.994Z",
+  "updatedAt": "2026-09-17T16:40:59.917Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Marcopolo: XP rebaixa recomendação e atualiza preço-alvo para R$ 5; POMO4 cai forte",
+      "link": "https://www.infomoney.com.br/mercados/marcopolo-xp-rebaixa-recomendacao-e-atualiza-preco-alvo-para-r-5-pomo4-cai-forte/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa sobe após cair até 3 mil pontos com \"efeito Bolsa Família\": o que explica?",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-perde-3-mil-pontos-apos-anuncio-do-bolsa-familia-mas-recupera-como-afeta/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa retoma alta com VALE3 após cair com receio fiscal",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "EUA e China propõem regras de segurança para IA como as do setor nuclear",
       "link": "https://www.infomoney.com.br/mercados/eua-e-china-propoem-regras-de-seguranca-para-ia-como-as-do-setor-nuclear/",
-      "pubDate": null
-    },
-    {
-      "title": "Dividendos de 33 FIIs superam CDI após nova queda da Selic, mas cotas decepcionam",
-      "link": "https://www.infomoney.com.br/mercados/dividendos-de-33-fiis-superam-cdi-apos-nova-queda-da-selic-mas-cotas-decepcionam/",
-      "pubDate": null
-    },
-    {
-      "title": "Estrangeiro voltou à Bolsa; Selic menor e Fed mais duro podem frear o rali?",
-      "link": "https://www.infomoney.com.br/mercados/fluxo-estrangeiro-bolsa-selic-fed/",
       "pubDate": null
     }
   ]
