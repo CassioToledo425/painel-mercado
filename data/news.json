@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T17:49:21.539Z",
+  "updatedAt": "2026-09-17T18:03:43.162Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe com VALE3, PETR4, bancos e exterior",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
+      "pubDate": null
+    },
+    {
       "title": "Ações europeias sobem após alta de juros pelo Fed e com recuo do petróleo",
       "link": "https://www.infomoney.com.br/mercados/acoes-europeias-sobem-apos-alta-de-juros-pelo-fed-e-com-recuo-do-petroleo/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Petrobras: alta de R$ 1 no diesel é suficiente? Analistas veem defasagem persistente",
       "link": "https://www.infomoney.com.br/mercados/petrobras-petr4-alta-de-r-1-no-diesel-e-suficiente-analistas-veem-defasagem-persistente/",
-      "pubDate": null
-    },
-    {
-      "title": "Marcopolo: XP rebaixa recomendação e atualiza preço-alvo para R$ 5; POMO4 cai forte",
-      "link": "https://www.infomoney.com.br/mercados/marcopolo-xp-rebaixa-recomendacao-e-atualiza-preco-alvo-para-r-5-pomo4-cai-forte/",
       "pubDate": null
     }
   ]
