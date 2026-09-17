@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-17T20:39:09.594Z",
+  "updatedAt": "2026-09-17T20:50:44.738Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Wall Street sobe com techs e queda no petróleo e nos rendimentos dos Treasuries",
+      "link": "https://www.infomoney.com.br/mercados/wall-street-sobe-com-techs-e-queda-no-petroleo-e-nos-rendimentos-dos-treasuries/",
+      "pubDate": null
+    },
+    {
       "title": "Marcopolo: XP rebaixa recomendação e atualiza preço-alvo para R$ 5; POMO4 cai 5%",
       "link": "https://www.infomoney.com.br/mercados/marcopolo-xp-rebaixa-recomendacao-e-atualiza-preco-alvo-para-r-5-pomo4-cai-forte/",
       "pubDate": null
@@ -31,16 +36,6 @@
     {
       "title": "Casas Bahia precisa reenquadrar ação acima de R$ 1 até março de 2027; BHIA3 salta 9%",
       "link": "https://www.infomoney.com.br/mercados/casas-bahia-bhia3-precisa-reenquadrar-acao-acima-de-r-1-ate-marco-de-2027/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa sobe após cair até 3 mil pontos com \"efeito Bolsa Família\": o que explica?",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-perde-3-mil-pontos-apos-anuncio-do-bolsa-familia-mas-recupera-como-afeta/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa termina em alta, após experimentar queda forte, e acompanha exterior",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17092026/",
       "pubDate": null
     }
   ]
