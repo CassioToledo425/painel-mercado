@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T15:52:33.137Z",
+  "updatedAt": "2026-09-18T16:07:35.173Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Dólar hoje sobe com aperto monetário global e cautela eleitoral",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-18092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Ações da Nestlé caem após governo da Rússia assumir controle de subsidiária",
+      "link": "https://www.infomoney.com.br/mercados/acoes-da-nestle-caem-apos-governo-da-russia-assumir-controle-de-subsidiaria/",
+      "pubDate": null
+    },
+    {
       "title": "Credores da Braskem rejeitam plano de dívida e cobram aporte da Petrobras",
       "link": "https://www.infomoney.com.br/mercados/credores-da-braskem-rejeitam-plano-de-divida-e-cobram-aporte-da-petrobras/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai em dia de vencimento de opções",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Yduqs: BBI vê valuation atrativo, eleva preço-alvo e destaca como preferida do setor",
-      "link": "https://www.infomoney.com.br/mercados/yduqs-yduq3-bradesco-bbi-ve-valuation-atrativo-eleva-preco-alvo-e-destaca-como-preferida-do-setor/",
-      "pubDate": null
-    },
-    {
-      "title": "Goldman Sachs vê “janela de compra” para Sabesp (SBSP3) após queda recente",
-      "link": "https://www.infomoney.com.br/mercados/goldman-sachs-ve-janela-de-compra-para-sabesp-sbsp3-apos-queda-recente/",
       "pubDate": null
     }
   ]
