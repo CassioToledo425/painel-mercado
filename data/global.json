@@ -1,55 +1,55 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T15:03:22.932Z",
-  "lastAttemptAt": "2026-09-18T15:03:22.932Z",
+  "updatedAt": "2026-09-18T15:05:24.864Z",
+  "lastAttemptAt": "2026-09-18T15:05:24.864Z",
   "source": "Yahoo Finance chart",
   "stocks": [
     {
       "symbol": "AAPL",
       "name": "Apple",
-      "price": 333.99,
-      "changePercent": -0.8931750741839736,
-      "marketTime": 1789743796,
+      "price": 334.32,
+      "changePercent": -0.7952522255192898,
+      "marketTime": 1789743918,
       "stale": false
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft",
-      "price": 493.59,
-      "changePercent": -0.8357609241587193,
-      "marketTime": 1789743801,
+      "price": 494.02,
+      "changePercent": -0.7493721747865432,
+      "marketTime": 1789743920,
       "stale": false
     },
     {
       "symbol": "NVDA",
       "name": "NVIDIA",
-      "price": 219.152,
-      "changePercent": -0.08571168049604112,
-      "marketTime": 1789743798,
+      "price": 219.27,
+      "changePercent": -0.031913923588945556,
+      "marketTime": 1789743918,
       "stale": false
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet",
-      "price": 351.2,
-      "changePercent": 1.1142141479284844,
-      "marketTime": 1789743800,
+      "price": 351.18,
+      "changePercent": 1.1084559352776964,
+      "marketTime": 1789743920,
       "stale": false
     },
     {
       "symbol": "AMZN",
       "name": "Amazon",
-      "price": 254.4,
-      "changePercent": 1.2779171145348176,
-      "marketTime": 1789743791,
+      "price": 255.25,
+      "changePercent": 1.616306381623473,
+      "marketTime": 1789743914,
       "stale": false
     },
     {
       "symbol": "META",
       "name": "Meta",
-      "price": 680.67,
-      "changePercent": -0.24035995368673868,
-      "marketTime": 1789743802,
+      "price": 680.19,
+      "changePercent": -0.31070920842430727,
+      "marketTime": 1789743918,
       "stale": false
     }
   ]
