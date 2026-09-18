@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T15:38:54.667Z",
+  "updatedAt": "2026-09-18T15:52:33.137Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Credores da Braskem rejeitam plano de dívida e cobram aporte da Petrobras",
+      "link": "https://www.infomoney.com.br/mercados/credores-da-braskem-rejeitam-plano-de-divida-e-cobram-aporte-da-petrobras/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai em dia de vencimento de opções",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Goldman Sachs vê “janela de compra” para Sabesp (SBSP3) após queda recente",
       "link": "https://www.infomoney.com.br/mercados/goldman-sachs-ve-janela-de-compra-para-sabesp-sbsp3-apos-queda-recente/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa recua e caminha para primeira perda semanal em quase um mês",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-recua-primeira-perda-semanal-em-quase-um-mes-18092026/",
       "pubDate": null
     }
   ]
