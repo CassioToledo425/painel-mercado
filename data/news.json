@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T19:05:52.292Z",
+  "updatedAt": "2026-09-18T19:21:09.397Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "De aperto a bets ao Bolsa Família: como medidas podem impactar ações de varejo na B3?",
+      "link": "https://www.infomoney.com.br/mercados/de-aperto-a-bets-ao-bolsa-familia-como-medidas-impactam-varejo-e-consumo-na-bolsa/",
+      "pubDate": null
+    },
+    {
       "title": "Bolsa até o 1º turno: 6 gatilhos que podem mexer com o mercado",
       "link": "https://www.infomoney.com.br/mercados/bolsa-primeiro-turno-gatilhos-mercado/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa recua com VALE3, PETR4 e bancos",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
-      "pubDate": null
-    },
-    {
-      "title": "BBAS3: Por que o 4T26 será o primeiro grande teste para o Banco do Brasil?",
-      "link": "https://www.infomoney.com.br/mercados/bbas3-por-que-o-4t26-sera-o-primeiro-grande-teste-para-o-banco-do-brasil/",
       "pubDate": null
     }
   ]
