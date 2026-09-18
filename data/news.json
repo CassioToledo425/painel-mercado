@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T13:22:13.932Z",
+  "updatedAt": "2026-09-18T13:38:06.924Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,23 +24,18 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Confira o que movimenta Bolsa, Dólar e Juros nesta sexta",
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai em dia de vencimento de opções",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Assaí (ASAI3) coloca combustíveis no carrinho para acelerar o crescimento; entenda",
+      "link": "https://www.infomoney.com.br/mercados/assai-asai3-coloca-combustiveis-no-carrinho-para-acelerar-o-crescimento-entenda/",
       "pubDate": null
     },
     {
       "title": "Dólar hoje opera quase estável após nova pesquisa e antes de leilões do BC",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-18092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Futuro opera perto da estabilidade após resultados do Datafolha",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-futuro-opera-perto-da-estabilidade-apos-resultados-do-datafolha/",
-      "pubDate": null
-    },
-    {
-      "title": "Mega-Sena: única aposta acerta seis dezenas e leva R$ 101,9 milhões",
-      "link": "https://www.infomoney.com.br/mercados/mega-sena-unica-aposta-acerta-seis-dezenas-e-leva-r-1019-milhoes/",
       "pubDate": null
     }
   ]
