@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T18:41:22.366Z",
+  "updatedAt": "2026-09-18T19:03:32.727Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Bolsa até o 1º turno: 6 gatilhos que podem mexer com o mercado",
+      "link": "https://www.infomoney.com.br/mercados/bolsa-primeiro-turno-gatilhos-mercado/",
+      "pubDate": null
+    },
+    {
+      "title": "Axia (AXIA3): XP vê \"tempestade antes da calmaria\" e reitera compra para a ação",
+      "link": "https://www.infomoney.com.br/mercados/axia-axia3-xp-ve-tempestade-antes-da-calmaria-mas-reitera-compra-para-a-acao/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa recua com VALE3, PETR4 e bancos",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "BBAS3: Por que o 4T26 será o primeiro grande teste para o Banco do Brasil?",
       "link": "https://www.infomoney.com.br/mercados/bbas3-por-que-o-4t26-sera-o-primeiro-grande-teste-para-o-banco-do-brasil/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras pode pagar US$ 3,8 bi em dividendos no 3T mesmo com queda do Ebitda, diz XP",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-pode-pagar-us-38-bi-em-dividendos-no-3t-mesmo-com-queda-do-ebitda-diz-xp/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas da Europa fecham em queda firme, pressionadas por alta dos títulos soberanos",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-da-europa-fecham-em-queda-firme-pressionadas-por-alta-dos-titulos-soberanos/",
       "pubDate": null
     }
   ]
