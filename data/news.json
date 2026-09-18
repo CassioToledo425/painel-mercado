@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T14:07:08.842Z",
+  "updatedAt": "2026-09-18T14:25:07.787Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "MBRF (MBRF3) pode subir até 23% apenas com queda da Selic até 2027, avalia Goldman",
+      "link": "https://www.infomoney.com.br/mercados/mbrf-mbrf3-pode-subir-ate-23-apenas-com-queda-da-selic-ate-2027-avalia-goldman/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai em dia de vencimento de opções",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
       "pubDate": null
@@ -31,11 +36,6 @@
     {
       "title": "Assaí (ASAI3) coloca combustíveis no carrinho para acelerar o crescimento; entenda",
       "link": "https://www.infomoney.com.br/mercados/assai-asai3-coloca-combustiveis-no-carrinho-para-acelerar-o-crescimento-entenda/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje opera quase estável após nova pesquisa e antes de leilões do BC",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-18092026/",
       "pubDate": null
     }
   ]
