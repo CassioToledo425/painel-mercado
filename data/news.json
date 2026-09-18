@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T21:02:59.027Z",
+  "updatedAt": "2026-09-18T21:18:28.247Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "A 10 pregões do 1º turno, até onde podem ir Ibovespa, Vale e Petrobras?",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-vale-petrobras-10-pregoes-primeiro-turno/",
+      "pubDate": null
+    },
+    {
       "title": "Taxas longas fecham com leves baixas apesar de alta dos rendimentos dos Treasuries",
       "link": "https://www.infomoney.com.br/mercados/taxas-longas-fecham-com-leves-baixas-apesar-de-alta-dos-rendimentos-dos-treasuries/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Dólar opera sem sinal único e iene se desvaloriza após elevação de juros do BoJ",
       "link": "https://www.infomoney.com.br/mercados/dolar-opera-sem-sinal-unico-e-iene-se-desvaloriza-apos-elevacao-de-juros-do-boj/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas de NY fecham sem direção única em semana volátil após Fed subir juros",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-sem-direcao-unica-em-semana-volatil-apos-fed-subir-juros/",
       "pubDate": null
     }
   ]
