@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T19:46:59.323Z",
+  "updatedAt": "2026-09-18T20:03:06.383Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo cai e WTI fica abaixo dos US$ 100 com oferta da Arábia Saudita no radar",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-18092026/",
+      "pubDate": null
+    },
+    {
       "title": "De aperto a bets ao Bolsa Família: como medidas podem impactar ações de varejo na B3?",
       "link": "https://www.infomoney.com.br/mercados/de-aperto-a-bets-ao-bolsa-familia-como-medidas-impactam-varejo-e-consumo-na-bolsa/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Axia (AXIA3): XP vê \"tempestade antes da calmaria\" e reitera compra para a ação",
       "link": "https://www.infomoney.com.br/mercados/axia-axia3-xp-ve-tempestade-antes-da-calmaria-mas-reitera-compra-para-a-acao/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa recua com VALE3, PETR4 e bancos",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
       "pubDate": null
     }
   ]
