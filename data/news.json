@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T20:03:06.383Z",
+  "updatedAt": "2026-09-18T20:22:09.709Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Volkswagen corta projeção de lucro após baixa contábil na Porsche e piora na China",
+      "link": "https://www.infomoney.com.br/mercados/volkswagen-corta-projecao-de-lucro-apos-baixa-contabil-na-porsche-e-piora-na-china/",
+      "pubDate": null
+    },
+    {
       "title": "Petróleo cai e WTI fica abaixo dos US$ 100 com oferta da Arábia Saudita no radar",
       "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-18092026/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Bolsa até o 1º turno: 6 gatilhos que podem mexer com o mercado",
       "link": "https://www.infomoney.com.br/mercados/bolsa-primeiro-turno-gatilhos-mercado/",
-      "pubDate": null
-    },
-    {
-      "title": "Axia (AXIA3): XP vê \"tempestade antes da calmaria\" e reitera compra para a ação",
-      "link": "https://www.infomoney.com.br/mercados/axia-axia3-xp-ve-tempestade-antes-da-calmaria-mas-reitera-compra-para-a-acao/",
       "pubDate": null
     }
   ]
