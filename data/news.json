@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T15:22:51.734Z",
+  "updatedAt": "2026-09-18T15:38:54.667Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai em dia de vencimento de opções",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Yduqs: BBI vê valuation atrativo, eleva preço-alvo e destaca como preferida do setor",
+      "link": "https://www.infomoney.com.br/mercados/yduqs-yduq3-bradesco-bbi-ve-valuation-atrativo-eleva-preco-alvo-e-destaca-como-preferida-do-setor/",
+      "pubDate": null
+    },
+    {
       "title": "Goldman Sachs vê “janela de compra” para Sabesp (SBSP3) após queda recente",
       "link": "https://www.infomoney.com.br/mercados/goldman-sachs-ve-janela-de-compra-para-sabesp-sbsp3-apos-queda-recente/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Ibovespa recua e caminha para primeira perda semanal em quase um mês",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-recua-primeira-perda-semanal-em-quase-um-mes-18092026/",
-      "pubDate": null
-    },
-    {
-      "title": "MBRF (MBRF3) pode subir até 23% apenas com queda da Selic até 2027, avalia Goldman",
-      "link": "https://www.infomoney.com.br/mercados/mbrf-mbrf3-pode-subir-ate-23-apenas-com-queda-da-selic-ate-2027-avalia-goldman/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai em dia de vencimento de opções",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
       "pubDate": null
     }
   ]
