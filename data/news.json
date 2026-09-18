@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T20:22:09.709Z",
+  "updatedAt": "2026-09-18T20:37:07.608Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa fecha negativo e tem primeira semana no vermelho depois de quatro positivas",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Dólar fecha sessão sem gatilhos quase estável, a R$ 5,14, e sobe 0,4% na semana",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-18092026/",
+      "pubDate": null
+    },
+    {
       "title": "Volkswagen corta projeção de lucro após baixa contábil na Porsche e piora na China",
       "link": "https://www.infomoney.com.br/mercados/volkswagen-corta-projecao-de-lucro-apos-baixa-contabil-na-porsche-e-piora-na-china/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Petróleo cai e WTI fica abaixo dos US$ 100 com oferta da Arábia Saudita no radar",
       "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-18092026/",
-      "pubDate": null
-    },
-    {
-      "title": "De aperto a bets ao Bolsa Família: como medidas podem impactar ações de varejo na B3?",
-      "link": "https://www.infomoney.com.br/mercados/de-aperto-a-bets-ao-bolsa-familia-como-medidas-impactam-varejo-e-consumo-na-bolsa/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsa até o 1º turno: 6 gatilhos que podem mexer com o mercado",
-      "link": "https://www.infomoney.com.br/mercados/bolsa-primeiro-turno-gatilhos-mercado/",
       "pubDate": null
     }
   ]
