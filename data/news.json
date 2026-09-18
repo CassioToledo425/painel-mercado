@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-18T20:37:07.608Z",
+  "updatedAt": "2026-09-18T20:50:08.220Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,23 +24,23 @@
       "pubDate": null
     },
     {
+      "title": "Bolsas de NY fecham sem direção única em semana volátil após Fed subir juros",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-sem-direcao-unica-em-semana-volatil-apos-fed-subir-juros/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa fecha negativo e tem primeira semana no vermelho depois de quatro positivas",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-18092026/",
       "pubDate": null
     },
     {
-      "title": "Dólar fecha sessão sem gatilhos quase estável, a R$ 5,14, e sobe 0,4% na semana",
+      "title": "Dólar fecha quase estável em sessão sem gatilhos, a R$ 5,14, e sobe 0,4% na semana",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-18092026/",
       "pubDate": null
     },
     {
       "title": "Volkswagen corta projeção de lucro após baixa contábil na Porsche e piora na China",
       "link": "https://www.infomoney.com.br/mercados/volkswagen-corta-projecao-de-lucro-apos-baixa-contabil-na-porsche-e-piora-na-china/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo cai e WTI fica abaixo dos US$ 100 com oferta da Arábia Saudita no radar",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-18092026/",
       "pubDate": null
     }
   ]
