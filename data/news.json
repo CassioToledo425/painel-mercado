@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-21T21:18:50.887Z",
+  "updatedAt": "2026-09-21T22:22:42.613Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Bradsaúde (SAUD3) anuncia pagamento de R$ 250 milhões em juros sobre capital próprio",
+      "link": "https://www.infomoney.com.br/mercados/bradsaude-saud3-anuncia-pagamento-de-r-250-milhoes-em-juros-sobre-capital-proprio/",
+      "pubDate": null
+    },
+    {
       "title": "BB Seguridade (BBSE3) cai mais de 2% com dados da Susep reforçando cautela para ações",
       "link": "https://www.infomoney.com.br/mercados/bb-seguridade-bbse3-cai-mais-de-2-com-dados-da-susep-reforcando-cautela-para-acoes/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "América Latina começa a reagir no fluxo global após ficar para trás entre emergentes",
       "link": "https://www.infomoney.com.br/mercados/america-latina-reage-fluxo-global-mercados-emergentes/",
-      "pubDate": null
-    },
-    {
-      "title": "Nasdaq salta mais de 2% e renova recorde com otimismo em IA e queda do petróleo",
-      "link": "https://www.infomoney.com.br/mercados/nasdaq-salta-mais-de-2-e-renova-recorde-com-otimismo-em-ia-e-queda-do-petroleo/",
       "pubDate": null
     }
   ]
