@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-22T21:44:39.755Z",
+  "updatedAt": "2026-09-22T23:15:30.066Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Localiza (RENT3) aprova R$ 614,9 milhões em proventos; veja quem tem direito",
+      "link": "https://www.infomoney.com.br/mercados/localiza-rent3-aprova-r-6149-milhoes-em-proventos-veja-quem-tem-direito/",
+      "pubDate": null
+    },
+    {
       "title": "Petrobras e demais petroleiras sempre operaram com incerteza, diz diretora",
       "link": "https://www.infomoney.com.br/mercados/petrobras-e-demais-petroleiras-sempre-operaram-com-incerteza-diz-diretora/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Brava (BRAV3) sobe e fica entre maiores altas do Ibovespa após avanço em Papa-Terra",
       "link": "https://www.infomoney.com.br/mercados/brava-brav3-sobe-e-fica-entre-maiores-altas-do-ibovespa-apos-avanco-em-papa-terra/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa fecha em alta com recuperação de ações da Petrobras em dia \"de lado\"",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-recua-com-pressao-de-vale-e-bancos/",
       "pubDate": null
     }
   ]
