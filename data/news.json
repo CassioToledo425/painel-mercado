@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-22T17:37:25.196Z",
+  "updatedAt": "2026-09-22T18:26:21.814Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Alta de 28%? O potencial que os bancos veem para a Bolsa brasileira com a eleição",
+      "link": "https://www.infomoney.com.br/mercados/alta-de-28-o-potencial-de-alta-que-bancos-veem-para-a-bolsa-do-brasil-com-a-eleicao/",
+      "pubDate": null
+    },
+    {
       "title": "Ações europeias sobem com otimismo por potenciais negociações entre EUA e Irã",
       "link": "https://www.infomoney.com.br/mercados/acoes-europeias-sobem-com-otimismo-por-potenciais-negociacoes-entre-eua-e-ira/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Bitcoin dispara e segura os US$ 85 mil: quais são os próximos alvos?",
       "link": "https://www.infomoney.com.br/mercados/bitcoin-dispara-e-segura-os-us-85-mil-quais-sao-os-proximos-alvos/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo abaixo de US$ 100 é para valer? Parte do mercado segue desconfiada",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-abaixo-de-us-100-e-para-valer-parte-do-mercado-segue-desconfiada/",
       "pubDate": null
     }
   ]
