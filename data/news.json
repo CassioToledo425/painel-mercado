@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-23T18:45:36.454Z",
+  "updatedAt": "2026-09-23T20:51:10.366Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,18 +24,23 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa recua, com exterior, bancos e VALE3; PETR4 sobe",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-23092026/",
+      "title": "Bolsas de NY fecham em queda, pressionadas por tensões EUA-Irã e alta dos Treasuries",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-queda-pressionadas-por-tensoes-eua-ira-e-alta-dos-treasuries/",
       "pubDate": null
     },
     {
-      "title": "Dólar hoje avança e chega aos R$ 5,17 com pesquisa eleitoral e Fed no radar",
+      "title": "Dólar hoje sobe a R$ 5,17, máxima desde agosto, com pesquisa eleitoral e exterior",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-23092026/",
       "pubDate": null
     },
     {
-      "title": "Eleições 2026: que esperar do dólar durante o período, segundo o Goldman Sachs",
-      "link": "https://www.infomoney.com.br/mercados/eleicoes-2026-que-esperar-do-dolar-durante-o-periodo-segundo-o-goldman-sachs/",
+      "title": "Ibovespa: após forte volatilidade, índice fecha em queda de 0,86%; o que explica?",
+      "link": "https://www.infomoney.com.br/mercados/pesquisa-petrobras-o-que-fez-ibovespa-sair-de-queda-para-alta-no-pregao-desta-4a/",
+      "pubDate": null
+    },
+    {
+      "title": "Petróleo sobe 4% com falta de acordo EUA-Irã e possível restrição a diesel nos EUA",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-23092026/",
       "pubDate": null
     }
   ]
