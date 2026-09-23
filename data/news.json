@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-23T20:51:10.366Z",
+  "updatedAt": "2026-09-23T21:55:40.791Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
-      "title": "UBS vê Brasil operando sob influência de 3 forças poderosas e segue cautela com ações",
-      "link": "https://www.infomoney.com.br/mercados/ubs-ve-brasil-operando-sob-influencia-de-3-forcas-poderosas-e-segue-cautela-com-acoes/",
+      "title": "Goldman Sachs: Shoppings brasileiros crescem mais que seus pares internacionais",
+      "link": "https://www.infomoney.com.br/mercados/goldman-sachs-shoppings-brasileiros-crescem-mais-que-seus-pares-internacionais/",
       "pubDate": null
     },
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Ibovespa freia após rali e atravessa setembro com gringo comprador e eleição no radar",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-setembro-fluxo-estrangeiro-eleicao/",
+      "pubDate": null
+    },
+    {
       "title": "Bolsas de NY fecham em queda, pressionadas por tensões EUA-Irã e alta dos Treasuries",
       "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-queda-pressionadas-por-tensoes-eua-ira-e-alta-dos-treasuries/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Ibovespa: após forte volatilidade, índice fecha em queda de 0,86%; o que explica?",
       "link": "https://www.infomoney.com.br/mercados/pesquisa-petrobras-o-que-fez-ibovespa-sair-de-queda-para-alta-no-pregao-desta-4a/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo sobe 4% com falta de acordo EUA-Irã e possível restrição a diesel nos EUA",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-23092026/",
       "pubDate": null
     }
   ]
