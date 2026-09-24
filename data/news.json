@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-24T17:51:13.491Z",
+  "updatedAt": "2026-09-24T18:46:04.773Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,11 +24,6 @@
       "pubDate": null
     },
     {
-      "title": "TSE mantém rejeição de candidatura de José Arruda ao governo do DF",
-      "link": "https://www.infomoney.com.br/mercados/tse-mantem-rejeicao-de-candidatura-de-jose-arruda-ao-governo-do-df/",
-      "pubDate": null
-    },
-    {
       "title": "Ibovespa recua com novo avanço nos rendimentos dos Treasuries",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-recua-com-novo-avanco-nos-rendimentos-dos-treasuries/",
       "pubDate": null
@@ -41,6 +36,11 @@
     {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com política monetária, eleições e exterior no radar",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-24092026/",
+      "pubDate": null
+    },
+    {
+      "title": "Camil (CAML3): ações podem se recuperar com a alta dos preços do arroz?",
+      "link": "https://www.infomoney.com.br/mercados/camil-caml3-acoes-podem-se-recuperar-com-a-alta-dos-precos-do-arroz/",
       "pubDate": null
     }
   ]
