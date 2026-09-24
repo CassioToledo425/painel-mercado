@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-24T20:57:40.654Z",
+  "updatedAt": "2026-09-24T21:55:04.218Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Treasuries nos EUA e receio fiscal no Brasil: o que fez Ibovespa cair 0,99% nesta 5ª",
+      "link": "https://www.infomoney.com.br/mercados/treasuries-nos-eua-e-receio-fiscal-no-brasil-o-que-fez-ibovespa-cair-099-nesta-5a/",
+      "pubDate": null
+    },
+    {
       "title": "Bolsas de NY fecham sem direção com tensões no Oriente Médio e falas do Fed",
       "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-sem-direcao-com-tensoes-no-oriente-medio-e-falas-do-fed/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Ibovespa tem nova queda e dólar, mais uma alta, com eleição e exterior; Vale perde 1%",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-24092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje fecha a R$ 5,19, com exterior, em sessão negativa para ativos de risco",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-24092026/",
       "pubDate": null
     }
   ]
