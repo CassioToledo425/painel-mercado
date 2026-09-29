@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-29T00:21:02.434Z",
+  "updatedAt": "2026-09-29T00:56:54.901Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -19,6 +19,11 @@
       "pubDate": null
     },
     {
+      "title": "Prospecto do IPO da Anthropic revela visão abrangente de IA e custos crescentes",
+      "link": "https://www.infomoney.com.br/mercados/prospecto-do-ipo-da-anthropic-revela-visao-abrangente-de-ia-e-custos-crescentes/",
+      "pubDate": null
+    },
+    {
       "title": "Ambipar obtém decisão favorável e avança em transição de Chapter 11 para Chapter 15",
       "link": "https://www.infomoney.com.br/mercados/ambipar-obtem-decisao-favoravel-e-avanca-em-transicao-de-chapter-11-para-chapter-15/",
       "pubDate": null
@@ -31,11 +36,6 @@
     {
       "title": "Ibovespa ameniza perdas com Petrobras, mas cai pelo 4º pregão com exterior e eleições",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-zera-apos-cair-forte-mas-tem-cautela-com-inflacao-global-e-eleicao/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas de NY caem com falta de perspectiva para negociações EUA-Irã e IA no radar",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-caem-com-falta-de-perspectiva-para-negociacoes-eua-ira-e-ia-no-radar/",
       "pubDate": null
     }
   ]
