@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-29T18:36:25.663Z",
+  "updatedAt": "2026-09-29T19:43:45.316Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Calor na Europa derrete as vendas de chocolate da Lindt",
+      "link": "https://www.infomoney.com.br/mercados/calor-na-europa-derrete-as-vendas-de-chocolate-da-lindt/",
+      "pubDate": null
+    },
+    {
       "title": "Morningstar elege Brasil como preferido entre emergentes",
       "link": "https://www.infomoney.com.br/mercados/morningstar-elege-brasil-como-preferido-entre-emergentes/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Método Gain 3.0 terá aulas de análise técnica e risco com Alex Carvalho",
       "link": "https://www.infomoney.com.br/mercados/metodo-gain-3-0-tera-aulas-de-analise-tecnica-risco-com-alex-carvalho/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com exterior e eleições em foco; VALE3 perde 2%",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-29092026/",
       "pubDate": null
     }
   ]
