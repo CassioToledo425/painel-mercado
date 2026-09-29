@@ -1,16 +1,16 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-28T20:06:10.944Z",
+  "updatedAt": "2026-09-29T00:20:57.242Z",
   "source": "Yahoo Finance FX via GitHub Actions",
   "schedule": "08:00 + 10:10–18:10 a cada 15 min · America/Sao_Paulo",
   "USDBRL": {
-    "bid": 5.2268,
-    "pctChange": 0.7750742297458753,
-    "timestamp": 1790625969
+    "bid": 5.2226,
+    "pctChange": 0.19376498800958375,
+    "timestamp": 1790639331
   },
   "EURBRL": {
-    "bid": 5.9405,
-    "pctChange": 0.5483996547113282,
-    "timestamp": 1790625837
+    "bid": 5.9353,
+    "pctChange": 0.0522571727183824,
+    "timestamp": 1790640837
   }
 }

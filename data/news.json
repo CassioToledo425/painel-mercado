@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-28T20:58:26.338Z",
+  "updatedAt": "2026-09-29T00:21:02.434Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -19,6 +19,16 @@
       "pubDate": null
     },
     {
+      "title": "Ambipar obtém decisão favorável e avança em transição de Chapter 11 para Chapter 15",
+      "link": "https://www.infomoney.com.br/mercados/ambipar-obtem-decisao-favoravel-e-avanca-em-transicao-de-chapter-11-para-chapter-15/",
+      "pubDate": null
+    },
+    {
+      "title": "Em compasso de espera, Bolsa perde força e dólar sobe na reta final do 1º turno",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-dolar-primeiro-turno-eleicoes-2026-4-pregoes/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa ameniza perdas com Petrobras, mas cai pelo 4º pregão com exterior e eleições",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-zera-apos-cair-forte-mas-tem-cautela-com-inflacao-global-e-eleicao/",
       "pubDate": null
@@ -26,16 +36,6 @@
     {
       "title": "Bolsas de NY caem com falta de perspectiva para negociações EUA-Irã e IA no radar",
       "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-caem-com-falta-de-perspectiva-para-negociacoes-eua-ira-e-ia-no-radar/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa fecha com leve queda, com exterior e bancos; dólar sobe a R$ 5,22",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-28092026/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar sobe a R$ 5,22, maior valor de fechamento em 6 meses, com exterior e eleição",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-28092026/",
       "pubDate": null
     }
   ]
