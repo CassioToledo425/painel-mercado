@@ -1,57 +1,57 @@
 {
   "status": "ok",
-  "updatedAt": "2026-09-29T19:43:39.525Z",
+  "updatedAt": "2026-09-30T16:33:00.901Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
       "name": "VALE3",
-      "price": 69.59,
-      "changePercent": -2.21,
-      "marketTime": "2026-09-29T19:42:30.000Z"
+      "price": 69.84,
+      "changePercent": 0.33,
+      "marketTime": "2026-09-30T16:31:30.000Z"
     },
     {
       "symbol": "PETR4",
       "name": "PETR4",
-      "price": 48.88,
-      "changePercent": 0.33,
-      "marketTime": "2026-09-29T19:42:30.000Z"
+      "price": 49.6,
+      "changePercent": 1.02,
+      "marketTime": "2026-09-30T16:31:30.000Z"
     },
     {
       "symbol": "ITUB4",
       "name": "ITUB4",
-      "price": 42.22,
-      "changePercent": 1.22,
-      "marketTime": "2026-09-29T19:42:30.000Z"
+      "price": 44.1,
+      "changePercent": 4.26,
+      "marketTime": "2026-09-30T16:32:30.000Z"
     },
     {
       "symbol": "BBDC4",
       "name": "BBDC4",
-      "price": 17.68,
-      "changePercent": 0.11,
-      "marketTime": "2026-09-29T19:42:30.000Z"
+      "price": 18.26,
+      "changePercent": 2.7,
+      "marketTime": "2026-09-30T16:31:30.000Z"
     },
     {
       "symbol": "WEGE3",
       "name": "WEGE3",
-      "price": 50.29,
-      "changePercent": 0.34,
-      "marketTime": "2026-09-29T19:42:30.000Z"
+      "price": 49.81,
+      "changePercent": -0.95,
+      "marketTime": "2026-09-30T16:31:30.000Z"
     },
     {
       "symbol": "MGLU3",
       "name": "MGLU3",
-      "price": 6.6,
-      "changePercent": 0,
-      "marketTime": "2026-09-29T19:42:30.000Z"
+      "price": 7.22,
+      "changePercent": 8.9,
+      "marketTime": "2026-09-30T16:32:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
     "name": "IBOVESPA",
-    "price": 183459.44,
-    "changePercent": 0.26,
-    "marketTime": "2026-09-29T19:42:48.000Z"
+    "price": 185986.88,
+    "changePercent": 1.17,
+    "marketTime": "2026-09-30T16:32:41.000Z"
   }
 }
