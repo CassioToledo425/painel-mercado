@@ -1,6 +1,6 @@
 {
-  "status": "stale",
-  "updatedAt": "2026-09-30T16:33:12.455Z",
+  "status": "ok",
+  "updatedAt": "2026-09-30T19:45:41.606Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,30 +24,24 @@
       "pubDate": null
     },
     {
-      "title": "3 cenários para ativos brasileiros após 1º turno, segundo área de trading do Goldman",
-      "link": "https://www.infomoney.com.br/mercados/3-cenarios-para-ativos-brasileiros-apos-1o-turno-segundo-area-de-trading-do-goldman/",
+      "title": "IRB: redução de tarifas deve impulsionar resultados e ganho de valor pode ir a 30%",
+      "link": "https://www.infomoney.com.br/mercados/irb-reducao-de-tarifas-deve-impulsionar-resultados-e-ganho-de-valor-pode-ir-a-30/",
       "pubDate": null
     },
     {
-      "title": "CEO da Bridgewater alerta que IA ameaça provocar “colapso social”",
-      "link": "https://www.infomoney.com.br/mercados/ceo-da-bridgewater-alerta-que-ia-ameaca-provocar-colapso-social/",
+      "title": "Como Lula e Bolsonaro estavam nas pesquisas na última semana antes da eleição de 2022",
+      "link": "https://www.infomoney.com.br/mercados/como-lula-e-bolsonaro-estavam-nas-pesquisas-na-ultima-semana-antes-da-eleicao-de-2022/",
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe após dados de inflação dos EUA abaixo do esperado",
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa acelera e retoma os 187 mil pontos; bancos disparam",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-30092026/",
       "pubDate": null
     },
     {
-      "title": "China ajuda o minério, mas VALE3 não sustenta reação: o que pesa sobre a ação?",
-      "link": "https://www.infomoney.com.br/mercados/vale3-minerio-china-acao-queda-reacao/",
+      "title": "Chances de alta de juros nos EUA em outubro caem após dados de inflação",
+      "link": "https://www.infomoney.com.br/mercados/chances-de-alta-de-juros-nos-eua-em-outubro-caem-apos-dados-de-inflacao/",
       "pubDate": null
     }
-  ],
-  "lastAttemptAt": "2026-09-30T18:25:55.525Z",
-  "warning": "Falha ao consultar o InfoMoney; mantidas as últimas manchetes válidas.",
-  "errors": [
-    "RSS: feed RSS sem itens reconhecíveis",
-    "HTML: This operation was aborted"
   ]
 }
