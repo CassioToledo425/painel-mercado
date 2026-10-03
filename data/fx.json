@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-02T22:25:59.300Z",
+  "updatedAt": "2026-10-03T00:24:03.905Z",
   "source": "Yahoo Finance FX via GitHub Actions",
   "schedule": "08:00 + 10:10–18:10 a cada 15 min · America/Sao_Paulo",
   "USDBRL": {
