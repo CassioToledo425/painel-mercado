@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-07T19:19:02.634Z",
+  "updatedAt": "2026-10-07T20:21:58.994Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo fecha em queda, ponderando risco geopolítico e estoques nos EUA",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-07102026/",
+      "pubDate": null
+    },
+    {
+      "title": "GPA (PCAR3): ação salta após tribunal homologar plano de recuperação extrajudicial",
+      "link": "https://www.infomoney.com.br/mercados/gpa-pcar3-acao-salta-apos-tribunal-homologar-plano-de-recuperacao-extrajudicial/",
+      "pubDate": null
+    },
+    {
       "title": "JPMorgan eleva aposta no real e vê dólar entre R$ 4,70 e R$ 4,80",
       "link": "https://www.infomoney.com.br/mercados/jpmorgan-eleva-aposta-no-real-e-ve-dolar-entre-r-470-e-r-480/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Euro cai globalmente e volta para perto de mínimas em 17 meses",
       "link": "https://www.infomoney.com.br/mercados/euro-hoje-abertura-fechamento-comercial-turismo-07102026/",
-      "pubDate": null
-    },
-    {
-      "title": "O estrangeiro veio para ficar? BBA estima que fluxo para B3 pode ser de até R$ 270 bi",
-      "link": "https://www.infomoney.com.br/mercados/o-estrangeiro-veio-para-ficar-bba-estima-que-fluxo-para-b3-pode-ser-de-ate-r-270-bi/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai com exterior, em dia de oscilação; Vale perde 2%",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-07102026/",
       "pubDate": null
     }
   ]
