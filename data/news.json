@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-07T23:38:32.848Z",
+  "updatedAt": "2026-10-08T00:55:34.486Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Samsung estima salto de quase 9 vezes no lucro do 3º tri puxado por IA",
+      "link": "https://www.infomoney.com.br/mercados/samsung-estima-salto-de-quase-9-vezes-no-lucro-do-3o-tri-puxado-por-ia/",
+      "pubDate": null
+    },
+    {
       "title": "Rali perde força e taxas de juros fecham de lado, com dúvidas sobre quadro fiscal",
       "link": "https://www.infomoney.com.br/mercados/rali-perde-forca-e-taxas-de-juros-fecham-de-lado-com-duvidas-sobre-quadro-fiscal/",
       "pubDate": null
@@ -31,11 +36,6 @@
     {
       "title": "Taxas longas têm leves altas puxadas pelo exterior, mas eleição segue no foco",
       "link": "https://www.infomoney.com.br/mercados/taxas-longas-tem-leves-altas-puxadas-pelo-exterior-mas-eleicao-segue-no-foco/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa fecha em queda de 0,74%, a 204 mil pontos, com exterior e eleições no foco",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-fecha-em-queda-de-074-a-204-mil-pontos-com-exterior-e-eleicoes-no-foco/",
       "pubDate": null
     }
   ]
