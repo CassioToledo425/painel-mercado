@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-09T18:47:18.465Z",
+  "updatedAt": "2026-10-09T19:57:01.682Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "JPMorgan: JBS e MBRF não surfam em alta com eleições, mas podem ser oportunidade",
+      "link": "https://www.infomoney.com.br/mercados/jpmorgan-jbs-e-mbrf-nao-surfam-em-alta-com-eleicoes-mas-podem-ser-oportunidade/",
+      "pubDate": null
+    },
+    {
+      "title": "Petróleo fecha em alta, ponderando sinais de oferta, e avança na semana",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-09102026/",
+      "pubDate": null
+    },
+    {
       "title": "Starlink pode virar 4ª operadora do Brasil? TIM e Vivo caem após movimento da gigante",
       "link": "https://www.infomoney.com.br/mercados/starlink-pode-virar-4a-operadora-do-brasil-tim-tims3-e-vivo-vivt3-caem-bolsa-apos-movimento-da-gigante-eua/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Bitcoin testa os US$ 80 mil: correção ameaça a recuperação do BTC?",
       "link": "https://www.infomoney.com.br/mercados/bitcoin-btc-80-mil-correcao-recuperacao/",
-      "pubDate": null
-    },
-    {
-      "title": "Menos juros, mais lucro: Morgan Stanley aponta quais ações ganham mais nesse cenário",
-      "link": "https://www.infomoney.com.br/mercados/menos-juros-mais-lucro-morgan-stanley-aponta-quais-acoes-ganham-mais-nesse-cenario/",
-      "pubDate": null
-    },
-    {
-      "title": "Frete de petróleo dos EUA para China já custa mais do que lançar um foguete ao espaço",
-      "link": "https://www.infomoney.com.br/mercados/frete-de-petroleo-dos-eua-para-china-ja-custa-mais-do-que-lancar-um-foguete-ao-espaco/",
       "pubDate": null
     }
   ]
