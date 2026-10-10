@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-09T22:57:43.342Z",
+  "updatedAt": "2026-10-10T00:42:49.296Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Santander (SANB11) aprova proventos no valor de R$ 1,5 bi; veja quem tem direito",
+      "link": "https://www.infomoney.com.br/mercados/santander-sanb11-aprova-proventos-no-valor-de-r-15-bi-veja-quem-tem-direito/",
+      "pubDate": null
+    },
+    {
       "title": "MGLU3 salta 60% e só 11 ações caem: os destaques do Ibovespa na semana após 1º turno",
       "link": "https://www.infomoney.com.br/mercados/magalu-mglu3-salta-60-e-so-11-acoes-caem-os-destaques-do-ibovespa-na-semana-apos-1o-turno/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Ibovespa bate novo recorde acima de 209 mil e tem melhor semana desde março de 2020",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-09102026-sobe-ny-trade-eleitoral-salta-semana/",
-      "pubDate": null
-    },
-    {
-      "title": "Wall Street tem ganhos semanais, com balanços e inflação prestes a serem divulgados",
-      "link": "https://www.infomoney.com.br/mercados/wall-street-tem-ganhos-semanais-com-balancos-e-inflacao-prestes-a-serem-divulgados/",
       "pubDate": null
     }
   ]
