@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-14T21:37:29.068Z",
+  "updatedAt": "2026-10-14T23:52:39.492Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Apple atinge valor de mercado inédito de US$ 5 tri e segue como segunda mais valiosa",
+      "link": "https://www.infomoney.com.br/mercados/apple-atinge-valor-de-mercado-inedito-de-us-5-tri-e-segue-como-segunda-mais-valiosa/",
+      "pubDate": null
+    },
+    {
+      "title": "Assaí nega estudar oferta de ações",
+      "link": "https://www.infomoney.com.br/mercados/assai-nega-estudar-oferta-de-acoes/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa fecha negativo, com eleição e dados de inflação; dólar vale R$ 5,02",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14102026/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Bolsas de NY fecham em queda com preocupações inflacionárias e investimentos em IA",
       "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-queda-com-preocupacoes-inflacionarias-e-investimentos-em-ia/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras e PRIO são destaques do Ibovespa: petróleo e recomendações guiam altas",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-petr3-petr4-e-prio-prio3-sao-destaques-do-ibovespa-petroleo-e-recomendacoes-guiam-altas/",
-      "pubDate": null
-    },
-    {
-      "title": "Taxas fecham em alta após dados de inflação nos EUA e antes de pesquisa eleitoral",
-      "link": "https://www.infomoney.com.br/mercados/taxas-fecham-em-alta-apos-dados-de-inflacao-nos-eua-e-antes-de-pesquisa-eleitoral/",
       "pubDate": null
     }
   ]
