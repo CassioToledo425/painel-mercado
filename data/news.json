@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-15T21:53:16.286Z",
+  "updatedAt": "2026-10-15T23:24:16.219Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "MSCI congela mudanças em índices de ações da Turquia",
+      "link": "https://www.infomoney.com.br/mercados/msci-congela-mudancas-em-indices-de-acoes-da-turquia/",
+      "pubDate": null
+    },
+    {
       "title": "DIRR3: ação da Direcional desaba mais de 9% após queda nas vendas e lançamentos do 3T",
       "link": "https://www.infomoney.com.br/mercados/acao-da-direcional-recua-apos-queda-nas-vendas-e-lancamentos-do-3o-tri/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Bolsas de NY fecham em alta mesmo com inflação nos EUA e incerteza com IA",
       "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-alta-mesmo-com-inflacao-nos-eua-e-incerteza-com-ia/",
-      "pubDate": null
-    },
-    {
-      "title": "HSBC vê IA assumindo operações nos mercados financeiros em poucos anos",
-      "link": "https://www.infomoney.com.br/mercados/hsbc-ve-ia-assumindo-operacoes-nos-mercados-financeiros-em-poucos-anos/",
       "pubDate": null
     }
   ]
