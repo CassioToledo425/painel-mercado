@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-16T21:51:29.264Z",
+  "updatedAt": "2026-10-16T22:48:10.107Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Caixa Seguridade terá ganho de R$ 210 milhões com multa do Banco Pan",
+      "link": "https://www.infomoney.com.br/mercados/caixa-seguridade-tera-ganho-de-r-210-milhoes-com-multa-do-banco-pan/",
+      "pubDate": null
+    },
+    {
       "title": "XP anuncia saída de Martín Escobari do Conselho e traz executivo da Microsoft",
       "link": "https://www.infomoney.com.br/mercados/xp-anuncia-saida-de-martin-escobari-do-conselho-e-traz-executivo-da-microsoft/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Ibovespa sobe puxado por Petrobras e com atenção a pesquisas, mas cai 1,74% na semana",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-sobe-apos-recentes-quedas-atento-a-pesquisas-eleitorais-mas-cautela-segue/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas de NY fecham em baixa com temores por IA e Nasdaq recua mais de 2%",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-baixa-com-temores-por-ia-e-nasdaq-recua-mais-de-2/",
       "pubDate": null
     }
   ]
