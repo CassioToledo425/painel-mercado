@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-16T18:33:05.574Z",
+  "updatedAt": "2026-10-16T20:00:17.706Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo Brent supera US$ 110 pela 1ª vez desde maio com temor sobre oferta global",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-16102026/",
+      "pubDate": null
+    },
+    {
+      "title": "Por que a CoreWeave está na mira do pânico dos mercados em torno da IA",
+      "link": "https://www.infomoney.com.br/mercados/por-que-a-coreweave-esta-na-mira-do-panico-dos-mercados-em-torno-da-ia/",
+      "pubDate": null
+    },
+    {
       "title": "Brasil lidera atração de capital entre emergentes na Bolsa: quais os próximos passos?",
       "link": "https://www.infomoney.com.br/mercados/brasil-lidera-atracao-de-capital-entre-emergentes-na-bolsa-quais-os-proximos-passos/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Euforia do mercado com eleição desvia olhar do problema da dívida do Brasil",
       "link": "https://www.infomoney.com.br/mercados/euforia-do-mercado-com-eleicao-desvia-olhar-para-problema-da-divida-do-brasil/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas da Europa fecham em alta com recuperação de tecnologia",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-da-europa-fecham-em-alta-com-recuperacao-de-tecnologia/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa oscila com pesquisas eleitorais em foco",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-16102026/",
       "pubDate": null
     }
   ]
