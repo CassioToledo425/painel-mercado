@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-20T21:33:46.274Z",
+  "updatedAt": "2026-10-20T22:00:08.550Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Argentina: risco-país renova nível mais alto em um ano e reacende dúvida sobre ativos",
+      "link": "https://www.infomoney.com.br/mercados/argentina-risco-pais-renova-nivel-mais-alto-em-um-ano-e-reacende-duvida-sobre-ativos/",
+      "pubDate": null
+    },
+    {
       "title": "Antes de IPOs, empresas de IA delineiam planos para compartilhar lucros",
       "link": "https://www.infomoney.com.br/mercados/antes-de-ipos-empresas-de-ia-delineiam-planos-para-compartilhar-lucros/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "SpaceX registra lucro acima do esperado e receita dispara no 3º tri; ação sobe 1,4%",
       "link": "https://www.infomoney.com.br/mercados/spacex-registra-lucro-acima-do-esperado-e-receita-dispara-no-3o-tri-acao-sobe-14/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas de NY fecham mistas com mudança de rumo do petróleo e balanços",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-mistas-com-mudanca-de-rumo-do-petroleo-e-balancos/",
       "pubDate": null
     }
   ]
