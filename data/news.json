@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-21T21:37:10.781Z",
+  "updatedAt": "2026-10-21T23:58:22.184Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Opções de BBAS3, PETR4 e BOVA11 voltam a precificar risco antes do 2º turno",
+      "link": "https://www.infomoney.com.br/mercados/opcoes-bbas3-petr4-bova11-risco-segundo-turno/",
+      "pubDate": null
+    },
+    {
       "title": "IBM supera em lucro e receita no terceiro trimestre de 2026; ações sobem 3,4%",
       "link": "https://www.infomoney.com.br/mercados/ibm-supera-em-lucro-e-receita-no-terceiro-trimestre-de-2026-acoes-sobem-34/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Tesla supera em lucro e melhora fluxo de caixa apesar de investimentos em IA",
       "link": "https://www.infomoney.com.br/mercados/tesla-supera-em-lucro-e-melhora-fluxo-de-caixa-apesar-de-investimentos-em-ia/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje sobe a R$ 5,02, após nova pesquisa da Quaest e na contramão do exterior",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-21102026/",
       "pubDate": null
     }
   ]
