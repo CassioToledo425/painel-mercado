@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-21T17:59:58.133Z",
+  "updatedAt": "2026-10-21T19:03:22.512Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "JPMorgan destaca \"próximo grande teste\" para mercado brasileiro após ciclo eleitoral",
+      "link": "https://www.infomoney.com.br/mercados/jpmorgan-destaca-proximo-grande-teste-para-mercado-brasileiro-apos-ciclo-eleitoral/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa recua com nova pesquisa, na contramão do exterior",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-21102026/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Mesa do Goldman reitera compra para ações brasileiras e recomenda estratégia com EWZ",
       "link": "https://www.infomoney.com.br/mercados/mesa-do-goldman-reitera-compra-para-acoes-brasileiras-e-recomenda-operacao-com-ewz/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras lidera valorização entre gigantes globais do petróleo no mês; veja ranking",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-petr3-petr4-lidera-valorizacao-entre-gigantes-globais-do-petroleo-outubro-2026-veja-ranking/",
       "pubDate": null
     }
   ]
