@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-22T22:12:08.127Z",
+  "updatedAt": "2026-10-22T23:57:01.639Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Bolsa antes da eleição: vale carregar ações do último pregão até segunda-feira?",
+      "link": "https://www.infomoney.com.br/mercados/bolsa-eleicao-carregar-acoes-ate-segunda/",
+      "pubDate": null
+    },
+    {
       "title": "Taxas dos DIs sobem com disputa eleitoral no Brasil e aversão global ao risco",
       "link": "https://www.infomoney.com.br/mercados/taxas-dos-dis-sobem-com-disputa-eleitoral-no-brasil-e-aversao-global-ao-risco/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "BradSaúde (SAUD3) sobe 4,2% após balanço do 3T e anúncio de dividendo bilionário",
       "link": "https://www.infomoney.com.br/mercados/bradsaude-saud3-analise-resultados-terceiro-trimestre/",
-      "pubDate": null
-    },
-    {
-      "title": "Vale cai 4% com baixa do minério; CSN, Usiminas e Gerdau também têm fortes perdas",
-      "link": "https://www.infomoney.com.br/mercados/vale-vale3-cai-4-com-baixa-do-minerio-csn-usiminas-e-gerdau-tambem-tem-fortes-perdas/",
       "pubDate": null
     }
   ]
