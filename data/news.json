@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-23T18:49:05.230Z",
+  "updatedAt": "2026-10-23T20:51:21.786Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,18 +24,23 @@
       "pubDate": null
     },
     {
-      "title": "Alta ou queda de 5% do Ibovespa: as expectativas do mercado para sessão após 2º turno",
-      "link": "https://www.infomoney.com.br/mercados/alta-ou-queda-de-5-do-ibovespa-as-expectativas-do-mercado-para-sessao-apos-2o-turno/",
+      "title": "Bradesco tem nova alta seguida no lucro e ações sobem, mas inadimplência preocupa",
+      "link": "https://www.infomoney.com.br/mercados/bradesco-bbdc4-11-altas-seguidas-no-lucro-mas-inadimplencia-preocupa-mercado-3t26-desempenho-acoes/",
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa passa a subir na reta final, antes do segundo turno",
+      "title": "Dólar hoje cai quase 1%, a R$ 4,98, com expectativa sobre eleições no domingo",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-23102026/",
+      "pubDate": null
+    },
+    {
+      "title": "Bolsas de NY caem com tensões geopolíticas e temores em IA minando apetite ao risco",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-caem-com-tensoes-geopoliticas-e-temores-em-ia-minando-apetite-ao-risco/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa fecha última sessão antes da eleição com alta; dólar cai a R$ 5,00",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-23102026/",
-      "pubDate": null
-    },
-    {
-      "title": "Bolsas da Europa fecham sem direção única de olho em alta do petróleo e temor com IA",
-      "link": "https://www.infomoney.com.br/mercados/bolsas-da-europa-fecham-sem-direcao-unica-de-olho-em-alta-do-petroleo-e-temor-com-ia/",
       "pubDate": null
     }
   ]
