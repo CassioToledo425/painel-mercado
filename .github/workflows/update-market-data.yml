@@ -48,7 +48,7 @@ jobs:
       - name: Atualizar dados de mercado
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
-          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '7 8 * * 1-5' || github.event.schedule == '8 12,16 * * 1-5' }}
+          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[refresh-b3]') || github.event.schedule == '7 8 * * 1-5' || github.event.schedule == '8 12,16 * * 1-5' }}
           UPDATE_FX: ${{ github.event_name != 'schedule' || github.event.schedule == '7 8 * * 1-5' || github.event.schedule == '7,22,37,52 10-17 * * 1-5' || github.event.schedule == '7 18 * * 1-5' }}
         run: node scripts/update-market-data.mjs
 
@@ -71,6 +71,8 @@ jobs:
 
       - name: Validar integridade e atualização dos dados
         shell: bash
+        env:
+          EXPECT_FRESH_BRAPI: ${{ github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[refresh-b3]') || github.event.schedule == '7 8 * * 1-5' || github.event.schedule == '8 12,16 * * 1-5' }}
         run: |
           node --input-type=module <<'NODE'
           import { readFile } from 'node:fs/promises';
@@ -93,6 +95,10 @@ jobs:
 
           if (!['ok', 'fallback', 'stale'].includes(brapi.status)) fail(`brapi.json com status ${brapi.status}`);
           if (!Array.isArray(brapi.stocks) || brapi.stocks.length < 6 || !finite(brapi?.ibovespa?.price)) fail('brapi.json incompleto');
+          if (process.env.EXPECT_FRESH_BRAPI === 'true') {
+            const brapiAge = Date.now() - Date.parse(brapi.updatedAt);
+            if (!Number.isFinite(brapiAge) || brapiAge < 0 || brapiAge > 45 * 60 * 1000) fail(`brapi.json desatualizado: ${brapi.updatedAt}`);
+          }
 
           if (!['ok', 'stale'].includes(global.status)) fail(`global.json com status ${global.status}`);
           if (!Array.isArray(global.stocks) || global.stocks.length < 6) fail('global.json incompleto');
