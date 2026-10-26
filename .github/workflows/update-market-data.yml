@@ -12,13 +12,15 @@ on:
       - '.github/workflows/update-market-data.yml'
   workflow_dispatch:
   schedule:
-    - cron: '0 8 * * 1-5'
+    # Horários em America/Sao_Paulo; minutos deslocados do início da hora
+    # para reduzir atrasos/descartes em períodos de maior carga do GitHub Actions.
+    - cron: '7 8 * * 1-5'
       timezone: 'America/Sao_Paulo'
-    - cron: '0 12,16 * * 1-5'
+    - cron: '8 12,16 * * 1-5'
       timezone: 'America/Sao_Paulo'
-    - cron: '10,25,40,55 10-17 * * 1-5'
+    - cron: '7,22,37,52 10-17 * * 1-5'
       timezone: 'America/Sao_Paulo'
-    - cron: '10 18 * * 1-5'
+    - cron: '7 18 * * 1-5'
       timezone: 'America/Sao_Paulo'
 
 permissions:
@@ -31,6 +33,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 8
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
@@ -45,8 +48,8 @@ jobs:
       - name: Atualizar dados de mercado
         env:
           BRAPI_TOKEN: ${{ secrets.BRAPI_TOKEN }}
-          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8 * * 1-5' || github.event.schedule == '0 12,16 * * 1-5' }}
-          UPDATE_FX: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '0 8 * * 1-5' || github.event.schedule == '10,25,40,55 10-17 * * 1-5' || github.event.schedule == '10 18 * * 1-5' }}
+          UPDATE_BRAPI: ${{ github.event_name == 'workflow_dispatch' || github.event.schedule == '7 8 * * 1-5' || github.event.schedule == '8 12,16 * * 1-5' }}
+          UPDATE_FX: ${{ github.event_name != 'schedule' || github.event.schedule == '7 8 * * 1-5' || github.event.schedule == '7,22,37,52 10-17 * * 1-5' || github.event.schedule == '7 18 * * 1-5' }}
         run: node scripts/update-market-data.mjs
 
       - name: Atualizar notícias do InfoMoney
@@ -57,12 +60,45 @@ jobs:
         run: |
           if git diff --quiet -- data/; then
             echo "Nenhuma alteração gerada."
-            exit 0
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "chore: atualiza dados de mercado"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git commit -m "chore: atualiza dados de mercado"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+      - name: Validar integridade e atualização dos dados
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+
+          const load = async (name) => JSON.parse(await readFile(`data/${name}`, 'utf8'));
+          const fail = (message) => { throw new Error(message); };
+          const finite = (value) => Number.isFinite(Number(value));
+
+          const [fx, brapi, global, news] = await Promise.all([
+            load('fx.json'),
+            load('brapi.json'),
+            load('global.json'),
+            load('news.json'),
+          ]);
+
+          if (fx.status !== 'ok') fail(`fx.json com status ${fx.status}`);
+          if (!finite(fx?.USDBRL?.bid) || !finite(fx?.EURBRL?.bid)) fail('fx.json sem USD/BRL ou EUR/BRL válido');
+          const fxAge = Date.now() - Date.parse(fx.updatedAt);
+          if (!Number.isFinite(fxAge) || fxAge < 0 || fxAge > 45 * 60 * 1000) fail(`fx.json desatualizado: ${fx.updatedAt}`);
+
+          if (!['ok', 'fallback', 'stale'].includes(brapi.status)) fail(`brapi.json com status ${brapi.status}`);
+          if (!Array.isArray(brapi.stocks) || brapi.stocks.length < 6 || !finite(brapi?.ibovespa?.price)) fail('brapi.json incompleto');
+
+          if (!['ok', 'stale'].includes(global.status)) fail(`global.json com status ${global.status}`);
+          if (!Array.isArray(global.stocks) || global.stocks.length < 6) fail('global.json incompleto');
+
+          if (!['ok', 'stale'].includes(news.status)) fail(`news.json com status ${news.status}`);
+          if (!Array.isArray(news.items) || news.items.length === 0) fail('news.json sem notícias');
+
+          console.log(`[VALIDAÇÃO] FX USD/BRL=${fx.USDBRL.bid} EUR/BRL=${fx.EURBRL.bid} | B3=${brapi.status} | Global=${global.status} | InfoMoney=${news.status}`);
+          NODE
