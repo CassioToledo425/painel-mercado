@@ -1,57 +1,57 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-29T17:24:23.085Z",
+  "updatedAt": "2026-10-29T20:11:14.835Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
       "name": "VALE3",
-      "price": 60.69,
-      "changePercent": -1.12,
-      "marketTime": "2026-10-29T17:23:30.000Z"
+      "price": 60.37,
+      "changePercent": -1.65,
+      "marketTime": "2026-10-29T20:10:30.000Z"
     },
     {
       "symbol": "PETR4",
       "name": "PETR4",
-      "price": 51.83,
-      "changePercent": -1.29,
-      "marketTime": "2026-10-29T17:23:30.000Z"
+      "price": 52.4,
+      "changePercent": -0.21,
+      "marketTime": "2026-10-29T20:10:30.000Z"
     },
     {
       "symbol": "ITUB4",
       "name": "ITUB4",
-      "price": 39.58,
-      "changePercent": -0.5,
-      "marketTime": "2026-10-29T17:23:30.000Z"
+      "price": 39.75,
+      "changePercent": -0.08,
+      "marketTime": "2026-10-29T20:10:30.000Z"
     },
     {
       "symbol": "BBDC4",
       "name": "BBDC4",
-      "price": 14.2,
-      "changePercent": -3.27,
-      "marketTime": "2026-10-29T17:23:30.000Z"
+      "price": 14.17,
+      "changePercent": -3.47,
+      "marketTime": "2026-10-29T20:10:30.000Z"
     },
     {
       "symbol": "WEGE3",
       "name": "WEGE3",
-      "price": 48.36,
-      "changePercent": 2.46,
-      "marketTime": "2026-10-29T17:23:30.000Z"
+      "price": 49.55,
+      "changePercent": 4.98,
+      "marketTime": "2026-10-29T20:09:30.000Z"
     },
     {
       "symbol": "MGLU3",
       "name": "MGLU3",
-      "price": 5.16,
-      "changePercent": -1.15,
-      "marketTime": "2026-10-29T17:23:30.000Z"
+      "price": 5.14,
+      "changePercent": -1.53,
+      "marketTime": "2026-10-29T20:09:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
     "name": "IBOVESPA",
-    "price": 169470.81,
-    "changePercent": -0.9,
-    "marketTime": "2026-10-29T17:23:06.000Z"
+    "price": 169555.23,
+    "changePercent": -0.85,
+    "marketTime": "2026-10-29T20:10:43.000Z"
   }
 }

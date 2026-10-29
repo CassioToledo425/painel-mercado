@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-29T18:56:30.330Z",
+  "updatedAt": "2026-10-29T20:11:20.496Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Taxas longas sobem com mercado sensível aos desdobramentos da vitória de Lula",
+      "link": "https://www.infomoney.com.br/mercados/taxas-longas-sobem-com-mercado-sensivel-aos-desdobramentos-da-vitoria-de-lula/",
+      "pubDate": null
+    },
+    {
+      "title": "Petróleo cai conforme negociações EUA-Irã ofuscam possíveis futuros ataques",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-29102026/",
+      "pubDate": null
+    },
+    {
       "title": "Motiva (MOTV3): Citi eleva recomendação a compra após onda de vendas e de olho no 3T",
       "link": "https://www.infomoney.com.br/mercados/motiva-motv3-citi-eleva-recomendacao-a-compra-apos-onda-de-vendas-e-de-olho-no-3t/",
       "pubDate": null
@@ -31,11 +41,6 @@
     {
       "title": "Vale divulga balanço do 3º trimestre de 2026; acompanhe ao vivo",
       "link": "https://www.infomoney.com.br/mercados/vale-vale3-balanco-3t26/",
-      "pubDate": null
-    },
-    {
-      "title": "Ações de varejo desabam após as eleições – queda abriu oportunidades na Bolsa?",
-      "link": "https://www.infomoney.com.br/mercados/acoes-de-varejo-desabam-apos-as-eleicoes-queda-abriu-oportunidades-na-bolsa/",
       "pubDate": null
     }
   ]
