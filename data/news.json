@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-29T23:14:34.712Z",
+  "updatedAt": "2026-10-30T00:52:27.642Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Kitchens, de móveis planejados, pede recuperação judicial, diz site",
+      "link": "https://www.infomoney.com.br/mercados/kitchens-de-moveis-planejados-pede-recuperacao-judicial-diz-site/",
+      "pubDate": null
+    },
+    {
       "title": "Braskem tem queda de 18% nas vendas de principais químicos no Brasil no 3º tri",
       "link": "https://www.infomoney.com.br/mercados/braskem-tem-queda-de-18-nas-vendas-de-principais-quimicos-no-brasil-no-3o-tri/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Vale (VALE3) tem lucro líquido de US$ 1,25 bi no 3º tri, queda anual de 53%",
       "link": "https://www.infomoney.com.br/mercados/vale-vale3-balanco-3t26/",
-      "pubDate": null
-    },
-    {
-      "title": "Petrobras anuncia terceira descoberta de petróleo em poço na Foz do Amazonas",
-      "link": "https://www.infomoney.com.br/mercados/petrobras-anuncia-terceira-descoberta-de-petroleo-em-poco-na-foz-do-amazonas/",
       "pubDate": null
     }
   ]
