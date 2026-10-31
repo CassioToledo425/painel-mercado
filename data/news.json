@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-10-30T22:38:40.288Z",
+  "updatedAt": "2026-10-31T00:43:14.110Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,16 @@
       "pubDate": null
     },
     {
+      "title": "Bradespar (BRAP4) aprova distribuição de dividendos e juros sobre capital próprio",
+      "link": "https://www.infomoney.com.br/mercados/bradespar-brap4-aprova-distribuicao-de-dividendos-e-juros-sobre-capital-proprio/",
+      "pubDate": null
+    },
+    {
+      "title": "Vale tem alta de 66% no resultado do cobre e avança para cumprir projeção de produção",
+      "link": "https://www.infomoney.com.br/mercados/vale-tem-alta-de-66-no-resultado-do-cobre-e-avanca-para-cumprir-projecao-de-producao/",
+      "pubDate": null
+    },
+    {
       "title": "Empresas da B3 perdem R$ 963 bi na semana pós-eleição; VAMO3 e MGLU3 caem mais de 50%",
       "link": "https://www.infomoney.com.br/mercados/vamo3-mglu3-caem-mais-50-suzb3-embj3-wege3-sobem-10-semana-ibovespa-26-10-2026/",
       "pubDate": null
@@ -31,16 +41,6 @@
     {
       "title": "Bolsa a 159 mil pontos? Trader projeta até onde pode cair o Ibovespa",
       "link": "https://www.infomoney.com.br/mercados/bolsa-a-159-mil-pontos-trader-projeta-ate-onde-pode-cair-o-ibovespa/",
-      "pubDate": null
-    },
-    {
-      "title": "Usiminas (USIM5) desaba 8,6% após balanço fraco e perspectivas negativas para 4T26",
-      "link": "https://www.infomoney.com.br/mercados/usiminas-usim5-analise-resultados-terceiro-trimestre-2026-desempenho-acoes/",
-      "pubDate": null
-    },
-    {
-      "title": "JP Morgan: Vendas da Braskem (BRKM5) crescem, mas margens preocupam",
-      "link": "https://www.infomoney.com.br/mercados/jp-morgan-vendas-da-braskem-brkm5-crescem-mas-margens-preocupam/",
       "pubDate": null
     }
   ]
