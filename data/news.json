@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-02T20:44:14.823Z",
+  "updatedAt": "2026-11-02T22:18:01.693Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,23 +24,23 @@
       "pubDate": null
     },
     {
-      "title": "Índice de ADRs brasileiros recua em dia de queda de petróleo e bolsas mistas em NY",
+      "title": "Bolsas de NY fecham mistas com queda do petróleo, em semana de payroll e midterms",
+      "link": "https://www.infomoney.com.br/mercados/bolsas-de-ny-abrem-em-alta-com-queda-do-petroleo-em-semana-de-agenda-cheia/",
+      "pubDate": null
+    },
+    {
+      "title": "Índice de ADRs brasileiros cai em dia de queda de petróleo e bolsas mistas em NY",
       "link": "https://www.infomoney.com.br/mercados/indice-de-adrs-brasileiros-sobe-em-dia-de-queda-de-petroleo-e-altas-em-ny/",
+      "pubDate": null
+    },
+    {
+      "title": "Criptomoedas: bitcoin opera em queda após ataque à Binance, à espera de midterms",
+      "link": "https://www.infomoney.com.br/mercados/criptomoedas-bitcoin-opera-em-queda-apos-ataque-a-binance-a-espera-de-midterms/",
       "pubDate": null
     },
     {
       "title": "Ouro fecha em alta com otimismo sobre diálogo entre EUA e Irã para encerrar guerra",
       "link": "https://www.infomoney.com.br/mercados/ouro-fecha-em-alta-com-otimismo-sobre-dialogo-entre-eua-e-ira-para-encerrar-guerra/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo cai mais de 7% enquanto Irã sinaliza abertura para negociações de paz",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-cai-mais-de-4-com-esperanca-de-paz-goldman-projeta-us-140/",
-      "pubDate": null
-    },
-    {
-      "title": "Estatal de petróleo dos Emirados Árabes faz parceria com OpenAI para uso em operações",
-      "link": "https://www.infomoney.com.br/mercados/estatal-de-petroleo-dos-emirados-arabes-faz-parceria-com-openai-para-uso-em-operacoes/",
       "pubDate": null
     }
   ]
