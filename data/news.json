@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-04T18:36:39.883Z",
+  "updatedAt": "2026-11-04T20:24:00.453Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Construção: quais empresas devem surpreender e quais podem frustrar no 3T26",
+      "link": "https://www.infomoney.com.br/mercados/temporada-balanco-3t26-construtoras-cyre3-cury3-mrve3/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa Hoje Ao Vivo: Bolsa sobe e caminha para encerrar sequência de quedas",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-04112026/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "\"Incerteza menor\": por que ações mundiais sobem após vitória democrata nos EUA",
       "link": "https://www.infomoney.com.br/mercados/incerteza-menor-por-que-acoes-mundiais-sobem-apos-vitoria-democrata-nos-eua/",
-      "pubDate": null
-    },
-    {
-      "title": "Império de Musk se prepara para onda azul com vitória democrata no Texas",
-      "link": "https://www.infomoney.com.br/mercados/imperio-de-musk-se-prepara-para-onda-azul-com-vitoria-democrata-no-texas/",
       "pubDate": null
     }
   ]
