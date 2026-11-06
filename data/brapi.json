@@ -1,57 +1,57 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-06T17:55:27.120Z",
+  "updatedAt": "2026-11-06T20:48:43.161Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
       "name": "VALE3",
-      "price": 63.66,
-      "changePercent": 1.58,
-      "marketTime": "2026-11-06T17:54:30.000Z"
+      "price": 63.87,
+      "changePercent": 1.91,
+      "marketTime": "2026-11-06T20:47:30.000Z"
     },
     {
       "symbol": "PETR4",
       "name": "PETR4",
-      "price": 45.18,
-      "changePercent": -1.68,
-      "marketTime": "2026-11-06T17:54:30.000Z"
+      "price": 45.31,
+      "changePercent": -1.39,
+      "marketTime": "2026-11-06T20:47:30.000Z"
     },
     {
       "symbol": "ITUB4",
       "name": "ITUB4",
       "price": 40.6,
       "changePercent": 1.58,
-      "marketTime": "2026-11-06T17:54:30.000Z"
+      "marketTime": "2026-11-06T20:47:30.000Z"
     },
     {
       "symbol": "BBDC4",
       "name": "BBDC4",
-      "price": 14.08,
-      "changePercent": 2.25,
-      "marketTime": "2026-11-06T17:54:30.000Z"
+      "price": 14.17,
+      "changePercent": 2.9,
+      "marketTime": "2026-11-06T20:48:30.000Z"
     },
     {
       "symbol": "WEGE3",
       "name": "WEGE3",
-      "price": 48.5,
-      "changePercent": 0.41,
-      "marketTime": "2026-11-06T17:54:30.000Z"
+      "price": 48.19,
+      "changePercent": -0.23,
+      "marketTime": "2026-11-06T20:47:30.000Z"
     },
     {
       "symbol": "MGLU3",
       "name": "MGLU3",
-      "price": 5.69,
-      "changePercent": 4.79,
-      "marketTime": "2026-11-06T17:54:30.000Z"
+      "price": 5.57,
+      "changePercent": 2.58,
+      "marketTime": "2026-11-06T20:47:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
     "name": "IBOVESPA",
-    "price": 168807.19,
-    "changePercent": 1.57,
-    "marketTime": "2026-11-06T17:54:41.000Z"
+    "price": 168342.47,
+    "changePercent": 1.29,
+    "marketTime": "2026-11-06T20:48:27.000Z"
   }
 }
