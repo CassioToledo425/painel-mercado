@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-10T20:25:53.207Z",
+  "updatedAt": "2026-11-10T21:15:26.775Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Petróleo fecha em queda com indicação de moderação dos EUA em relação ao Irã e dólar",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-10112026/",
+      "pubDate": null
+    },
+    {
       "title": "Dólar salta quase 1,5% e fecha a R$ 5,60 após inflação nos EUA superar expectativas",
       "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-10112026/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Usiminas vai sair da Bolsa? Ternium responde e revela planos para o Brasil",
       "link": "https://www.infomoney.com.br/mercados/usiminas-sair-bolsa-ternium-planos-investimentos-brasil/",
-      "pubDate": null
-    },
-    {
-      "title": "Cenário de “nem paz, nem guerra” pode sustentar prêmio geopolítico no petróleo",
-      "link": "https://www.infomoney.com.br/mercados/cenario-de-nem-paz-nem-guerra-pode-sustentar-premio-geopolitico-no-petroleo/",
       "pubDate": null
     }
   ]
