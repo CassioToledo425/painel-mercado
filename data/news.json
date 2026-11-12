@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-12T18:51:56.690Z",
+  "updatedAt": "2026-11-12T20:45:42.486Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,18 +24,23 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa recua em dia de IPCA, pacote fiscal e balanços",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-12112026/",
+      "title": "Dólar sobe 1,58% a R$ 5,65, maior valor desde junho de 2025, com pacote fiscal e IPCA",
+      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-12112026/",
       "pubDate": null
     },
     {
-      "title": "Quais são os riscos legais para Huang e a Nvidia após o escândalo?",
-      "link": "https://www.infomoney.com.br/mercados/quais-sao-os-riscos-legais-para-huang-e-a-nvidia-apos-o-escandalo/",
+      "title": "Petróleo sobe 3% após fala de Trump sobre Irã e relatos de tensões no Oriente Médio",
+      "link": "https://www.infomoney.com.br/mercados/petroleo-abertura-fechamento-ira-eua-12112026/",
       "pubDate": null
     },
     {
-      "title": "BB Seguridade não está à venda, por sua rentabilidade e importância, diz CEO do BB",
-      "link": "https://www.infomoney.com.br/mercados/bb-seguridade-nao-esta-a-venda-por-sua-rentabilidade-e-importancia-diz-ceo-do-bb/",
+      "title": "Taxas dos DIs fecham em alta firme em meio a insatisfação com pacote fiscal",
+      "link": "https://www.infomoney.com.br/mercados/taxas-dos-dis-fecham-em-alta-firme-em-meio-a-insatisfacao-com-pacote-fiscal/",
+      "pubDate": null
+    },
+    {
+      "title": "PDD dos quatro maiores bancos brasileiros bate recorde histórico de R$ 49 bilhões",
+      "link": "https://www.infomoney.com.br/mercados/pdd-dos-quatro-maiores-bancos-brasileiros-bate-recorde-historico-de-r-49-bilhoes/",
       "pubDate": null
     }
   ]
