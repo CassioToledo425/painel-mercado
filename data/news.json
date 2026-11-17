@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-17T21:43:44.127Z",
+  "updatedAt": "2026-11-17T22:50:30.059Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,23 +24,23 @@
       "pubDate": null
     },
     {
+      "title": "Bolsas de NY fecham em queda com bancos pressionados e techs em foco com Nvidia",
+      "link": "https://www.infomoney.com.br/mercados/nasdaq-pregao-volatil-com-resultados-da-nvidia-em-foco/",
+      "pubDate": null
+    },
+    {
+      "title": "Ibovespa encerra em alta, mas cautela com cenário fiscal limita recuperação",
+      "link": "https://www.infomoney.com.br/mercados/ibovespa-sobe-mas-investidor-segue-cauteloso-a-espera-de-definicoes-do-governo-lula/",
+      "pubDate": null
+    },
+    {
+      "title": "Após saída polêmica de CEO, Nvidia supera expectativa e dobra receita no 3º trimestre",
+      "link": "https://www.infomoney.com.br/mercados/nvidia-apresenta-projecao-otimista-em-seu-primeiro-balanco-desde-a-saida-de-huang/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa desidrata durante o dia mas fecha positivo; dólar sobe de novo",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-17112026/",
-      "pubDate": null
-    },
-    {
-      "title": "Taxas dos DIs recuam com ajuste fiscal e novo governo Lula no radar",
-      "link": "https://www.infomoney.com.br/mercados/taxas-dos-dis-recuam-com-ajuste-fiscal-e-novo-governo-lula-no-radar/",
-      "pubDate": null
-    },
-    {
-      "title": "Petróleo sobe em meio a ataques a petroleiros e previsão de queda nos estoques",
-      "link": "https://www.infomoney.com.br/mercados/petroleo-sobe-em-meio-a-ataques-a-petroleiros-e-previsao-de-queda-nos-estoques/",
-      "pubDate": null
-    },
-    {
-      "title": "Dólar hoje sobe 0,08%, a R$ 5,78, à espera de votação de destaques de ajuste fiscal",
-      "link": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-17112026/",
       "pubDate": null
     }
   ]
