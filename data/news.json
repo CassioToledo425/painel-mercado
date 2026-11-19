@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-18T22:32:52.150Z",
+  "updatedAt": "2026-11-19T02:30:42.322Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,6 +24,11 @@
       "pubDate": null
     },
     {
+      "title": "Saúde: Planos de saúde ficam mistos e hospitais têm bons resultados no 3º tri",
+      "link": "https://www.infomoney.com.br/mercados/saude-planos-de-saude-ficam-mistos-e-hospitais-tem-bons-resultados-no-3o-tri/",
+      "pubDate": null
+    },
+    {
       "title": "Ibovespa fecha em queda com receios sobre cenário fiscal e juro maior nos EUA",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-fecha-em-queda-com-receios-sobre-cenario-fiscal-e-juro-maior-nos-eua/",
       "pubDate": null
@@ -36,11 +41,6 @@
     {
       "title": "Wall St fecha sem direção única após divulgação dos resultados da Nvidia",
       "link": "https://www.infomoney.com.br/mercados/wall-st-fecha-sem-direcao-unica-apos-divulgacao-dos-resultados-da-nvidia/",
-      "pubDate": null
-    },
-    {
-      "title": "IPO da Anthropic deve criar milhares de milionários",
-      "link": "https://www.infomoney.com.br/mercados/ipo-da-anthropic-deve-criar-milhares-de-milionarios/",
       "pubDate": null
     }
   ]
