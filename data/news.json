@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-19T21:25:50.759Z",
+  "updatedAt": "2026-11-19T22:38:26.867Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,18 +24,23 @@
       "pubDate": null
     },
     {
-      "title": "Ibovespa fecha em queda com exterior e sem trégua com receio fiscal",
-      "link": "https://www.infomoney.com.br/mercados/pacote-fiscal-timido-impede-avanco-do-ibovespa/",
+      "title": "\"Trump fraco é dólar forte\": moeda ganhou força após midterms, diz diretor do Pine",
+      "link": "https://www.infomoney.com.br/mercados/trump-fraco-e-dolar-forte-moeda-ganhou-forca-apos-midterms-diz-diretor-do-pine/",
       "pubDate": null
     },
     {
-      "title": "Ibovespa encerra com nova baixa e semana termina negativa; dólar dispara a R$ 5,9",
-      "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/",
+      "title": "Como a intervenção do BC no mercado de câmbio acabou estressando a curva de juros",
+      "link": "https://www.infomoney.com.br/mercados/como-a-intervencao-do-bc-no-mercado-de-cambio-acabou-estressando-a-curva-de-juros/",
       "pubDate": null
     },
     {
-      "title": "Anthropic: ação fecha com alta de 17% em estreia na Nasdaq após maior IPO da história",
-      "link": "https://www.infomoney.com.br/mercados/anthropic-acoes-estreia-nasdaq-apos-maior-ipo-historia/",
+      "title": "Anthropic: BDR movimenta R$ 460 mi em estreia na B3, volume 3 vezes maior que SpaceX",
+      "link": "https://www.infomoney.com.br/mercados/anthropic-bdr-movimenta-r-460-mi-em-estreia-na-b3-volume-3-vezes-maior-que-spacex/",
+      "pubDate": null
+    },
+    {
+      "title": "Marcopolo (POMO4) fecha acordo para PDV e suspensão temporária de contratos; ação cai",
+      "link": "https://www.infomoney.com.br/mercados/marcopolo-pomo4-fecha-acordo-para-pdv-e-suspensao-temporaria-de-contratos/",
       "pubDate": null
     }
   ]
