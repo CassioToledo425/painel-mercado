@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-19T19:27:51.955Z",
+  "updatedAt": "2026-11-19T21:25:50.759Z",
   "source": "InfoMoney página Mercados",
   "items": [
     {
@@ -24,23 +24,18 @@
       "pubDate": null
     },
     {
-      "title": "Vale: Serra Norte vira nova preocupação para o mercado, mas analistas mantêm compra",
-      "link": "https://www.infomoney.com.br/mercados/vale-vale3-serra-norte-vira-nova-preocupacao-para-mercado-mas-analistas-mantem-compra-acao/",
+      "title": "Ibovespa fecha em queda com exterior e sem trégua com receio fiscal",
+      "link": "https://www.infomoney.com.br/mercados/pacote-fiscal-timido-impede-avanco-do-ibovespa/",
       "pubDate": null
     },
     {
-      "title": "Por que bancões estão rebaixando o Brasil? 5 razões por trás da cautela com a Bolsa",
-      "link": "https://www.infomoney.com.br/mercados/por-que-bancoes-estao-rebaixando-o-brasil-5-razoes-por-tras-da-cautela-com-a-bolsa/",
-      "pubDate": null
-    },
-    {
-      "title": "Previsão de safra mundial de milho 2026/27 é reduzida após revisões na Ucrânia e EUA",
-      "link": "https://www.infomoney.com.br/mercados/previsao-de-safra-mundial-de-milho-2026-27-e-reduzida-apos-revisoes-na-ucrania-e-eua/",
-      "pubDate": null
-    },
-    {
-      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai após intervenção do BC no dólar, que sobe a R$ 5,92",
+      "title": "Ibovespa encerra com nova baixa e semana termina negativa; dólar dispara a R$ 5,9",
       "link": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-19112026/",
+      "pubDate": null
+    },
+    {
+      "title": "Anthropic: ação fecha com alta de 17% em estreia na Nasdaq após maior IPO da história",
+      "link": "https://www.infomoney.com.br/mercados/anthropic-acoes-estreia-nasdaq-apos-maior-ipo-historia/",
       "pubDate": null
     }
   ]
