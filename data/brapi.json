@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-23T22:35:05.927Z",
+  "updatedAt": "2026-11-24T02:07:03.571Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
@@ -52,6 +52,6 @@
     "name": "IBOVESPA",
     "price": 164796.05,
     "changePercent": -0.95,
-    "marketTime": "2026-11-23T22:34:38.000Z"
+    "marketTime": "2026-11-24T02:06:50.000Z"
   }
 }
