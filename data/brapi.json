@@ -1,57 +1,57 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-25T20:26:56.402Z",
+  "updatedAt": "2026-11-25T23:33:27.279Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
       "name": "VALE3",
-      "price": 57.13,
-      "changePercent": 3.52,
-      "marketTime": "2026-11-25T20:26:30.000Z"
+      "price": 56.9,
+      "changePercent": 3.1,
+      "marketTime": "2026-11-25T21:30:30.000Z"
     },
     {
       "symbol": "PETR4",
       "name": "PETR4",
-      "price": 41.3,
-      "changePercent": 1.85,
-      "marketTime": "2026-11-25T20:25:30.000Z"
+      "price": 41.36,
+      "changePercent": 2,
+      "marketTime": "2026-11-25T21:30:30.000Z"
     },
     {
       "symbol": "ITUB4",
       "name": "ITUB4",
-      "price": 40.08,
-      "changePercent": 0.86,
-      "marketTime": "2026-11-25T20:25:30.000Z"
+      "price": 40.01,
+      "changePercent": 0.68,
+      "marketTime": "2026-11-25T21:30:30.000Z"
     },
     {
       "symbol": "BBDC4",
       "name": "BBDC4",
-      "price": 14.15,
-      "changePercent": 3.89,
-      "marketTime": "2026-11-25T20:26:30.000Z"
+      "price": 14.19,
+      "changePercent": 4.19,
+      "marketTime": "2026-11-25T21:30:30.000Z"
     },
     {
       "symbol": "WEGE3",
       "name": "WEGE3",
-      "price": 49.66,
-      "changePercent": -1.08,
-      "marketTime": "2026-11-25T20:25:30.000Z"
+      "price": 49.65,
+      "changePercent": -1.1,
+      "marketTime": "2026-11-25T21:30:30.000Z"
     },
     {
       "symbol": "MGLU3",
       "name": "MGLU3",
-      "price": 9.26,
-      "changePercent": 5.83,
-      "marketTime": "2026-11-25T20:25:30.000Z"
+      "price": 9.29,
+      "changePercent": 6.17,
+      "marketTime": "2026-11-25T21:30:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
     "name": "IBOVESPA",
-    "price": 166659,
-    "changePercent": 1.57,
-    "marketTime": "2026-11-25T20:26:15.000Z"
+    "price": 166684.61,
+    "changePercent": 1.58,
+    "marketTime": "2026-11-25T23:33:26.000Z"
   }
 }
