@@ -1,57 +1,57 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-25T23:33:27.279Z",
+  "updatedAt": "2026-11-26T20:07:15.636Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
       "name": "VALE3",
-      "price": 56.9,
-      "changePercent": 3.1,
-      "marketTime": "2026-11-25T21:30:30.000Z"
+      "price": 58,
+      "changePercent": 1.93,
+      "marketTime": "2026-11-26T20:05:30.000Z"
     },
     {
       "symbol": "PETR4",
       "name": "PETR4",
-      "price": 41.36,
-      "changePercent": 2,
-      "marketTime": "2026-11-25T21:30:30.000Z"
+      "price": 42.42,
+      "changePercent": 2.56,
+      "marketTime": "2026-11-26T20:06:30.000Z"
     },
     {
       "symbol": "ITUB4",
       "name": "ITUB4",
-      "price": 40.01,
-      "changePercent": 0.68,
-      "marketTime": "2026-11-25T21:30:30.000Z"
+      "price": 41.99,
+      "changePercent": 4.95,
+      "marketTime": "2026-11-26T20:06:30.000Z"
     },
     {
       "symbol": "BBDC4",
       "name": "BBDC4",
-      "price": 14.19,
-      "changePercent": 4.19,
-      "marketTime": "2026-11-25T21:30:30.000Z"
+      "price": 15.28,
+      "changePercent": 7.68,
+      "marketTime": "2026-11-26T20:06:30.000Z"
     },
     {
       "symbol": "WEGE3",
       "name": "WEGE3",
-      "price": 49.65,
-      "changePercent": -1.1,
-      "marketTime": "2026-11-25T21:30:30.000Z"
+      "price": 50.74,
+      "changePercent": 2.2,
+      "marketTime": "2026-11-26T20:05:30.000Z"
     },
     {
       "symbol": "MGLU3",
       "name": "MGLU3",
-      "price": 9.29,
-      "changePercent": 6.17,
-      "marketTime": "2026-11-25T21:30:30.000Z"
+      "price": 9.35,
+      "changePercent": 0.65,
+      "marketTime": "2026-11-26T20:06:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
     "name": "IBOVESPA",
-    "price": 166684.61,
-    "changePercent": 1.58,
-    "marketTime": "2026-11-25T23:33:26.000Z"
+    "price": 173521.02,
+    "changePercent": 4.1,
+    "marketTime": "2026-11-26T20:06:58.000Z"
   }
 }
