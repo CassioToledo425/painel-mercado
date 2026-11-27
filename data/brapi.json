@@ -1,57 +1,57 @@
 {
   "status": "ok",
-  "updatedAt": "2026-11-27T19:54:18.230Z",
+  "updatedAt": "2026-11-27T23:21:40.156Z",
   "source": "BRAPI",
   "schedule": "08:00 / 12:00 / 16:00 America/Sao_Paulo",
   "stocks": [
     {
       "symbol": "VALE3",
       "name": "VALE3",
-      "price": 57.39,
-      "changePercent": -2.28,
-      "marketTime": "2026-11-27T19:53:30.000Z"
+      "price": 57.19,
+      "changePercent": -2.62,
+      "marketTime": "2026-11-27T21:31:30.000Z"
     },
     {
       "symbol": "PETR4",
       "name": "PETR4",
-      "price": 42.24,
-      "changePercent": -2.2,
-      "marketTime": "2026-11-27T19:53:30.000Z"
+      "price": 42.14,
+      "changePercent": -2.43,
+      "marketTime": "2026-11-27T21:31:30.000Z"
     },
     {
       "symbol": "ITUB4",
       "name": "ITUB4",
-      "price": 43.04,
-      "changePercent": 1.13,
-      "marketTime": "2026-11-27T19:53:30.000Z"
+      "price": 42.73,
+      "changePercent": 0.4,
+      "marketTime": "2026-11-27T21:31:30.000Z"
     },
     {
       "symbol": "BBDC4",
       "name": "BBDC4",
       "price": 16.07,
       "changePercent": 1.52,
-      "marketTime": "2026-11-27T19:53:30.000Z"
+      "marketTime": "2026-11-27T21:31:30.000Z"
     },
     {
       "symbol": "WEGE3",
       "name": "WEGE3",
-      "price": 50.45,
-      "changePercent": -1.77,
-      "marketTime": "2026-11-27T19:53:30.000Z"
+      "price": 49.87,
+      "changePercent": -2.9,
+      "marketTime": "2026-11-27T21:31:30.000Z"
     },
     {
       "symbol": "MGLU3",
       "name": "MGLU3",
-      "price": 10.53,
-      "changePercent": 9.12,
-      "marketTime": "2026-11-27T19:53:30.000Z"
+      "price": 10.59,
+      "changePercent": 9.74,
+      "marketTime": "2026-11-27T21:31:30.000Z"
     }
   ],
   "ibovespa": {
     "symbol": "^BVSP",
     "name": "IBOVESPA",
-    "price": 177276.56,
-    "changePercent": 0.27,
-    "marketTime": "2026-11-27T19:53:35.000Z"
+    "price": 176573.34,
+    "changePercent": -0.13,
+    "marketTime": "2026-11-27T23:20:49.000Z"
   }
 }
